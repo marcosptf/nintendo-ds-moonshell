@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+<UL>
+<LI><A HREF="#install">インストール / アンインストール / アップデート の仕方</A></LI>
+<LI><A HREF="#notboot">起動しないときは</A></LI>
+<BR>
+<LI><A HREF="#supportformat">対応フォーマットリスト</A></LI>
+<LI><A HREF="#restrictformat">フォーマットに関する制限事項</A></LI>
+<LI><A HREF="#largefile">サイズが大きいファイルに関する制限事項</A></LI>
+<LI><A HREF="#heavyfile">重いファイルに関する制限事項</A></LI>
+</UL>
+<BR>
+</FONT>
+<A NAME="install"><HR>
+・インストール / アンインストール / アップデート の仕方<BR>
+<BR>
+SDFormatterでフォーマットしたSDカードを強く推奨します。<BR>
+安全のため、多少の空き容量（64MByte以上推奨）を残しておいてください。<BR>
+<BR>
+インストールは、setup.exeを実行してください。従来の手動コピーでもインストールできます。<BR>
+<BR>
+アンインストールは、moonshl2フォルダと、moonshl2.ndsファイルを、SDカードから削除してください。<BR>
+<BR>
+アップデートは、setup.exeを実行してください。古いmoonshl2をバックアップフォルダに移動してからインストールします。<BR>
+<BR>
+<A NAME="notboot"><HR>
+・起動しないときは<BR>
+<BR>
+SDFormatterでフォーマット後にインストールして動作を確認してください。<BR>
+他の自作アプリも起動できないときは、ファームウェアなどを確認して下さい。<BR>
+MoonShell2だけ起動できないときは、<A HREF="faq.html">よくある質問</A> を参照してください。<BR>
+<BR>
+<A NAME="supportformat"><HR>
+・対応フォーマットリスト<BR>
+<BR>
+音楽関係の MP1, MP2, MP3, OGG, WAV, M4A, WMA, TTA, MID, RCP, R36, FLAC に対応。<BR>
+MOD関係の MOD, IT, FAR, MTM, S3M, XM, 669, MED, STM, AMF, GDM, ULT, UNI, ASY, IMF, OKT, STX に対応。<BR>
+ChipTune関係の SPC, NSF, GBS, HES, AY, SAP, KSS に対応。<BR>
+プレイリスト関係の M3U, WPL に対応。<BR>
+画像関係の JPG, BMP, GIF, PNG, PSD に対応。<BR>
+動画再生(DPG)に対応。<BR>
+テキストファイル表示に対応。<BR>
+<BR>
+<A NAME="restrictformat"><HR>
+・フォーマットに関する制限事項<BR>
+<BR>
+NDS: 商用NDSROMは起動できません。<BR>
+WMA: ロスレスモードとボイスモードは再生できません。<BR>
+M4A, WMA: 暗号化ファイルは再生できません。<BR>
+MID: Standard MIDI file format.2 は再生できません。<BR>
+SPC: SPC-700エミュレーションは非常に音質が悪いです。<BR>
+ChipTune関係: FM音源チップは未対応です。<BR>
+FLAC: 32bits/sampleフォーマットは未対応です。<BR>
+プレイリスト関係: ANSI, S-JIS, UTF-8, CP437, CP850, CP1252 以外は扱えません。<BR>
+プレイリスト関係: 複数トラックを含むChipTuneサウンドファイルのプレイリストは"KbMedia Player for Windows Version 2.41.2005.0711"以降で出力されたM3Uファイル以外扱えないと思います。<BR>
+テキストファイル: ANSI, S-JIS, UTF-8, UTF-16BE, UTF-16LE 以外は扱えません。<BR>
+<BR>
+ファイルリストに情報が表示されるのは、MP3, Jpeg, BMP, PSD, DPG のみです。<BR>
+<BR>
+<A NAME="largefile"><HR>
+・サイズが大きいファイルに関する制限事項<BR>
+<BR>
+画像関係: 約3648x2736pixels（約1000万画素）を超えるファイルは開けないことがあります。<BR>
+テキストファイル: 容量制限はありませんが、131072行を超えた行は無視されます。<BR>
+MOD関係: 約500KByteを超えるファイルは再生できないことがあります。<BR>
+MID, RCP, R36: 約500KByteを超えるファイルは再生できないことがあります。<BR>
+<BR>
+フォルダ名とファイル名の合計（たとえば"/test/mp3files/samplemusic.mp3"だと30文字）が255文字を超えるファイルは扱えません。<BR>
+<BR>
+<A NAME="heavyfile"><HR>
+・重いファイルに関する制限事項<BR>
+<BR>
+非常に重いので、128kbps以上のWMAファイルを再生中とソフトウェアMIDI音源を使用中は、画面表示を簡略化します。<BR>
+プログレッシブJpegの展開には長い時間が掛かります。Bボタンによる中断はできません。（約300万画素で約30秒）<BR>
+MIDI再生と画像表示を同時に行うと、動的なメモリの奪い合いが発生するため（一応再生できますが）音飛びが頻発します。<BR>
+<BR>
+<HR>
+</body>
+
+</html>

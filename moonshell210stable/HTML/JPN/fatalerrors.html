@@ -1,0 +1,1187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+MoonShell2の動作を停止させる致命的なエラーのリストです。<BR>
+致命的なエラーのほとんどは安全性向上のための内部チェックで、実際に表示されることは滅多にないと思います。<BR>
+#で始まる5桁のエラー番号で検索して下さい。<BR>
+<BR>
+<HR>
+memtool.cpp: #00101: Insufficient memory. malloc(%d)<BR>
+メモリの確保に失敗したときに発生します。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00102: Request free null pointer in safefree.<BR>
+NULLポインタを開放しようとしたときに発生します。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00103: Insufficient memory. realloc(%d)<BR>
+確保済みメモリのサイズ変更に失敗したときに発生します。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00104: Not found target ptr in MM->pLists.<BR>
+確保されていないメモリポインタを解放しようとしたときに発生します。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00105: Memory check error. Illigal writing code?<BR>
+メモリ解放時に、バッファオーバーラン（異常書き込み）を検出しました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00106: MemMgr is NULL.<BR>
+メモリマネージャがNULLのsafemalloc呼び出しを行いました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00107: MemMgr is NULL.<BR>
+メモリマネージャがNULLのsafemalloc_chkmem呼び出しを行いました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00108: MemMgr is NULL.<BR>
+メモリマネージャがNULLのsafefree呼び出しを行いました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00109: MemMgr is NULL.<BR>
+メモリマネージャがNULLのsafecalloc呼び出しを行いました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+memtool.cpp: #00110: MemMgr is NULL.<BR>
+メモリマネージャがNULLのsaferealloc呼び出しを行いました。このエラーは呼び出し元の関数情報を併記します。<BR>
+<BR>
+<HR>
+InternalPlugin: #99999: Plugin internal error.<BR>
+外部プラグイン実行中に致命的なエラーが発生しました。原因がログファイルに出力されています。<BR>
+<BR>
+<HR>
+BootROM.cpp: #10002: Can not found NDS file.<BR>
+起動しようとしたNDSファイルが見つかりません。<BR>
+<BR>
+BootROM.cpp: #10003: ExtLink: Create error. [%s]<BR>
+拡張リンク情報ファイルが作成できません。<BR>
+<BR>
+BootROM.cpp: #10004: Can not open NDS file. [%s]<BR>
+起動しようとしたNDSファイルが開けません。<BR>
+<BR>
+BootROM.cpp: #10005: Not support commercial NDSROM file.<BR>
+商用NDSファイルは起動できません。<BR>
+<BR>
+<HR>
+cctf.cpp: #10101: CTF: Illigal header ID. ['%s'!='%s']<BR>
+クリアタイプフォントファイルのバージョンが違います。<BR>
+<BR>
+cctf.cpp: #10104: Deleted CCTF::DrawFont_Fast2 function.<BR>
+未定義関数を呼び出そうとしました。<BR>
+<BR>
+<HR>
+cctf_dfs.cpp: #10201: CTF cluster link pre-search stopped.<BR>
+クリアタイプフォントファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+cctf_dfs.cpp: #10202: CTF cluster link search stopped.<BR>
+クリアタイプフォントファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+<HR>
+dll.cpp: #10301: Plugin header array overflow.<BR>
+プラグイン定義情報が多すぎます。<BR>
+<BR>
+dll.cpp: #10302: DLLList_GetPluginFilename: resfn is NULL.<BR>
+プラグイン種別判定元ファイル名が空です。<BR>
+<BR>
+dll.cpp: #10303: Not found dll in list. [0x%08x]<BR>
+プラグイン定義情報に無いプラグインを呼び出そうとしました。<BR>
+<BR>
+dll.cpp: #10304: Unknown or none plugin type. [%s]<BR>
+このプラグインは要求された種類のプラグインではありません。<BR>
+<BR>
+<HR>
+extlink.cpp: #10401: ExtLink: Create error. [%s]<BR>
+拡張リンクファイルを初期化できません。<BR>
+<BR>
+extlink.cpp: #10402: ExtLink_Init: Not found folder. [%s]<BR>
+拡張リンクNDSファイルフォルダが見つかりません。<BR>
+<BR>
+extlink.cpp: #10403: ExtLink_GetNDSFullPathFilenameUnicode index overflow. %d/%d<BR>
+拡張リンク定義配列を超えたアクセスをしようとしました。<BR>
+<BR>
+<HR>
+hiddenpaths.cpp: #10501: HiddenPaths_Init: File not found. [%s]<BR>
+ファイルリストに表示しないフォルダリストファイルが見つかりません。<BR>
+<BR>
+<HR>
+main.cpp: #10602: Not found default font file.<BR>
+規定のフォントファイル（言語によって違う）が見つかりません。<BR>
+<BR>
+main.cpp: #10603: Boot warn screen unknown compress format.<BR>
+起動画面の圧縮方式が未定義です。<BR>
+<BR>
+main.cpp: #10604: Boot warn screen ZLIB decompress error.<BR>
+起動画面のZLIBデコードに失敗しました。<BR>
+<BR>
+main.cpp: #10605: Saved preview files. successed.<BR>
+プレビュー画像の保存に成功しました。（これはエラーではありません）<BR>
+<BR>
+main.cpp: #10606: Not found skin package.<BR>
+指定されたスキンファイルとデフォルトスキンファイルの両方が見つかりません。<BR>
+<BR>
+main.cpp: #10607: Illigal process error! NextProc==ENP_Loop<BR>
+ステート情報が異常です。ENP_Loopになることはありません。<BR>
+<BR>
+main.cpp: #10608: Unknown process error! NextProc==%d<BR>
+未定義のステート情報です。<BR>
+<BR>
+main.cpp: #10610: There is a file handle not closed. [%d]<BR>
+終了時に、閉じられていないファイルハンドルを検出しました。<BR>
+<BR>
+<HR>
+playlist.cpp: #10801: Can not change current path. [%s]<BR>
+フォルダ内プレイリスト作成時に、カレントフォルダの移動に失敗しました。<BR>
+<BR>
+playlist.cpp: #10802: Can not change current path. [%s]<BR>
+プレイリスト再生開始時に、カレントフォルダの移動に失敗しました。<BR>
+<BR>
+playlist.cpp: #10803: Play list file not found.<BR>
+フォルダ内に一つも音楽ファイルがありません。<BR>
+<BR>
+playlist.cpp: #10804: Resume play list file write error.<BR>
+空のプレイリストファイル作成時に、プレイリストファイルが作成できませんでした。<BR>
+<BR>
+playlist.cpp: #10805: Play list resume sector is NULL.<BR>
+プレイリストレジューム情報を書き込むセクタ番号が指定されていません。<BR>
+<BR>
+<HR>
+sjis2unicode.cpp: #10901: Not found S-JIS to Unicode convert table file.<BR>
+S-JISからUNICODEに変換するためのテーブルファイルが見つかりません。<BR>
+<BR>
+sjis2unicode.cpp: #10903: SJIS2Unicode_Convert: Table not loaded.<BR>
+S-JISからUNICODEに変換するためのテーブルファイルを読み込む前に、変換しようとしました。<BR>
+<BR>
+<HR>
+_console.cpp: #11001: Log file size error!!<BR>
+ログファイルのサイズが規定より小さいです。<BR>
+<BR>
+<HR>
+dllsound_internal_mp3.h: #11101: Table load error. [%s]<BR>
+MP3再生のためのテーブルファイルが見つかりません。<BR>
+<BR>
+<HR>
+dll_StdLib.h: #11201: MWin_ProgressShow: Already showed.<BR>
+進歩バーが既に表示されているのに表示命令を受け取りました。<BR>
+<BR>
+dll_StdLib.h: #11202: MWin_ProgressSetPos: MWin_pTitleStr is NULL.<BR>
+進歩バーのタイトルが空です。（恐らく表示が開始されていません）<BR>
+<BR>
+dll_StdLib.h: #11203: MWin_ProgressHide: No show.<BR>
+進歩バーが表示されていないのに終了命令を受け取りました。<BR>
+<BR>
+<HR>
+main_savepreview.h: #18701: can not open file for write.<BR>
+プレビューファイルが作成できません。（同名ファイルが既に10個以上存在します。）<BR>
+<BR>
+<HR>
+playlist_ConvertM3U.h: #11302: Check flag error.<BR>
+プレイリスト変換時に、異常なファイル名を検知しました。<BR>
+<BR>
+playlist_ConvertM3U.h: #11303: Play list file open error.<BR>
+プレイリスト変換元ファイルが開けません。<BR>
+<BR>
+playlist_ConvertM3U.h: #11305: Resume play list file write error.<BR>
+プレイリスト変換先ファイルが作成できません。<BR>
+<BR>
+<HR>
+playlist_ConvertM3U_CP2Unicode.h: #11401: Not found CP1252 to Unicode convert table file.<BR>
+プレイリスト変換時のCP1252->UNICODEテーブルが見つかりません。<BR>
+<BR>
+playlist_ConvertM3U_CP2Unicode.h: #11402: Not found CP437 to Unicode convert table file.<BR>
+プレイリスト変換時のCP437->UNICODEテーブルが見つかりません。<BR>
+<BR>
+playlist_ConvertM3U_CP2Unicode.h: #11403: Not found CP850 to Unicode convert table file.<BR>
+プレイリスト変換時のCP850->UNICODEテーブルが見つかりません。<BR>
+<BR>
+<HR>
+playlist_MakeFolder.h: #11502: Can not pre-read unicode filename.<BR>
+指定フォルダ以下全てのプレイリスト作成時に、LFN（長いファイル名）が検査できません。<BR>
+<BR>
+playlist_MakeFolder.h: #11504: Can not read unicode filename.<BR>
+指定フォルダ以下全てのプレイリスト作成時に、LFN（長いファイル名）が取得できません。<BR>
+<BR>
+playlist_MakeFolder.h: #11505: Can not change to deep path. [%s]<BR>
+指定フォルダ以下全てのプレイリスト作成時に、更に深いフォルダに移動できません。<BR>
+<BR>
+playlist_MakeFolder.h: #11506: Can not recovery path. [%s]<BR>
+指定フォルダ以下全てのプレイリスト作成時に、深いフォルダから戻れません。<BR>
+<BR>
+playlist_MakeFolder.h: #11507: Resume play list file write error.<BR>
+指定フォルダ以下全てのプレイリスト作成時に、出力先プレイリストファイルが作成できません。<BR>
+<BR>
+playlist_MakeFolder.h: #11508: Can not change current path.<BR>
+指定フォルダ以下全てのプレイリスト作成時に、指定フォルダに移動できません。<BR>
+<BR>
+<HR>
+playlist_TextPool.h: #11602: TextPool saferealloc error. 0x%x!=0x%x<BR>
+プレイリスト作成時に、テキストプールのサイズ変更に失敗しました。<BR>
+<BR>
+playlist_TextPool.h: #11603: TextPool memory overflow. size=%dbyte<BR>
+プレイリスト作成時に、テキストプールのメモリが足りません。<BR>
+<BR>
+<HR>
+_const.h: #11701: DTCM Stack overflow!!<BR>
+通常動作中にスタックが溢れました。<BR>
+<BR>
+_const.h: #11702: MTCM Stack overflow!!<BR>
+動画再生中にスタックが溢れました。<BR>
+<BR>
+<HR>
+disc_io.c: #11801: DISCIO_ShowAdapterInfo: Not ready active interface.<BR>
+DLDI初期化前にアダプタ情報を表示しようとしました。<BR>
+<BR>
+disc_io.c: #11802: System disk write verify error on cache.<BR>
+セクタ単位のシステムキャッシュを経由したシステム領域のディスク書き込みの状態検査で異常を検出しました。恐らくこのエラーが表示されたときは、ディスクが破壊されています。<BR>
+<BR>
+disc_io.c: #11803: System disk write verify error on direct.<BR>
+システム領域のディスク書き込みの状態検査で異常を検出しました。恐らくこのエラーが表示されたときは、ディスクが破壊されています。<BR>
+<BR>
+<HR>
+gba_nds_fat.c: #11901: FAT_DirEntFromPath: Not support find from LFN path.<BR>
+ディレクトリエントリ探査関数は、LFN（長いファイル名）をサポートしていません。<BR>
+<BR>
+gba_nds_fat.c: #11902: Unknown file open mode error.<BR>
+ファイルを開くときに、未定義の状態文字が指定されました。<BR>
+<BR>
+gba_nds_fat.c: #11903: Duplicated file open mode error.<BR>
+ファイルを開くときに、複数の状態文字が指定されました。<BR>
+<BR>
+gba_nds_fat.c: #11904: Can not open directory.<BR>
+ディレクトリはファイルとして開けません。<BR>
+<BR>
+gba_nds_fat.c: #11905: Can not open ReadOnly file for write.<BR>
+読み込み専用属性の付いたファイルを、書き込みあるいは追記モードで開こうとしました。<BR>
+<BR>
+gba_nds_fat.c: #11906: Not impliments file write.<BR>
+書き込み付加コンパイルオプションで作成されたFATライブラリで書き込みモードで開こうとしました。<BR>
+<BR>
+gba_nds_fat.c: #11907: FAT_FILE buffer full.<BR>
+同時に開けるファイル数を超えました。<BR>
+<BR>
+gba_nds_fat.c: #11908: Create first cluster error on read/write mode. Disk full!!<BR>
+読み書きファイル作成時に、先頭クラスタの登録に失敗しました。恐らくディスクに空き容量がありません。<BR>
+<BR>
+gba_nds_fat.c: #11909: Create first cluster error on write mode. Disk full!!<BR>
+書き込みファイル作成時に、先頭クラスタの登録に失敗しました。恐らくディスクに空き容量がありません。<BR>
+<BR>
+gba_nds_fat.c: #11910: Can not add dir entry.<BR>
+ファイル作成時に、ディレクトリエントリの確保に失敗しました。ディスクに空き容量がないか、ディレクトリエントリが異常です。<BR>
+<BR>
+gba_nds_fat.c: #11911: Create first cluster error on append mode. Disk full!!<BR>
+存在しないファイルを追記モードで開こうとしたため、新規ファイルを作成しましたが、先頭クラスタの登録に失敗しました。恐らくディスクに空き容量がありません。<BR>
+<BR>
+gba_nds_fat.c: #11912: Can not add dir entry.<BR>
+存在しないファイルを追記モードで開こうとしたため、新規ファイルを作成しましたが、ディレクトリエントリの確保に失敗しました。ディスクに空き容量がないか、ディレクトリエントリが異常です。<BR>
+<BR>
+gba_nds_fat.c: #11911: Create first cluster error on exists write mode. Disk full!!<BR>
+既に存在するファイルを書き込みモードで開こうとしたため、新規ファイルを作成しましたが、先頭クラスタの登録に失敗しました。恐らくディスクに空き容量がありません。<BR>
+<BR>
+gba_nds_fat.c: #11914: Unknown error in file open.<BR>
+ファイルを開くときに、原因不明のエラーが発生しました。<BR>
+<BR>
+gba_nds_fat.c: #11915: Not support 0byte file writed.<BR>
+書き込みモードのファイルを、0byteの状態で閉じようとしました。空ファイルの作成はサポートしていません。<BR>
+<BR>
+gba_nds_fat.c: #11916: Can not tell. not opened.<BR>
+開かれていないファイルの位置を取得しようとしました。<BR>
+<BR>
+gba_nds_fat.c: #11917: Can not seek. not opened.<BR>
+開かれていないファイルの位置を変更しようとしました。<BR>
+<BR>
+gba_nds_fat.c: #11918: Can not seek in modify mode.<BR>
+追記/書き込みモードのファイルはシークできません。<BR>
+<BR>
+gba_nds_fat.c: #11919: Can not seek. unknown origin mode.<BR>
+未定義の方向指示子によるシークを行おうとしました。<BR>
+<BR>
+gba_nds_fat.c: #11920: Can not write. not opened.<BR>
+開かれていないファイルに書き込もうとしました。<BR>
+<BR>
+gba_nds_fat.c: #11921: Can not write. opened for read.<BR>
+読み込みモードで開かれたファイルに書き込もうとしました。<BR>
+<BR>
+gba_nds_fat.c: #11922: Can not remove. This is removed.<BR>
+削除しようとしたファイルが見つかりません。<BR>
+<BR>
+gba_nds_fat.c: #11923: Can not tell. Directory isn't empty.<BR>
+フォルダを削除しようとしました。フォルダの削除はサポートされていません。<BR>
+<BR>
+gba_nds_fat.c: #11924: Can not mkdir. Directory is exists.<BR>
+既に存在するフォルダを作成しようとしました。<BR>
+<BR>
+gba_nds_fat.c: #11925: Can not mkdir. Can not chdir directory.<BR>
+フォルダ作成時に、目的のフォルダに移動できませんでした。<BR>
+<BR>
+gba_nds_fat.c: #11926: Can not tell. Couldn't get a new cluster for the directory.<BR>
+新規フォルダのためのディレクトリエントリのクラスタが取得できませんでした。恐らくディスクに空き容量がありません。<BR>
+<BR>
+gba_nds_fat.c: #11927: Can not tell. Couldn't add the directory entry.<BR>
+新規フォルダのための[.]フォルダと[..]フォルダが作成できませんでした。<BR>
+<BR>
+gba_nds_fat.c: #11928: Not support 0byte file writed.<BR>
+書き込みモードのファイルを、0byteの状態で再度開き直そうとしました。空ファイルの作成はサポートしていません。<BR>
+<BR>
+<HR>
+fat2.cpp: #12001: The cluster size that exceeds 32kbyte is not supported.<BR>
+32kbyteを超えるクラスタサイズのディスクで、高速ディスクアクセスモードに移行しようとしました。<BR>
+<BR>
+fat2.cpp: #12002: FAT2_SetSize already file size is not zero.<BR>
+0byte（書き込みモードで開いた直後）以外のファイルで、ファイルサイズを変更しようとしました。<BR>
+<BR>
+fat2.cpp: #12003: FAT2_SetSize file handle is NULL.<BR>
+NULLポインタのファイルハンドルのファイルサイズを変更しようとしました。<BR>
+<BR>
+fat2.cpp: #12004: FAT2_SetSize file handle is not opened.<BR>
+開かれていないファイルのファイルサイズを変更しようとしました。<BR>
+<BR>
+fat2.cpp: #12005: FAT2_SetSize file handle is not write mode.<BR>
+読み込みモードで開いたファイルのファイルサイズを変更しようとしました。<BR>
+<BR>
+fat2.cpp: #12006: FAT2_SetSize disk full.<BR>
+ディスクに空き容量がないため、ファイルサイズの変更に失敗しました。<BR>
+<BR>
+<HR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12101: Included illigal chars in Alias and LFN. [%s]<BR>
+LFN（長いファイル名）を作成するときに、エイリアスファイル名でもLFNでも使用が許可されていない文字をエイリアスファイル名に検出しました。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12102: Included illigal chars in Alias. [%s]<BR>
+LFN（長いファイル名）を作成するときに、エイリアスファイル名で使用が許可されていない文字を検出しました。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12103: Included illigal chars in LFN. [%s]<BR>
+LFN（長いファイル名）を作成するときに、エイリアスファイル名でもLFNでも使用が許可されていない文字をLFNに検出しました。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12104: Alias name overflow. %d,%d [%s]<BR>
+エイリアスファイル名が長すぎます。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12105: Alias ext overflow. %d,%d [%s]<BR>
+エイリアスファイル名の拡張子が長すぎます。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12106: LFN is too long.<BR>
+LFNが長すぎます。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12107: FAT_FILE buffer full.<BR>
+同時に開けるファイル数を超えました。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12108: Create first cluster error. Disk full!!<BR>
+先頭クラスタの登録に失敗しました。恐らくディスクに空き容量がありません。<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12109: Can not add dir entry.<BR>
+ディレクトリエントリの追加に失敗しました。ディスクに空き容量がないか、ディレクトリエントリが異常です。<BR>
+<BR>
+<HR>
+FAT2_fopen_CurrentForRead.h: #12201: Can not open. not allocate files area.<BR>
+同時に開けるファイル数を超えました。<BR>
+<BR>
+FAT2_fopen_CurrentForRead.h: #12202: Directory entry error. [FILE_FREE]<BR>
+最後に検索したファイルを開くときに、ディレクトリエントリが見つかりませんでした。<BR>
+<BR>
+<HR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12301: Illigal path. [%s]<BR>
+LFNエントリの先頭を検索するときに、異常な検索パスが指定されました。<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12302: name buffer overflow.<BR>
+検索パスからファイル名を切り出すときに、エイリアスファイル名文字数を超えました。検索パスにLFNが含まれている可能性があります。<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12303: Not support find from LFN path.<BR>
+検索パスにLFNが含まれています。<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12304: Not found dir entry.<BR>
+検索パスは存在しません。<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12305: found path is dir. [%s, %d]<BR>
+検索パスがフォルダで終了しました。フォルダのLFNエントリは取得できません。<BR>
+<BR>
+<HR>
+gba_nds_fat_fread.h: #12401: The cluster size that exceeds 32kbyte is not supported.<BR>
+32kbyteを超えるクラスタサイズのディスクで、高速ディスクアクセスモードに移行しようとしました。<BR>
+<BR>
+gba_nds_fat_fread.h: #12402: Can not read. not opened.<BR>
+開かれていないファイルから読み込もうとしました。<BR>
+<BR>
+gba_nds_fat_fread.h: #12403: Can not read. Illigal size or buffer. (%d,%x)<BR>
+サイズか出力先メモリアドレスが異常です。<BR>
+<BR>
+gba_nds_fat_fread.h: #12404: Can not read. for not read.<BR>
+読み込みモードで開かれていないファイルから読み込もうとしました。<BR>
+<BR>
+<HR>
+gba_nds_fat_fread_fast.h: #12501: Can not read. not opened.<BR>
+開かれていないファイルから読み込もうとしました。<BR>
+<BR>
+gba_nds_fat_fread_fast.h: #12502: Can not read. Illigal size or buffer. (%d,%x)<BR>
+読み込みサイズか出力先メモリアドレスが異常です。<BR>
+<BR>
+gba_nds_fat_fread_fast.h: #12503: Can not read. for not read.<BR>
+読み込みモードで開かれていないファイルから読み込もうとしました。<BR>
+<BR>
+<HR>
+gba_nds_fat_fskip.h: #12601: Can not read. not opened.<BR>
+開かれていないファイルで、読み込みスキップを行おうとしました。<BR>
+<BR>
+gba_nds_fat_fskip.h: #12602: Can not read. Illigal size. (%d)<BR>
+読み込みサイズが異常です。<BR>
+<BR>
+gba_nds_fat_fskip.h: #12603: Can not read. for not read.<BR>
+読み込みモードで開かれていないファイルで、読み込みスキップを行おうとしました。<BR>
+<BR>
+<HR>
+gba_nds_fat_move.h: #12701: FAT_Move: Source is removed.<BR>
+移動元ファイルが見つかりません。<BR>
+<BR>
+gba_nds_fat_move.h: #12702: FAT_Move: Can not move source folder.<BR>
+フォルダは移動できません。<BR>
+<BR>
+gba_nds_fat_move.h: #12703: FAT_Move: Dist is removed.<BR>
+移動先ファイルが見つかりません。移動先ファイルの作成に失敗しました。<BR>
+<BR>
+gba_nds_fat_move.h: #12704: FAT_Move: Can not move dist folder.<BR>
+移動先ファイルはフォルダです。フォルダに対する移動は禁止されています。<BR>
+<BR>
+gba_nds_fat_move.h: #12705: FAT_Move: Not found source directory entry.<BR>
+移動元ファイルのLFNディレクトリエントリの先頭が見つかりません。<BR>
+<BR>
+<HR>
+cglb15.cpp: #12801: CglB15::CglB15: _buf is NULL.<BR>
+空のメモリでビットマップを作成しようとしました。<BR>
+<BR>
+<HR>
+cglcanvas.cpp: #12902: Blocked free line function.<BR>
+自由な線描画機能は不要なので取り外しました。<BR>
+<BR>
+<HR>
+cglfont.cpp: #13004: Not support font height. (%d!=%d)<BR>
+未対応の高さのフォントファイルです。<BR>
+<BR>
+<HR>
+ErrorDialog.cpp: #18801: ErrorDialog_Draw: Can not load ErrorDialogBG.<BR>
+エラーダイアログのウィンドウ背景画像が読み込まれていません。<BR>
+<BR>
+<HR>
+extmem.cpp: #18901: extmem_Init: Internal error.<BR>
+拡張メモリの初期化で、原因不明のエラーが発生しました。<BR>
+<BR>
+<HR>
+lang.cpp: #13201: Not found language file.<BR>
+言語ファイルが見つかりません。<BR>
+<BR>
+lang.cpp: #13202: Language data buffer overflow.<BR>
+言語リストの最大項目数を超えました。<BR>
+<BR>
+lang.cpp: #13203: Lang_GetUTF8: Language file not loaded.<BR>
+メッセージを取得しようとしましたが、言語ファイルが読み込まれていません。<BR>
+<BR>
+<HR>
+launchstate.cpp: #13301: Can not found launch folder.<BR>
+アクセサリフォルダが見つかりません。<BR>
+<BR>
+launchstate.cpp: #13302: Can not read unicode filename.<BR>
+アクセサリファイルの検索中に、LFNを取得できませんでした。<BR>
+<BR>
+launchstate.cpp: #13303: Launch add error. item full.<BR>
+アクセサリ最大登録数を超えました。最も古いアクセサリの削除が行われなかった可能性があります。<BR>
+<BR>
+launchstate.cpp: #13304: ZLIB compress error!<BR>
+アクセサリ登録情報ファイルの圧縮に失敗しました。<BR>
+<BR>
+launchstate.cpp: #13305: launch data file open error. '%s'<BR>
+アクセサリ登録情報ファイルの作成に失敗しました。<BR>
+<BR>
+launchstate.cpp: #13306: launch data file write error. '%s'<BR>
+アクセサリ登録情報ファイルの書き込みに失敗しました。<BR>
+<BR>
+<HR>
+memtool.cpp: #13406: COPY. Hooked memory address error. %s%d (%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>
+異常なアドレスかサイズでメモリコピーを行おうとしました。<BR>
+<BR>
+memtool.cpp: #13407: SET. Hooked memory address error. %s%d (%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>
+異常なアドレスかサイズでメモリ初期化を行おうとしました。<BR>
+<BR>
+memtool.cpp: #13401: MM_Compact: Memory overflow. [%s]<BR>
+異常メモリアクセス検出機構の定義情報メモリの最適化に失敗しました。<BR>
+<BR>
+memtool.cpp: #13402: Expand memory overflow. [%s]<BR>
+異常メモリアクセス検出機構の定義情報メモリの拡張に失敗しました。<BR>
+<BR>
+memtool.cpp: #13403: This addres is locked. [%s] (0x%08x)<BR>
+解放を禁止してあるメモリを解放しようとしました。<BR>
+<BR>
+memtool.cpp: #13404: Can not clear. Not found adr. [%s] (0x%08x)<BR>
+不明なアドレスを解放しようとしました。<BR>
+<BR>
+memtool.cpp: #13405: Can not get size. Not found adr. [%s] (0x%08x)<BR>
+不明なアドレスのサイズを取得しようとしました。<BR>
+<BR>
+memtool.cpp: #13408: Memory leak detected. [%s]<BR>
+メモリリークチェック時に、メモリリーク（解放しわすれ）を検出しました。<BR>
+<BR>
+memtool.cpp: #13409: Memory check error. Illigal writing code?<BR>
+整合性チェック時に、バッファオーバーラン（異常書き込み）を検出しました。<BR>
+<BR>
+memtool.cpp: #13410: Request free null pointer in safefree.<BR>
+NULLポインタを解放しようとしました。<BR>
+<BR>
+<HR>
+procstate.cpp: #13501: File not found or size error. [%s]<BR>
+環境設定ファイルが見つからないか、サイズが異常です。<BR>
+<BR>
+procstate.cpp: #13502: Data sector index is 0 for load.<BR>
+セクタ0に対して、環境設定情報を読み込もうとしました。<BR>
+<BR>
+procstate.cpp: #13503: Data sector index is 0 for save.<BR>
+セクタ0に対して、環境設定情報を書き込もうとしました。<BR>
+<BR>
+procstate.cpp: #13504: ZLIB compress error!<BR>
+環境設定情報の圧縮に失敗しました。<BR>
+<BR>
+procstate.cpp: #13505: Data file buffer overflow.<BR>
+環境設定情報を圧縮しましたが、セクタサイズを超えました。非常に深いフォルダに居る可能性があります。<BR>
+<BR>
+<HR>
+rect.cpp: #19001: Rect buffer overflow.<BR>
+ダーティーリージョン作成関数の不定形リージョン登録数を超えました。<BR>
+<BR>
+<HR>
+shell.cpp: #13616: Not found base file for write.<BR>
+システムフォルダに書き込み対象のファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13617: Not found base file for create.<BR>
+システムフォルダに新規作成対象のファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13618: Not found base file for modify.<BR>
+システムフォルダに追記対象のファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13619: Not found base file for split read.<BR>
+システムフォルダに読み込み対象の分割ファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13601: Not found text font file. [%s]<BR>
+システムフォルダにフォントフォルダかフォントファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13602: Can not found swap file. [%s]<BR>
+システムフォルダにスワップファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13603: Can not found prgjpeg swap file. [%s]<BR>
+システムフォルダにプログレッシブJpeg用スワップファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13620: Can not found MoonShell2.00 data files.<BR>
+システムフォルダに環境設定ファイルが見つかりません。<BR>
+<BR>
+shell.cpp: #13604: Can not chdir to root.<BR>
+LFNをエイリアス名に変換するために、ルートフォルダに移動できません。<BR>
+<BR>
+shell.cpp: #13605: Can not chdir to %s.<BR>
+LFNをエイリアス名に変換するために、フォルダを移動できません。<BR>
+<BR>
+shell.cpp: #13606: Can not chdir to root.<BR>
+LFNファイルの存在確認のために、ルートフォルダに移動できません。<BR>
+<BR>
+shell.cpp: #13607: Can not chdir to %s.<BR>
+LFNファイルの存在確認のために、フォルダを移動できません。<BR>
+<BR>
+shell.cpp: #13608: Can not chdir to root.<BR>
+LFNフォルダの存在確認のために、ルートフォルダに移動できません。<BR>
+<BR>
+shell.cpp: #13609: Can not chdir to %s.<BR>
+LFNフォルダの存在確認のために、フォルダを移動できません。<BR>
+<BR>
+shell.cpp: #13621: ConvertFullPath_Unicode2Alias: Not found path.<BR>
+LFNをエイリアス名に変換するときに、存在しないLFNを指定しました。<BR>
+<BR>
+shell.cpp: #13610: SplitItemFromFullPathAlias: output buffer is NULL.<BR>
+エイリアスモードでパスとファイル名を分解するための出力先アドレスがNULLです。<BR>
+<BR>
+shell.cpp: #13611: SplitItemFromFullPathAlias: pFullPathAlias is NULL or blank.<BR>
+エイリアスモードでパスとファイル名を分解するための変換元パスがNULLか空です。<BR>
+<BR>
+shell.cpp: #13612: SplitItemFromFullPathUnicode: output buffer is NULL.<BR>
+LFNモードでパスとファイル名を分解するための出力先アドレスがNULLです。<BR>
+<BR>
+shell.cpp: #13613: SplitItemFromFullPathUnicode: pFullPathUnicode is NULL or blank.<BR>
+LFNモードでパスとファイル名を分解するための変換元パスがNULLか空です。<BR>
+<BR>
+shell.cpp: #13622: FullPathUnicodeFromSplitItem: pFilenameUnicode is NULL or blank.<BR>
+パスとファイル名を混合するためのファイル名がNULLか空です。<BR>
+<BR>
+shell.cpp: #13614: Can not chdir to root.<BR>
+プレイリスト専用。LFNをエイリアス名に変換するために、ルートフォルダに移動できません。<BR>
+<BR>
+shell.cpp: #13615: Can not chdir to %s.<BR>
+プレイリスト専用。LFNをエイリアス名に変換するために、フォルダを移動できません。<BR>
+<BR>
+<HR>
+skin.cpp: #13701: ComponentAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13702: FileList: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13703: FileListAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13704: FileListClockAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13705: ScrollBarAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13706: Setup: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13707: SetupAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13708: SysMenuAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13709: MoviePlayer: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13710: MoviePlayerAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13711: ImageView: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13712: Launch: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13713: LaunchAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13714: LongTapAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13715: MP3CntAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13716: Custom: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13717: StandbyClock: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13718: StandbyClockAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13719: TextView: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13720: TextViewAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13721: MemoEdit: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+skin.cpp: #13722: MemoEditAlpha: Unknown type. %d<BR>
+未定義のファイル名のスキンファイルを読み込もうとしました。<BR>
+<BR>
+<HR>
+sndeff.cpp: #13803: LoadTTB0File: Header error. %08x!=%08x<BR>
+効果音読み込み時に、未定義のヘッダーを持つファイルをTTBデコードしようとしました。<BR>
+<BR>
+sndeff.cpp: #13801: Sound data is too large! %d,%d<BR>
+効果音読み込み時に、指定された音声データサイズより大きなファイルを読み込もうとしました。<BR>
+<BR>
+sndeff.cpp: #13805: Sound_Init: sndeff.dat not found or internal error.<BR>
+効果音全体の内部設定ファイルが見つからないか、ファイル内容が異常です。<BR>
+<BR>
+sndeff.cpp: #13802: sound effect illigal channels count.<BR>
+効果音ファイルのチャネル数がモノラルかステレオ以外です。<BR>
+<BR>
+<HR>
+splash.cpp: #13901: Splash: Illigal key frame?<BR>
+起動アニメーションのキーフレームが異常です。<BR>
+<BR>
+splash.cpp: #13902: Splash: Exists multiple key frame?<BR>
+起動アニメーションの無圧縮キーフレームが複数存在します。<BR>
+<BR>
+splash.cpp: #13903: Splash: Exists multiple key frame?<BR>
+起動アニメーションのZLIB圧縮キーフレームが複数存在します。<BR>
+<BR>
+splash.cpp: #13904: Splash: Key frame decompress error.<BR>
+起動アニメーションのZLIB圧縮キーフレームの展開に失敗しました。<BR>
+<BR>
+splash.cpp: #13905: Splash: Not found key frame.<BR>
+起動アニメーションにキーフレームが一つも存在しません。<BR>
+<BR>
+<HR>
+strpcm.cpp: #14001: strpcm unknown format. (%d)<BR>
+未定義の音声出力デバイスです。<BR>
+<BR>
+strpcm.cpp: #14002: strpcmStart: Driver setting error.<BR>
+音声出力デバイスの初期化パラメータが異常です。<BR>
+<BR>
+strpcm.cpp: #14003: strpcmUpdate: strpcmRingLRBuf is NULL.<BR>
+音声出力デバイスのリングバッファが確保されていません。<BR>
+<BR>
+strpcm.cpp: #14004: Illigal writed on NULL pointer. (%d)<BR>
+異常な書き込み（NULLポインタ書き込み）を検出しました。<BR>
+<BR>
+<HR>
+zlibhelp.cpp: #19101: zliberror: deflateInit: %s<BR>
+ZLIBライブラリで圧縮するときに、初期化に失敗しました。<BR>
+<BR>
+zlibhelp.cpp: #19102: zliberror: deflate: %s<BR>
+ZLIBライブラリで圧縮するときに、エラーが発生しました。<BR>
+<BR>
+zlibhelp.cpp: #19103: zliberror: deflateEnd: %s<BR>
+ZLIBライブラリで圧縮するときに、解放に失敗しました。<BR>
+<BR>
+zlibhelp.cpp: #19104: zliberror: inflateInit: %s<BR>
+ZLIBライブラリで展開するときに、初期化に失敗しました。<BR>
+<BR>
+zlibhelp.cpp: #19105: zliberror: dist buffer memory overflow.<BR>
+ZLIBライブラリで展開するときは、出力先バッファを予め確保する必要があります。<BR>
+<BR>
+zlibhelp.cpp: #19106: zliberror: inflateEnd: %s<BR>
+ZLIBライブラリで展開するときに、解放に失敗しました。<BR>
+<BR>
+<HR>
+skin_colortbl.h: #14301: Skin file '%s' not found.<BR>
+スキンの色定義ファイルが見つかりません。<BR>
+<BR>
+skin_colortbl.h: #14302: The item doesn't suffice for this file. '%s'<BR>
+スキンの色定義ファイルが不完全です。指定されていない色項目があります。<BR>
+<BR>
+skin_colortbl.h: #14303: line%d error. The section name doesn't end correctly.<BR>
+スキンの色定義ファイルに、正しく終わっていないセクション定義行があります。<BR>
+<BR>
+skin_colortbl.h: #14304: line%d error. There is a key ahead of the section name.<BR>
+スキンの色定義ファイルに、どのセクションにも属していない実体行があります。<BR>
+<BR>
+skin_colortbl.h: #14305: line%d error. The key name doesn't end correctly.<BR>
+スキンの色定義ファイルに、項目名と内容が'='で区切られていない実体行があります。<BR>
+<BR>
+skin_colortbl.h: #14306: line%d error. The value doesn't end correctly.<BR>
+スキンの色定義ファイルに、128文字を超える実体行があります。<BR>
+<BR>
+skin_colortbl.h: #14307: line%d error. current section [%s] unknown key=%s value=%s<BR>
+スキンの色定義ファイルに、未定義の項目名の実体行があります。<BR>
+<BR>
+skin_colortbl.h: #14308: File is empty. [%s]<BR>
+スキンの色定義ファイルが空です。<BR>
+<BR>
+skin_colortbl.h: #14309: Illigal ScreenSaver type.<BR>
+未定義のスクリーンセーバのスキンタイプの色定義情報が要求されました。<BR>
+<BR>
+<HR>
+skin_SkinFile.h: #14401: Skin header size too long. %d,%d<BR>
+スキンファイルのヘッダーが大きすぎます。<BR>
+<BR>
+skin_SkinFile.h: #14404: ZLIB decompress error.<BR>
+スキンファイルのZLIB展開に失敗しました。<BR>
+<BR>
+skin_SkinFile.h: #14405: Skin B15 file '%s' not found.<BR>
+スキンファイルが不完全です。指定されたB15ファイルが見つかりませんでした。<BR>
+<BR>
+skin_SkinFile.h: #14406: Skin file TGF '%s' not found.<BR>
+スキンファイルが不完全です。指定されたTGFファイルが見つかりませんでした。<BR>
+<BR>
+<HR>
+strpcm_ARM7_SelfCheck.h: #14501: ARM7/SVC stack overflow signal received.<BR>
+ARM7システムから異常シグナルを受信しました。BIOS用スタックが不足しています。<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14502: ARM7/IRQ stack overflow signal received.<BR>
+ARM7システムから異常シグナルを受信しました。割り込み用スタックが不足しています。<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14503: ARM7/SYS stack overflow signal received.<BR>
+ARM7システムから異常シグナルを受信しました。システム用スタックが不足しています。<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14504: ARM7/Unknown(0x%x) stack overflow signal received.<BR>
+ARM7システムから異常シグナルを受信しました。未定義のエラーが発生しました。<BR>
+<BR>
+<HR>
+clibdpg.cpp: #14604: Horizontal sizes other than 256 pixels became unsupported.<BR>
+横256pixels以外のサイズの動画ファイルは再生できません。<BR>
+<BR>
+clibdpg.cpp: #14601: pClibmpg->ProcMoveFrame failed.<BR>
+フレーム単位の動画シークに失敗しました。<BR>
+<BR>
+clibdpg.cpp: #14602: pClibmpg->ProcMoveFrameGOP failed.<BR>
+GOP単位の動画シークに失敗しました。<BR>
+<BR>
+clibdpg.cpp: #14603: unknown audio format. (%d)<BR>
+未定義の音声フォーマットが含まれている動画ファイルです。（古いMoonShell用のOGGオーディオなど）<BR>
+<BR>
+clibmpg.cpp: #14701: Video width (%dpix) !=  Screen width (%dpix).<BR>
+ビデオと画面の横サイズが一致しません。<BR>
+<BR>
+clibmpg.cpp: #14702: Not support pixel format.<BR>
+サポートされていない色深度画像が含まれている動画ファイルです。（古いMoonShell用のRGB15/18/21ビデオなど）<BR>
+<BR>
+clibmpg.cpp: #14703: Unknown pixel format.<BR>
+未定義の色深度画像が含まれている動画ファイルです。<BR>
+<BR>
+<HR>
+plug_jpeg.cpp: #14801: Jpeg decode: Not support seek function. (%d,%d)<BR>
+Jpegデコーダはシークをサポートしていません。<BR>
+<BR>
+plug_jpeg.cpp: #14802: Jpeg decode: Decode error.<BR>
+Jpegデコーダにエラーが発生しました。<BR>
+<BR>
+<HR>
+plug_midi.cpp: #14901: Null MID track.<BR>
+空の標準MIDIファイルは再生できません。<BR>
+<BR>
+plug_midi.cpp: #14902: Null RCP track.<BR>
+空のRCPファイルは再生できません。<BR>
+<BR>
+<HR>
+plug_ndsrom.cpp: #15001: Can not open NDS file.<BR>
+起動しようとしたNDSファイルが見つかりません。<BR>
+<BR>
+plug_ndsrom.cpp: #15002: Large file size!! (Limit 2MByte)<BR>
+2MByteを超えるNDSファイルは起動できません。<BR>
+<BR>
+plug_ndsrom.cpp: #15003: Unknown error.<BR>
+NDSファイル起動中に、原因不明のエラーが発生しました。<BR>
+<BR>
+plug_ndsrom.cpp: #15004: Can not open DLDI patch backup file. (%s)<BR>
+DLDIバックアップファイルが見つかりません。<BR>
+<BR>
+plug_ndsrom.cpp: #15005: DLDI patch backup write error. (%s)<BR>
+DLDIバックアップファイルの書き込みに失敗しました。<BR>
+<BR>
+<HR>
+_dpgfs.cpp: #15101: cluster link pre-search stopped.<BR>
+動画ファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+_dpgfs.cpp: #15102: cluster link search stopped.<BR>
+動画ファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+<HR>
+clibmpg_diskcache.h: #15201: DiskCache_Init: Already exists disk cache memory.<BR>
+動画ファイルの読み込みディスクキャッシュが既に初期化されている状態で、初期化を試みました。<BR>
+<BR>
+clibmpg_diskcache.h: #15203: DiskCache_LoadAllBuffer(); Already exists disk cache blocks. r=%d/w=%d<BR>
+動画ファイルの読み込みディスクキャッシュが空でない状態で、事前読み込みを試みました。<BR>
+<BR>
+<HR>
+clibmpg_framecache.h: #15301: Not empty main memory for frame cache. request size is %dbyte.<BR>
+動画ファイルのフレームキャッシュが最低限要求するメモリサイズよりも空きメモリが少ないです。<BR>
+<BR>
+clibmpg_framecache.h: #15302: Frame cache memory overflow.<BR>
+動画ファイルのフレームキャッシュが最低限要求するフレーム数よりも実際に確保できたフレーム数が少ないです。<BR>
+<BR>
+<HR>
+plug_jpeg_prgjpeg_dfs.h: #15401: cluster link pre-search stopped.<BR>
+プログレッシブJpeg用スワップファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15402: cluster link search stopped.<BR>
+プログレッシブJpeg用スワップファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15403: Insufficient swap memory for seek.<BR>
+プログレッシブJpeg用スワップファイルのシーク中に、スワップファイルの最後に達しました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15404: Insufficient swap memory for write.<BR>
+プログレッシブJpeg用スワップファイルの書き込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15405: Insufficient swap memory for read.<BR>
+プログレッシブJpeg用スワップファイルの読み込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15406: DFS_PrgJpeg_Free: internal opened error.<BR>
+プログレッシブJpeg用スワップファイルの全ての内部ファイルハンドルが閉じられていない状態で、システムを解放しようとしました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15407: DFS_PrgJpeg_fopen: Allocate area overflow. %dbyte, %d/%d<BR>
+プログレッシブJpeg用スワップファイルの内部残り容量が足りないので、内部ファイルが開けませんでした。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15408: DFS_PrgJpeg_fopen: Not found closed file handle.<BR>
+プログレッシブJpeg用スワップファイルの内部ファイルハンドルが足りないので、内部ファイルが開けませんでした。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15409: DFS_PrgJpeg_fclose: is closed file. (%d)<BR>
+プログレッシブJpeg用スワップファイルの内部ファイルハンドルが開かれていない状態で、閉じようとしました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15410: DFS_PrgJpeg_fread: is closed file. (%d)<BR>
+プログレッシブJpeg用スワップファイルの内部ファイルハンドルが開かれていない状態で、読み込もうとしました。<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15411: DFS_PrgJpeg_fwrite: is closed file. (%d)<BR>
+プログレッシブJpeg用スワップファイルの内部ファイルハンドルが開かれていない状態で、書き込もうとしました。<BR>
+<BR>
+<HR>
+pch.cpp: #15503: PCMStack_Unregist: Can not unregist null pointer.<BR>
+サウンドフォントの音色データを解放しようとしましたが、対象アドレスがNULLでした。<BR>
+<BR>
+pch.cpp: #15504: PCMStack_Unregist: Not found target in stack list.<BR>
+サウンドフォントの音色データを解放しようとしましたが、対象アドレスが管理リストに存在しません。<BR>
+<BR>
+pch.cpp: #15505: Not support TTA compressed sound font.<BR>
+サウンドフォントの音色データは、TTAで圧縮されています。リアルタイム配置モードでは、TTA圧縮は使用できません。<BR>
+<BR>
+pch.cpp: #15506: Unknown WAVE format.<BR>
+サウンドフォントの音色データは、未定義の音色フォーマットです。<BR>
+<BR>
+pch.cpp: #15507: PCH_UnloadProgram: is NULL.<BR>
+サウンドフォントの音色リストを解放しようとしましたが、対象アドレスがNULLでした。<BR>
+<BR>
+pch.cpp: #15508: PCH_Init: Not found power table file. [%s]<BR>
+音量コントロールに使用する二乗テーブルファイルが見つかりません。<BR>
+<BR>
+pch.cpp: #15509: PCH_Init: Not found sin table file. [%s]<BR>
+モジュレーションに使用する正弦波テーブルファイルが見つかりません。<BR>
+<BR>
+pch.cpp: #15510: PCMStack: Not free pointer or zero referrer count founded.<BR>
+音色管理テーブルを解放中に、参照カウントが0でない（まだどこかで参照されている）音色を検出しました。<BR>
+<BR>
+pch.cpp: #15511: PCMStack_Regist: Stack buffer overflow.<BR>
+256個以上の音色を読み込もうとしました。音色管理テーブルの最大管理可能数は256です。<BR>
+<BR>
+<HR>
+sndfont.cpp: #15601: SndFont_Open: File not found. [%s]<BR>
+ソフトウェアMIDI音源のサウンドフォントファイルが見つかりません。<BR>
+<BR>
+<HR>
+sndfont_dfs.h: #15801: cluster link pre-search stopped.<BR>
+ソフトウェア音源のサウンドフォントファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+sndfont_dfs.h: #15802: cluster link search stopped.<BR>
+ソフトウェア音源のサウンドフォントファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+sndfont_dfs.h: #15803: ReadSkip: size align error. (0x%x)<BR>
+スキップしようとしたサイズは、アライメントが異常です。<BR>
+<BR>
+sndfont_dfs.h: #15804: Read16bit: pbuf align error. (0x%x)<BR>
+読み込もうとした出力先アドレスは、アライメントが異常です。<BR>
+<BR>
+sndfont_dfs.h: #15805: Read16bit: size align error. (0x%x)<BR>
+読み込もうとしたサイズは、アライメントが異常です。<BR>
+<BR>
+<HR>
+proc_chkdsk.cpp: #16101: Can not change root path.<BR>
+簡易チェックディスクは、ルートフォルダの検査に失敗しました。ルートフォルダに移動できません。<BR>
+<BR>
+proc_chkdsk.cpp: #16102: A necessary file doesn't suffice.<BR>
+簡易チェックディスクは、ルートフォルダの検査に失敗しました。ファイルが足りません。<BR>
+<BR>
+<HR>
+proc_Launch.cpp: #16303: DrawSubScreen create canvas failed.<BR>
+アクセサリモードは、上画面用のビットマップ作成に失敗しました。<BR>
+<BR>
+<HR>
+proc_chkdsk_body.h: #16401: Error found in checking duplicate cluster.<BR>
+簡易チェックディスクのクラスタリンク検査に失敗しました。主な原因は停止時の画面とログファイルを参照して下さい。<BR>
+<BR>
+proc_chkdsk_body.h: #16402: Not support disk size or cluster size.<BR>
+簡易チェックディスクのクラスタリンク検査に失敗しました。クラスタサイズが小さすぎるフォーマットが行われたディスクか、ディスクが大きすぎます。SDHC対応版SDFormatterでフォーマットを試みて下さい。<BR>
+<BR>
+proc_chkdsk_body.h: #16405: Unknown FAT type. (FAT%d)<BR>
+簡易チェックディスクのFAT種別検査に失敗しました。FAT16とFAT32のみ対応しています。<BR>
+<BR>
+proc_chkdsk_body.h: #16406: Write test error. Please reffer log file.<BR>
+簡易チェックディスクの書き込みテストに失敗しました。主な原因は停止時の画面とログファイルを参照して下さい。<BR>
+<BR>
+proc_chkdsk_body.h: #16408: 16bit read check error. Please refer [/misctools/Additional/Ignore16.txt]<BR>
+簡易チェックディスクのDLDI16bit読み込みテストに失敗しました。/misctools/Additional/Ignore16.txtを参照して下さい。<BR>
+<BR>
+<HR>
+proc_DPGPlay.cpp: #16601: can not open file.<BR>
+動画ファイルが開けません。<BR>
+<BR>
+proc_DPGPlay.cpp: #16602: can not open DPG format.<BR>
+認識できないフォーマットのため、DPGライブラリが開始できません。<BR>
+<BR>
+proc_DPGPlay.cpp: #16604: Unknown DPG play mode. (%d)<BR>
+未定義の動画再生モードです。<BR>
+<BR>
+<HR>
+proc_DPGPlay_BGM.h: #16701: Can not found Long filename entry.<BR>
+動画ファイルのプレイリストを作成するときに、LFNが取得できませんでした。<BR>
+<BR>
+proc_DPGPlay_BGM.h: #16702: Can not found files.<BR>
+動画ファイルのプレイリストを作成するときに、ひとつも動画ファイルが見つかりませんでした。<BR>
+<BR>
+<HR>
+proc_FileList_DeleteFileDialog.h: #16801: Not found extention.<BR>
+拡張子のないファイルは削除（ゴミ箱に移動）できません。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16802: Alias entry overflow.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、移動先エイリアス名の生成に失敗しました。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16803: CB_KeyLongPress_ins_ExecuteDelete: Not found source alias.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、移動元ファイルのエイリアス名が取得できませんでした。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16805: CB_KeyLongPress_ins_ExecuteDelete: Can not create move-to file.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、移動先ファイルを作成できませんでした。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16806: CB_KeyLongPress_ins_ExecuteDelete: Not found dist alias.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、移動先ファイルのエイリアス名が取得できませんでした。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16807: CB_KeyLongPress_ins_ExecuteDelete: FAT2_Move() failed.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、移動に失敗しました。ログファイルを参照して下さい。<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16808: CB_KeyLongPress: Can not create dustbox folder.<BR>
+ファイルを削除（ゴミ箱に移動）するときに、ゴミ箱フォルダの作成に失敗しました。フォルダ自動作成機能は現在無効になっています。<BR>
+<BR>
+<HR>
+proc_FileList_NDSFiles.h: #17004: Can not change path. [%s]<BR>
+ファイルリスト作成時に、対象フォルダ文字列が空か、対象フォルダに移動できませんでした。<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17002: Can not read unicode filename.<BR>
+ファイルリスト作成時に、LFNが取得できませんでした。<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17005: Illigal FileType. (%d)<BR>
+ファイルリスト作成時に、未定義のファイルタイプを検出しました。<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17003: Can not move current folder.<BR>
+NDSROMアイコン取得時に、対象フォルダに移動できませんでした。<BR>
+<BR>
+<HR>
+proc_FileList_NDSFiles_TextPool.h: #17102: TextPool saferealloc error. 0x%x!=0x%x<BR>
+ファイルリスト作成時に、テキストプールのサイズ変更に失敗しました。<BR>
+<BR>
+proc_FileList_NDSFiles_TextPool.h: #17103: TextPool memory overflow. size=%dbyte<BR>
+ファイルリスト作成時に、テキストプールのメモリが足りません。<BR>
+<BR>
+<HR>
+proc_FileList_ScrollBar.h: #17201: ScrollBar_MouseDown psb->CurMode(%d)!=ESBCM_Idle<BR>
+マウスイベント処理中に、マウス押下イベントを受信しました。<BR>
+<BR>
+proc_FileList_ScrollBar.h: #17202: ScrollBar_MouseIdle psb->MaxPos==0<BR>
+マウスイベント処理中にエラーが発生しました。ファイルリストが空です。<BR>
+<BR>
+<HR>
+proc_ImageView.cpp: #17401: RelationalToBack: File not found.<BR>
+画像ファイル移動時に、前のファイルが見つかりませんでした。<BR>
+<BR>
+proc_ImageView.cpp: #17402: RelationalToNext: File not found.<BR>
+画像ファイル移動時に、次のファイルが見つかりませんでした。<BR>
+<BR>
+proc_ImageView.cpp: #17404: Data file not found. [%s]<BR>
+画像ファイルが開けませんでした。<BR>
+<BR>
+proc_ImageView.cpp: #17405: This plugin is not image type. (%s)<BR>
+開始しようとしたプラグインは、画像プラグインではありません。<BR>
+<BR>
+proc_ImageView.cpp: #17406: Plugin load error.<BR>
+原因不明のエラーでプラグインが開始できませんでした。ログファイルを参照して下さい。<BR>
+<BR>
+proc_ImageView.cpp: #17403: File not found.<BR>
+画像ファイルリストの作成に失敗しました。画像ファイルが一つも見つかりません。<BR>
+<BR>
+<HR>
+proc_ImageView_createbg.h: #17501: Open for write failed.<BR>
+壁紙ファイル作成時に、出力先ファイルが開けませんでした。<BR>
+<BR>
+<HR>
+proc_ImageView_dfs.h: #17601: cluster link pre-search stopped.<BR>
+画像ファイル用スワップファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+proc_ImageView_dfs.h: #17602: cluster link search stopped.<BR>
+画像ファイル用スワップファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+proc_ImageView_dfs.h: #17603: Insufficient swap memory for seek.<BR>
+画像ファイル用スワップファイルのシーク中に、スワップファイルの最後に達しました。<BR>
+<BR>
+proc_ImageView_dfs.h: #17604: Insufficient swap memory for write.<BR>
+画像ファイル用スワップファイルの書き込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+proc_ImageView_dfs.h: #17605: Insufficient swap memory for read.<BR>
+画像ファイル用スワップファイルの読み込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+<HR>
+proc_ImageView_mcu.h: #17704: Can not found last MCU.<BR>
+画像展開データキャッシュシステムに異常が発生しました。解放を試みることができるMCUブロックが一つも見つかりません。<BR>
+<BR>
+<HR>
+proc_ImageView_preview.h: #17801: Create preview error. height overflow. (%d,%d %d,%d)<BR>
+画像ファイルのプレビュー画面情報が異常です。サイズ調整後の縦サイズが規定を超えました。<BR>
+<BR>
+proc_ImageView_preview.h: #17802: Create preview error. width overflow. (%d %d,%d)<BR>
+画像ファイルのプレビュー画面情報が異常です。サイズ調整後の横サイズが規定を超えました。<BR>
+<BR>
+<HR>
+proc_ImageView_relationalto.h: #17902: Can not change path. [%s]<BR>
+画像ファイルリスト作成時に、対象フォルダ文字列が空か、対象フォルダに移動できませんでした。<BR>
+<BR>
+proc_ImageView_relationalto.h: #17901: Can not read unicode filename.<BR>
+画像ファイルリスト作成時に、LFNが取得できませんでした。<BR>
+<BR>
+<HR>
+proc_TextView.cpp: #18101: Illigal font size. (%d)<BR>
+テキストの行間設定時に、未対応の高さのフォントを基準にしようとしました。<BR>
+<BR>
+proc_TextView.cpp: #18102: Can not open text file.<BR>
+テキストファイルが開けません。<BR>
+<BR>
+<HR>
+proc_TextView_bookmark_fileio.h: #18205: Bookmark_ChangeExtBKM: Not found extention.<BR>
+テキストブックマークファイルのLFNを生成するときに、拡張子が見つからないので'BKM'に変更できませんでした。<BR>
+<BR>
+proc_TextView_bookmark_fileio.h: #18201: Not found extention.<BR>
+テキストブックマークファイルを作成するときに、拡張子が見つかりませんでした。<BR>
+<BR>
+proc_TextView_bookmark_fileio.h: #18202: Alias entry overflow.<BR>
+テキストブックマークファイルのエイリアス名の作成に失敗しました。（同名ファイルが既に100個以上存在します。）<BR>
+<BR>
+<HR>
+proc_TextView_dfs.h: #18301: cluster link pre-search stopped.<BR>
+テキストファイル用スワップファイルにダイレクトディスクアクセスするための調査に失敗しました。FATが異常です。<BR>
+<BR>
+proc_TextView_dfs.h: #18302: cluster link search stopped.<BR>
+テキストファイル用スワップファイルにダイレクトディスクアクセスするためのクラスタリンクの作成に失敗しました。FATが異常です。<BR>
+<BR>
+proc_TextView_dfs.h: #18303: Insufficient swap memory for seek.<BR>
+テキストファイル用スワップファイルのシーク中に、スワップファイルの最後に達しました。<BR>
+<BR>
+proc_TextView_dfs.h: #18304: Insufficient swap memory for write.<BR>
+テキストファイル用スワップファイルの書き込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+proc_TextView_dfs.h: #18305: Insufficient swap memory for read.<BR>
+テキストファイル用スワップファイルの読み込み中に、スワップファイルの最後に達しました。<BR>
+<BR>
+<HR>
+proc_TextView_extfont.h: #18402: ExtFont: Not found font width file.<BR>
+テキストリーダーが拡張フォントを読み込むときに、横幅リストファイルが見つかりませんでした。<BR>
+<BR>
+proc_TextView_extfont.h: #18403: ExtFont: Not found clear type font file.<BR>
+テキストリーダーが拡張フォントを読み込むときに、クリアタイプフォントファイルが見つかりませんでした。<BR>
+<BR>
+proc_TextView_extfont.h: #18404: ExtFont_LoadBody: Not found font glyph file.<BR>
+テキストリーダーが拡張フォントを読み込むときに、フォントデータファイルが見つかりませんでした。<BR>
+<BR>
+<HR>
+proc_TextView_libconv_ansi.h: #18601: Not found Codepage to Unicode convert table.<BR>
+テキストリーダーが多言語コードページからUNICODEに変換するためのテーブルファイルが見つかりませんでした。<BR>
+<HR>
+fpga_helper.cpp: #19201: Can not ROMEO2 configration. (process:REG_IME)<BR>
+ROMEO2にコンフィギュレーションコードを転送するためには割り込みを禁止する必要があります。<BR>
+<BR>
+fpga_helper.cpp: #19202: FPGA configration failed.<BR>
+コンフィギュレーション完了フラグを受信できません。初期化に失敗しました。<BR>
+<BR>
+fpga_helper.cpp: #19203: Can not ROMEO2 shutdown. (process:REG_IME)<BR>
+ROMEO2を停止するためには割り込みを禁止する必要があります。<BR>
+<BR>
+fpga_helper.cpp: #19204: Can not ROMEO2 shutdown. (process:TimeOut)<BR>
+停止完了フラグを受信できません。停止に失敗しました。<BR>
+<BR>
+<HR>
+lang_TextPool.h: #19301: TextPool saferealloc error. 0x%x!=0x%x<BR>
+言語ファイル読み込み時に、テキストプールのサイズ変更に失敗しました。<BR>
+<BR>
+lang_TextPool.h: #19302: TextPool memory overflow. size=%dbyte<BR>
+言語ファイル読み込み時に、テキストプールのメモリが足りません。<BR>
+<BR>
+<HR>
+memtool_MM.h: #19401 :Unknown memory manager ID.<BR>
+未定義IDを持つメモリマネージャの使用を検出しました。<BR>
+<BR>
+<HR>
+shell_FAT_Read.h: #19501: Not found plugin in plugin package. [%s]<BR>
+プラグインパッケージに存在しないプラグインを読み込もうとしました。<BR>
+<BR>
+shell_FAT_Read.h: #19502: Plugin load error.<BR>
+不明なエラーでプラグインの読み込みが失敗しました。<BR>
+<BR>
+<HR>
+plug_mp3.cpp: #19601: Samples buffer overflow. %d/%dsamples.<BR>
+MP3展開バッファを超えた情報が入力されました。<BR>
+<BR>
+<HR>
+proc_FileList.cpp: #19701: Relational file error.<BR>
+ウィンドウ間連携ファイル情報がNULLです。<BR>
+<BR>
+<HR>
+proc_MemoEdit.cpp: #19801: Not found BMP file. [%s]<BR>
+メモ帳モードでBMPファイルが読み込めませんでした。<BR>
+<BR>
+proc_MemoEdit.cpp: #19802: Can not open BMP file for write. [%s]<BR>
+メモ帳モードでBMPファイルが保存できませんでした。<BR>
+<BR>
+<HR>
+</body>
+
+</html>

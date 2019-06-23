@@ -1,0 +1,14 @@
+
+Device: M3 Adapter (Compact Flash)
+DeviceID: M3CF
+Version: 1.0
+Download: http://mdxonline.dyndns.org/
+Source: Open (Edit ok, License free)
+Author: Moonlight
+Orignal: MoonShellVer1.51 InternalDriver
+Read/Write: R/W
+Tested?: Yes
+Manufacturer: M3 Adapter
+Manufacturer's Website: http://www.m3adapter.com/main.htm
+LastModified=2007-01-01
+

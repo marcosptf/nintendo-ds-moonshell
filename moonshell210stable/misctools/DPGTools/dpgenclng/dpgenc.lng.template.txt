@@ -1,0 +1,6 @@
+DPG Encoder Language file for Template by Moonlight. (2006/02/23)
+FontName
+FontSize
+FontCodePage
+
+Please refer to dpgenc.ENG.lng excluding this.

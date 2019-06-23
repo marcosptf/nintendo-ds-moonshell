@@ -1,0 +1,52 @@
+DPG Encoder Arquivo de Tradução para Português por Axel-MaV. (2009/04/09) Moonlight(2006/12/13)
+Tahoma
+8
+0
+Vídeo de origem :
+Selecionar
+Cancelar
+Aplicar
+Exibir opções
+Opções de codificação do fluxo de Áudio
+Bitrate
+kbps
+Volume
+Opções de codificação do fluxo de Vídeo
+Relação de aspecto de Vídeo
+auto detectar
+4:3 (normal)
+16:9 (wide screen)
+1:2.35 (cinemascópio)
+Bitrate do Vídeo
+kbps
+Framerate do Vídeo
+fps
+Ajustes automáticos
+Brilho do vídeo
+Blur
+Pesado
+Leve
+Inverter vídeo
+Sobre o frame rate\n\nEste mpeg é de %ffps.\n24fps ou menos é recomendado. Continuar?
+Criar pipe error.
+Alterar o atributo de pipe error.
+O fluxo de áudio não foi adquirido.\nPor favor tente outro método.
+Auto detectar. (Quando não for possível converter usando DirectShow, tentar preparação.)
+Preparar vídeo usando ffmpeg. (fpara formato específico) (lento)
+Destino : 
+Escolher
+Selecionar destino.
+Selecione o destino e pressione o botão Salvar.
+Opções (&O)
+Exibir Log (&L)
+Sobre (&A)
+Auto Desligar (&S)
+Por favor arraste e solte o(s) arquivo(s) de video.\nPor favor não solte um formato não suportado.
+Cancelar
+Aguardando o cancelamento...
+Cancelado.
+Não foi possível identificar o FPS do vídeo.
+formato [WMV3 / Windows Media Video 9] não suportado.
+Configurações avançadas
+Tempo decorrido: %s Tempo restante estimado: %s
+Ative esta opção para fechar ao terminar a codificação.\nSempre que reiniciar, esta opção é desativada.

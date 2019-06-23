@@ -1,0 +1,880 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ANSI" />
+</head>
+
+<body>
+<DIV class=Section1>
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">MoonShell2 
+의 작동을 멈추게 하는 치명적인 에러목록 입니다。<BR>치명적 에러의 대부분은 안전성 
+향상을 위한 내부점검중 발생한 에러이며 실제 표시되는 메시지는 무분별하지 않습니다。<BR># 이후의 다섯자리 숫자로 에러를 검색해 주세요。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">memtool.cpp: 
+#00101: Insufficient memory. malloc(%d)<BR>메모리 
+설정에 실패했을 때 발생합니다。이 에러는 호출한 함수정보를 포함합니다。<BR><BR>memtool.cpp: 
+#00102: Request free null pointer in safefree.<BR>NULL포인터를 개방하려고 할 때 발생합니다。이 에러는 호출한 함수정보를 
+포함합니다。<BR><BR>memtool.cpp: #00103: Insufficient memory. realloc(%d)<BR>설정이 끝난 메모리의 크기변경에 실패했을 때 발생합니다。이 에러는 
+호출한 함수정보를 포함합니다。<BR><BR>memtool.cpp: #00104: Not found target 
+ptr in MM-&gt;pLists.<BR><BR>memtool.cpp: #00105: Memory check error. Illigal writing 
+code?<BR>메모리를 사용 후 닫을 때 버퍼 오버 런(이상기입) 검출 시 발생합니다。이 에러는 호출한 함수정보를 
+포함합니다。<BR><BR>memtool.cpp: #00106: MemMgr is NULL.<BR>MS-DOS 메모리 관리 프로그램이 NULL 의 safemalloc 
+을 호출할 때 발생합니다。이 에러는 호출한 함수정보를 포함합니다。<BR><BR>memtool.cpp: 
+#00107: MemMgr is NULL.<BR>MS-DOS 메모리 관리 
+프로그램이 NULL 의 safemalloc_chkmem 을 호출할 때 발생합니다。이 에러는 호출한 함수정보를 
+포함합니다。<BR><BR>memtool.cpp: #00108: MemMgr is NULL.<BR>MS-DOS 메모리 관리 프로그램이 NULL 의 safefree 
+를 호출할 때 발생합니다。이 에러는 호출한 함수정보를 포함합니다。<BR><BR>memtool.cpp: #00109: MemMgr is 
+NULL.<BR>MS-DOS 메모리 관리 프로그램이 NULL 의 safecalloc 를 호출할 때 발생합니다。이 에러는 호출한 함수정보를 포함합니다。<BR><BR>memtool.cpp: #00110: MemMgr is 
+NULL.<BR>MS-DOS 메모리 관리 프로그램이 NULL 의 saferealloc 를 호출할 때 발생합니다。이 에러는 호출한 함수정보를 포함합니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">InternalPlugin: #99999: Plugin internal error.<BR>외부 플러그인 사용중 치명적 에러가 발생했습니다。원인이 로그파일에 기록됩니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">BootROM.cpp: 
+#10002: Can not found NDS file.<BR>실행하려는 NDS 파일을 찾을 수 없습니다。<BR><BR>BootROM.cpp: 
+#10003: ExtLink: Create error. [%s]<BR>확장 연결 정보 파일을 작성할 수 
+없습니다。<BR><BR>BootROM.cpp: #10004: Can 
+not open NDS file. [%s]<BR>실행하려는 NDS 파일이 
+열리지 않습니다。<BR><BR>BootROM.cpp: #10005: Not support commercial 
+NDSROM file.<BR>상업용 NDS 파일은 실행할 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">cctf.cpp: 
+#10101: CTF: Illigal header ID. ['%s'!='%s']<BR>클리어타입 폰트 파일버전이 
+다릅니다。<BR><BR>cctf.cpp: #10104: Deleted CCTF::DrawFont_Fast2 
+function.<BR>정의되지 않은 함수를 호출하려고 하였습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">cctf_dfs.cpp: 
+#10201: CTF cluster link pre-search stopped.<BR>클리어타입 폰트 직접 엑세스 검사에 실패했습니다。FAT가 비정상 입니다。<BR><BR>cctf_dfs.cpp: #10202: 
+CTF cluster link search stopped.<BR>클리어타입 폰트 직접 
+엑세스를 위한 클러스터 링크 작성에 실패했습니다。FAT가 비정상 입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">dll.cpp: #10301: 
+Plugin header array overflow.<BR>플러그인 정의 정보가 너무 
+많습니다。<BR><BR>dll.cpp: #10302: DLLList_GetPluginFilename: resfn 
+is NULL.<BR>플러그인에 맞는 확장자목록에 파일명이 비었습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">extlink.cpp: 
+#10401: ExtLink: Create error. [%s]<BR>확장 연결 링크 파일 초기화에 
+실패하였습니다。<BR><BR>extlink.cpp: #10402: ExtLink_Init: Not found folder. [%s]<BR>확장 연결 NDS 폴더가 없습니다。<BR><BR>extlink.cpp: #10403: 
+ExtLink_GetNDSFullPathFilenameUnicode index overflow. 
+%d/%d<BR>확장 연결 정의를 넘는 엑세스가 발생했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">hiddenpaths.cpp: 
+#10501: HiddenPaths_Init: File not found. 
+[%s]<BR>파일목록에 표시하지 않게 설정한 폴더목록이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">main.cpp: 
+#10602: Not found default font file.<BR>규정된 폰트파일이 없습니다（언어마다 다름）。<BR><BR>main.cpp: #10603: Boot warn screen unknown compress 
+format.<BR>시동화면의 압축방식이 정의되지 않았습니다。<BR><BR>main.cpp: 
+#10604: Boot warn screen ZLIB decompress 
+error.<BR>시동화면의 ZLIB 디코딩에 실패했습니다。<BR><BR>main.cpp: #10605: Saved 
+preview files. successed.<BR>미리보기 
+화면을 저장했습니다。（에러가 아닙니다）<BR><BR>main.cpp: #10606: Not found skin 
+package.<BR>지정한 스킨파일과 디폴트스킨 모두 없습니다。<BR><BR>main.cpp: 
+#10607: Illigal process error! NextProc==ENP_Loop<BR>상태정보가 
+비정상입니다。ENP_Loop될 것이 없습니다。<BR><BR>main.cpp: #10608: Unknown process error! NextProc==%d<BR>미정의된 상태정보 
+입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">playlist.cpp: 
+#10801: Can not change current path. 
+[%s]<BR>폴더내 재생목록 생성 시 현재 폴더로의 이동에 실패했습니다。<BR><BR>playlist.cpp: #10802: Can not 
+change current path. [%s]<BR>재생목록을 재생하려고 할 때 현재 폴더로의 이동에 실패했습니다。<BR><BR>playlist.cpp: #10803: Play list file not 
+found.<BR>폴더내에 음악파일이 없습니다。<BR><BR>playlist.cpp: #10804: Resume play list file write 
+error.<BR>정지 후 계속 재생목록 작성에 실패하였습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">sjis2unicode.cpp: #10901: Not found S-JIS to Unicode convert table 
+file.<BR>S-JIS에서UNICODE 로 변환하기 위한 테이블 파일이 
+없습니다。<BR><BR>sjis2unicode.cpp: #10903: SJIS2Unicode_Convert: 
+Table not loaded.<BR>S-JIS에서 UNICODE 로 변환하기 위한 
+테이블 파일을 읽기전 변환을 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">_console.cpp: 
+#11001: Log file size error!!<BR>로그파일의 크기가 
+작습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">dllsound_internal_mp3.h: #11101: Table load error. [%s]<BR>MP3 
+재생을 위한 테이블 파일이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">dll_StdLib.h: #11201: MWin_ProgressShow: Already showed.<BR>파일 진행상태바가 표시되는 중 다시 표시명령을 받았습니다。<BR><BR>dll_StdLib.h: #11202: MWin_ProgressSetPos: MWin_pTitleStr is NULL.<BR>파일 진행상태바의 제목이 없습니다。（표시가 되지 않고 있습니다）<BR><BR>dll_StdLib.h: #11203: MWin_ProgressHide: No show.<BR>파일 진행상태바가 표시되고 있지 않음에도 표시하지 말라는 명령을 받았습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">main_savepreview.h: #18701: can not open file for write.<BR>미리보기 파일을 생성할 수 없습니다。（10개 이상의 같은 이름을 
+가진 파일이 존재합니다。）
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">playlist_ConvertM3U.h: #11302: Check flag error.<BR>재생목록 변환시에 부적절한 파일명이 검색되었습니다。<BR><BR>playlist_ConvertM3U.h: #11303: Play list file open 
+error.<BR>재생목록을 변환할 파일을 열수 없습니다。<BR><BR>playlist_ConvertM3U.h: #11305: Resume play list file write 
+error.<BR>재생목록 파일을 쓸 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">playlist_ConvertM3U_CP2Unicode.h: #11401: Not found CP1252 to Unicode 
+convert table file.<BR>재생목록 변환을 위한 CP1252-&gt;UNICODE 
+용 테이블이 없습니다。<BR><BR>playlist_ConvertM3U_CP2Unicode.h: 
+#11402: Not found CP437 to Unicode convert table file.<BR>재생목록 변환을 
+위한 CP437-&gt;UNICODE 용 테이블이 없습니다。<BR><BR>playlist_ConvertM3U_CP2Unicode.h: #11403: Not found CP850 to 
+Unicode convert table file.<BR>재생목록 변환을 위한
+CP850-&gt;UNICODE 용 테이블이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">playlist_MakeFolder.h: #11502: Can not pre-read unicode 
+filename.<BR>지정한 폴더에서 재생목록을 작성중 LFN（긴 파일명）을 가진 파일을 검사할 수 없습니다。<BR><BR>playlist_MakeFolder.h: #11504: Can 
+not read unicode filename.<BR>지정한 폴더에서 
+재생목록을 작성중LFN（긴 파일명）을 가진 파일명을 
+가져올 수 없습니다。<BR><BR>playlist_MakeFolder.h: #11505: Can 
+not change to deep path. [%s]<BR>지정한 폴더에서 재생목록을 작성중 하위폴더로 이동할 수 없습니다。<BR><BR>playlist_MakeFolder.h: #11506: Can 
+not recovery path. [%s]<BR>지정한 폴더에서 재생목록을 작성중 하위폴더에서 되돌아 오는데 실패했습니다。<BR><BR>playlist_MakeFolder.h: #11507: Resume play list file write 
+error.<BR>지정한 폴더에서 재생목록을 쓸 수 없습니다。<BR><BR>playlist_MakeFolder.h: #11508: Can 
+not change current path.<BR>지정한 폴더에서 재생목록 작성 후 지정한 폴더로 이동할 수 
+없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">playlist_TextPool.h: #11602: TextPool saferealloc error. 
+0x%x!=0x%x<BR>재생목록 작성시 텍스트풀 크기변경에 실패했습니다。<BR><BR>playlist_TextPool.h: #11603: TextPool memory overflow. 
+size=%dbyte<BR>재생목록 작성시 텍스트풀 메모리가 충분하지 않습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">_const.h: #11701: DTCM Stack overflow!!<BR>일반 작동중 스택오버플로우가 발생했습니다。<BR><BR>_const.h: #11702: MTCM Stack overflow!!<BR>동영상 재생중 스택오버플로우가 발생했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">disc_io.c: #11801: DISCIO_ShowAdapterInfo: Not ready active 
+interface.<BR>DLDI를 초기화하기 전 닥터정보를 표시하려고 
+했습니다。<BR><BR>disc_io.c: #11802: 
+System disk write verify error on cache.<BR>캐쉬의 
+내용을 시스템영역에 쓰던 중 검증에 실패했습니다。이 에러가 발생했다면 디스크가 파괴되었을 수 있습니다。<BR><BR>disc_io.c: #11803: System disk 
+write verify error on direct.<BR>시스템영역에 쓰던 중 검증에 실패했습니다。이 에러가 발생했다면 디스크가 
+파괴되었을 수 있습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat.c: #11901: FAT_DirEntFromPath: Not support find from LFN 
+path.<BR>디렉토리 엔트리 
+검색함수가 LFN（긴 파일명）을 지원하지 않습니다。<BR><BR>gba_nds_fat.c: #11902: Unknown 
+file open mode error.<BR>파일을 열 때 정의되지 않은 문자가 
+지정되었습니다。<BR><BR>gba_nds_fat.c: 
+#11903: Duplicated file open mode error.<BR>파일을 열 때 복수 상태 문자가 
+지정되었습니다。<BR><BR>gba_nds_fat.c: 
+#11904: Can not open directory.<BR>디렉토리를 열 수 없습니다。<BR><BR>gba_nds_fat.c: #11905: Can not 
+open ReadOnly file for write.<BR>읽기 전용 파일에 쓰기를 
+시도했습니다。<BR><BR>gba_nds_fat.c: 
+#11906: Not impliments file write.<BR>쓰기 
+불가 FAT에 쓰기를 시도했습니다。<BR><BR>gba_nds_fat.c: #11907: FAT_FILE buffer full.<BR>동시에 
+너무 많은 파일을 열었습니다。<BR><BR>gba_nds_fat.c: #11908: Create first cluster error on 
+read/write mode. Disk full!!<BR>읽고 쓰기 시에 클러스트 등록이 실패했습니다。디스크에 빈공간이 
+부족합니다。<BR><BR>gba_nds_fat.c: #11909: 
+Create first cluster error on write mode. Disk full!!<BR>쓰기에서 클러스터 등록이 
+실패했습니다。디스크에 빈공간이 부족합니다。<BR><BR>gba_nds_fat.c: #11910: Can not add 
+dir entry.<BR>파일작성중 디렉토리 엔트리 추가에 실패했습니다。디스크에 빈공간이 부족하던가 디렉토리 엔트리가 부적절 합니다。<BR><BR>gba_nds_fat.c: #11911: Create first cluster error on append 
+mode. Disk full!!<BR>덮어쓰기 모드로 파일을 열었으나 파일이 존재하지 않아 새파일을 쓰던중 클러스터 등록에 실패 했습니다。디스크에 
+빈공간이 부족합니다。<BR><BR>gba_nds_fat.c: #11912: Can not add 
+dir entry.<BR>덮어쓰기 모드로 파일을 열었으나 파일이 존재하지 않아 새파일을&nbsp; 쓰던 중 디렉토리 엔트리 추가에 실패했습니다。 디스크에 빈공간이 부족하던가 디렉토리 엔트리가 부적절 합니다<BR><BR>gba_nds_fat.c: #11911: Create first cluster error on exists 
+write mode. Disk full!!<BR>기존파일에 쓰기를 시도 새파일을 작성하려 했으나 클러스터 등록에 실패했습니다。디스크에 빈공간이 부족합니다。<BR><BR>gba_nds_fat.c: #11914: Unknown error in 
+file open.<BR>파일을 여는 중 알수 없는 에러가 
+발생했습니다。<BR><BR>gba_nds_fat.c: #11915: 
+Not support 0byte file writed.<BR>0byte파일 작성을 
+시도했습니다。비어있는 파일은 지원되지 않습니다。<BR><BR>gba_nds_fat.c: #11916: Can not 
+tell. not opened.<BR>파일의 위치를 알 수 없습니다。<BR><BR>gba_nds_fat.c: #11917: Can not seek. not 
+opened.<BR>열리지 않은 파일의 위치를 변경하려고 하였습니다。<BR><BR>gba_nds_fat.c: #11918: Can not 
+seek in modify mode.<BR>덮어쓰기/쓰기 상태의 파일은 검색이 
+불가능합니다。<BR><BR>gba_nds_fat.c: #11919: 
+Can not seek. unknown origin 
+mode.<BR>지정되지 않은 방향지시에 의한 검색을 시도했습니다。<BR><BR>gba_nds_fat.c: #11920: Can not 
+write. not opened.<BR>열리지 않은 파일에 쓰기를 
+시도했습니다。<BR><BR>gba_nds_fat.c: #11921: 
+Can not write. opened for 
+read.<BR>읽기 상태로 연 파일에 쓰기를 
+시도했습니다。<BR><BR>gba_nds_fat.c: 
+#11922: Can not remove. This is 
+removed.<BR>삭제하려는 파일을 찾을 수 없습니다。<BR><BR>gba_nds_fat.c: #11923: Can not 
+tell. Directory isn't empty.<BR>폴더삭제를 시도했습니다。폴더삭제는 지원되지 않습니다。<BR><BR>gba_nds_fat.c: #11924: Can not mkdir. Directory is 
+exists.<BR>같은 이름을 사용하는 폴더가 
+있습니다。<BR><BR>gba_nds_fat.c: 
+#11925: Can not mkdir. Can not chdir 
+directory.<BR>폴더를 생성하고 생성된 폴더로 이동하는데 실패했습니다。<BR><BR>gba_nds_fat.c: #11926: Can not tell. Couldn't get a new cluster 
+for the directory.<BR>새 폴더를 생성하기 위한 디렉토리 
+엔트리 추가에 실패했습니다。디스크에 빈공간이 
+부족합니다。<BR><BR>gba_nds_fat.c: #11927: 
+Can not tell. Couldn't add the 
+directory entry.<BR>새 폴더를 위한 [.] 와 [..] 폴더 생성에 실패했습니다。<BR><BR>gba_nds_fat.c: #11928: Not support 
+0byte file writed.<BR>쓰기 상태의 파일을 0byte 상태로 다시 열려고 했습니다。 비어있는 파일작성은 지원하지 않습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">fat2.cpp: 
+#12001: The cluster size that exceeds 32kbyte is not 
+supported.<BR>32kbyte가 넘는 클러스터 크기의 디스크는 지원되지 않습니다。<BR><BR>fat2.cpp: #12002: FAT2_SetSize already file size is not 
+zero.<BR>0byte （쓰기상태로 연 직후） 이외의 파일 크기를 변경하려고 하였습니다。<BR><BR>fat2.cpp: #12003: FAT2_SetSize file handle is 
+NULL.<BR>NULL포인터 핸들러의 파일 크기를 변경하려고 하였습니다。<BR><BR>fat2.cpp: #12004: FAT2_SetSize file handle is not 
+opened.<BR>열리지 않은 파일의 크기를 변경하려고 하였습니다。<BR><BR>fat2.cpp: 
+#12005: FAT2_SetSize file handle is not write 
+mode.<BR>읽기상태의 파일 크기를 변경하려고 
+하였습니다。<BR><BR>fat2.cpp: #12006: FAT2_SetSize disk 
+full.<BR>디스크에 빈공간이 없어 파일 크기 변경에 실패하였습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12101: Included illigal chars in Alias and LFN. [%s]<BR>LFN（긴 파일명）작성시 
+앨리어스와 LFN 에 사용이 금지된 문자가 앨리어스에 포함되었습니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12102: 
+Included illigal chars in Alias. [%s]<BR>LFN（긴 
+파일명） 작성시 앨리어스 파일명으로 금지된 문자를 포함하였습니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12103: 
+Included illigal chars in LFN. [%s]<BR>LFN（긴 
+파일명）작성시 앨리어스와 LFN 에 사용이 금지된 
+문자가 LFN 에 포함되었습니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12104: Alias 
+name overflow. %d,%d 
+[%s]<BR>앨리어스 파일명이 너무 깁니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12105: Alias 
+ext overflow. %d,%d 
+[%s]<BR>앨리어스 파일명의 확장자가 너무 깁니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12106: LFN is 
+too long.<BR>LFN이 너무 깁니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12107: 
+FAT_FILE buffer full.<BR>동시에 열 수 있는 파일수를 
+넘었습니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: 
+#12108: Create first cluster error. Disk full!!<BR>클러스터 등록에 실패했습니다。 디스크에 
+빈공간이 없습니다。<BR><BR>FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12109: Can not add dir entry.<BR>디렉토리 엔트리 추가에 실패했습니다。 디스크에 빈공간이 부족하던가 디렉토리 엔트리 오류입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">FAT2_fopen_CurrentForRead.h: #12201: Can 
+not open. not allocate files area.<BR>동시에 
+열 수 있는 파일수를 넘었습니다。<BR><BR>FAT2_fopen_CurrentForRead.h: #12202: Directory entry error. 
+[FILE_FREE]<BR>마지막 검색 파일을 열 때 디렉토리 엔트리가 발견되지 않았습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12301: Illigal path. [%s]<BR>LFN 
+엔트리의 검색에 비정상적인 검색이 지정되었습니다。<BR><BR>gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12302: name 
+buffer overflow.<BR>검색패스에서 파일명을 자를 때 
+앨리어스 파일명 문자수를 넘었습니다。 
+검색패스에 LFN 이 포함되어 있을 수 있습니다。<BR><BR>gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12303: Not 
+support find from LFN path.<BR>검색패스에 LFN 이 포함되어 있습니다。<BR><BR>gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12304: Not 
+found dir entry.<BR>검색패스가 
+없습니다。<BR><BR>gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12305: found 
+path is dir. [%s, %d]<BR>검색패스가 폴더에서 
+끝났습니다。 폴더의 LFN 엔트리 취득이 
+불가능합니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat_fread.h: #12401: The 
+cluster size that exceeds 32kbyte is not supported.<BR>32kbyte이상 클러스터 크기를 
+가진 디스크를 지원하지 않습니다。<BR><BR>gba_nds_fat_fread.h: #12402: Can 
+not read. not opened.<BR>열리지 않은 파일에서 읽기를 
+시도했습니다。<BR><BR>gba_nds_fat_fread.h: 
+#12403: Can not read. Illigal size or buffer. 
+(%d,%x)<BR>크기나 출력 
+어드레스가 비정상입니다。<BR><BR>gba_nds_fat_fread.h: #12404: Can 
+not read. for not read.<BR>읽기모드가 아닌 파일로부터 읽기를 
+시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat_fread_fast.h: #12501: 
+Can not read. not 
+opened.<BR>열리지 않은 파일에서 읽기를 시도했습니다。<BR><BR>gba_nds_fat_fread_fast.h: #12502: Can 
+not read. Illigal size or buffer. (%d,%x)<BR>읽기 크기나 출력 어드레스가 
+비정상입니다。<BR><BR>gba_nds_fat_fread_fast.h: #12503: Can 
+not read. for not read.<BR>읽기모드가 아닌 파일로부터 읽기를 
+시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat_fskip.h: #12601: Can not read. not 
+opened.<BR>열리지 않은 파일에서 건너뛰어 읽기를 시도했습니다。<BR><BR>gba_nds_fat_fskip.h: #12602: Can 
+not read. Illigal size. (%d)<BR>읽기 크기가 
+비정상입니다。<BR><BR>gba_nds_fat_fskip.h: #12603: Can 
+not read. for not read.<BR>읽기모드가 아닌 파일로부터 
+건너뛰어 읽기를 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">gba_nds_fat_move.h: #12701: FAT_Move: Source is removed.<BR>이동할 파일을 찾을 수 
+없습니다。<BR><BR>gba_nds_fat_move.h: 
+#12702: FAT_Move: Can not 
+move source folder.<BR>폴더는 이동할 수 없습니다。<BR><BR>gba_nds_fat_move.h: #12703: FAT_Move: Dist is removed.<BR>이동할 곳의 파일을 찾을 수 없습니다。 
+파일생성에 실패했습니다。<BR><BR>gba_nds_fat_move.h: #12704: FAT_Move: Can not move dist 
+folder.<BR>이동할 곳의 파일이 폴더입니다。 폴더의 이동은 지원되지 않습니다。<BR><BR>gba_nds_fat_move.h: #12705: FAT_Move: Not found source directory entry.<BR>이동할 
+파일의 LFN 디렉토리 엔트리의 헤더를 찾을 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">cglb15.cpp: 
+#12801: CglB15::CglB15: _buf is NULL.<BR>비어있는 
+메모리에 비트맵 작성을 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">cglcanvas.cpp: 
+#12902: Blocked free line function.<BR>자유로운 선그리기 기능은 사용할 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">cglfont.cpp: 
+#13004: Not support font height. (%d!=%d)<BR>사용할 
+수 없는 폰트 파일입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">ErrorDialog.cpp: 
+#18801: ErrorDialog_Draw: Can 
+not load ErrorDialogBG.<BR>에러정보창의 배경화면을 
+읽을 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">extmem.cpp: 
+#18901: extmem_Init: Internal error.<BR>확장 메모리의 초기화 때 
+알수없는 에러가 발생했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">lang.cpp: 
+#13201: Not found language file.<BR>언어파일이 없습니다。<BR><BR>lang.cpp: #13202: Language data buffer 
+overflow.<BR>언어목록의 최대항목수를 넘었습니다。<BR><BR>lang.cpp: #13203: Lang_GetUTF8: Language file not 
+loaded.<BR>메시지를 얻으려 했으나 언어파일을 읽을 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">launchstate.cpp: 
+#13301: Can not found launch folder.<BR>보조 프로그램 
+폴더가 없습니다。<BR><BR>launchstate.cpp: #13302: Can not read unicode 
+filename.<BR>보조프로그램 파일 검색중 LFN 
+을 얻을 수 없습니다。<BR><BR>launchstate.cpp: #13303: Launch 
+add error. item 
+full.<BR>보조프로그램 최대등록 파일수를 넘었습니다。 사용하지 않는 보조 
+프로그램을 삭제하세요。<BR><BR>launchstate.cpp: #13304: ZLIB compress 
+error!<BR>보조프로그램 등록정보파일 압축이 실패했습니다。<BR><BR>launchstate.cpp: #13305: launch data file open error. 
+'%s'<BR>보조프로그램 등록정보 파일 작성이 실패했습니다。<BR><BR>launchstate.cpp: #13306: launch data file write error. 
+'%s'<BR>보조프로그램 등록정보파일 저장에 실패했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">memtool.cpp: 
+#13406: COPY. Hooked memory address error. %s%d (%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>정상이 아닌 주소나 
+크기로 메모리복사를 시도했습니다。<BR><BR>memtool.cpp: #13407: SET. Hooked memory address error. %s%d 
+(%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>정상이 아닌 주소나 크기로 메모리 초기화를 
+시도했습니다。<BR><BR>memtool.cpp: #13401: MM_Compact: Memory overflow. 
+[%s]<BR>정상이 아닌 메모리 검출 정의 정보 메모리 최적화에 실패했습니다。<BR><BR>memtool.cpp: #13402: Expand memory overflow. 
+[%s]<BR>정상이 아닌 메모리 검출 정의 정보 메모리 확장에 실패했습니다。<BR><BR>memtool.cpp: #13403: This addres is 
+locked. [%s] (0x%08x)<BR>릴리즈 할 수 없는 메모리를 릴리즈 하려고 했습니다。<BR><BR>memtool.cpp: #13404: 
+Can not clear. Not found adr. [%s] (0x%08x)<BR>분명치 않은 주소를 릴리즈하려고 했습니다。<BR><BR>memtool.cpp: #13405: 
+Can not get size. Not found adr. [%s] (0x%08x)<BR>분명치 않은 주소의 크기를 얻으려 시도했습니다。<BR><BR>memtool.cpp: #13408: Memory leak detected. [%s]<BR>메모리 
+손실 검사에서 손실된 메모리가 발견되었습니다。<BR><BR>memtool.cpp: #13409: Memory 
+check error. Illigal writing 
+code?<BR>정합성 검사에서 버퍼 오버런이 검출되었습니다。<BR><BR>memtool.cpp: #13410: Request free null pointer in safefree.<BR>NULL 포인터를 릴리즈 
+하려고 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">procstate.cpp: 
+#13501: File not found or size error. [%s]<BR>환경설정 파일이 없던가 크기가 
+비정상입니다。<BR><BR>procstate.cpp: #13502: Data sector index is 0 
+for load.<BR>섹터 0에서 환경설정 정보를 읽으려 시도했습니다。<BR><BR>procstate.cpp: #13503: Data sector index is 0 for 
+save.<BR>섹터 0 에서 환경설정 정보를 쓰려고 시도했습니다。<BR><BR>procstate.cpp: #13504: ZLIB compress error!<BR>환경설정 정보 
+압축에 실패했습니다。<BR><BR>procstate.cpp: #13505: Data file buffer 
+overflow.<BR>환경설정 정보를 압축했으나 세크타크기를 넘었습니다。 너무 하위 
+폴더에 있을 가능성이 있습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">rect.cpp: 
+#19001: Rect buffer overflow.<BR>더티 리전 작성함수의 부정형 리전 등록갯수를 넘었습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">shell.cpp: 
+#13616: Not found base file for write.<BR>시스템폴더의 쓸 대상파일이 없습니다。<BR><BR>shell.cpp: #13617: Not found base file for 
+create.<BR>시스템폴더에 새로 작성할 파일이 없습니다。<BR><BR>shell.cpp: 
+#13618: Not found base file for modify.<BR>시스템 폴더에 덮어쓰기할 파일이 없습니다。<BR><BR>shell.cpp: #13619: 
+Not found base file for split read.<BR>시스템 폴더에 읽어들일 파일의 분할된 부분이 없습니다。<BR><BR>shell.cpp: 
+#13601: Not found text font file. [%s]<BR>시스템폴더에 폰트폴더나 폰트파일이 없습니다。<BR><BR>shell.cpp: #13602: Can not found 
+swap file. [%s]<BR>시스템폴더에 스왑파일이 없습니다。<BR><BR>shell.cpp: #13603: Can not found 
+prgjpeg swap file. [%s]<BR>시스템폴더에 프로그래시브 Jpeg 용 스왑파일이 없습니다。<BR><BR>shell.cpp: #13620: Can not found MoonShell2.00 data files.<BR>시스템 폴더에 
+환경설정 파일이 없습니다。<BR><BR>shell.cpp: #13604: Can 
+not chdir to root.<BR>LFN 을 앨리어스 명으로 변환하기 위해 루트폴더로 이동할 수 없습니다。<BR><BR>shell.cpp: #13605: Can not chdir to %s.<BR>LFN 을 앨리어스 명으로 변환하기 위해 폴더를 이동할 수 없습니다。<BR><BR>shell.cpp: #13606: Can not chdir to root.<BR>LFN 파일의 존재확인을 위해 루트폴더로 이동할 수 
+없습니다。<BR><BR>shell.cpp: #13607: Can 
+not chdir to %s.<BR>LFN 파일의 존재확인을 위해 폴더를 이동할 수 없습니다。<BR><BR>shell.cpp: #13608: Can not chdir to root.<BR>LFN 폴더의 존재확인을 위해 루트 폴더로 이동할 수 
+없습니다。<BR><BR>shell.cpp: #13609: Can 
+not chdir to %s.<BR>LFN 폴더의 존재확인을 위해 폴더를 이동할 수 없습니다。<BR><BR>shell.cpp: #13621: ConvertFullPath_Unicode2Alias: Not found 
+path.<BR>LFN 을 앨리어스 명으로 변환할 때 없는 LFN 을 지정했습니다。<BR><BR>shell.cpp: #13610: SplitItemFromFullPathAlias: output buffer is 
+NULL.<BR>앨리어스 모드로 패스와 파일명을 분해하기 위한 출력 주소가 NULL 입니다。<BR><BR>shell.cpp: #13611: SplitItemFromFullPathAlias: pFullPathAlias is NULL or blank.<BR>앨리어스 모드로 패스와 파일명을 분해하기 위한 변환의 입력주소가 NULL 
+입니다。<BR><BR>shell.cpp: #13612: SplitItemFromFullPathUnicode: output buffer is NULL.<BR>LFN 
+모드로 패스와 파일명을 분해하기 위한 출력 주소가 NULL 입니다。<BR><BR>shell.cpp: #13613: SplitItemFromFullPathUnicode: pFullPathUnicode is NULL or blank.<BR>LFN 모드로 패스와 
+파일명을 분해하기 위한 입력주소가 NULL 이거나 없습니다。<BR><BR>shell.cpp: #13622: FullPathUnicodeFromSplitItem: pFilenameUnicode is NULL or blank.<BR>패스와 파일명을 혼합하기 
+위한 파일명이 NULL 이거나 없습니다。<BR><BR>shell.cpp: #13614: Can not chdir to root.<BR>재생목록 전용。 LFN 
+을 앨리어스 명으로 변환하기 위해 루트폴더로 이동할 수 없습니다。<BR><BR>shell.cpp: #13615: Can not chdir to %s.<BR>재생목록 전용。 
+LFN 을 앨리어스 명으로 변환하기 위해 폴더를 이동할 
+수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">skin.cpp: 
+#13701: ComponentAlpha: Unknown type. 
+%d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: 
+#13702: FileList: Unknown type. %d<BR>정의되지 않은 
+파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13703: FileListAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 
+읽으려 시도했습니다。<BR><BR>skin.cpp: #13704: FileListClockAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 
+스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13705: ScrollBarAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 
+읽으려 시도했습니다。<BR><BR>skin.cpp: #13706: Setup: Unknown type. 
+%d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: 
+#13707: SetupAlpha: Unknown type. %d<BR>정의되지 않은 
+파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13708: SysMenuAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 
+읽으려 시도했습니다。<BR><BR>skin.cpp: #13709: MoviePlayer: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 읽으려 
+시도했습니다。。<BR><BR>skin.cpp: #13710: MoviePlayerAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 
+스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13711: ImageView: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 읽으려 
+시도했습니다。<BR><BR>skin.cpp: #13712: Launch: Unknown type. 
+%d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: 
+#13713: LaunchAlpha: Unknown type. %d<BR>정의되지 
+않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13714: LongTapAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 
+읽으려 시도했습니다。<BR><BR>skin.cpp: #13715: MP3CntAlpha: Unknown type. 
+%d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: 
+#13716: Custom: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13717: StandbyClock: 
+Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13718: StandbyClockAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 
+스킨을 읽으려 시도했습니다。<BR><BR>skin.cpp: #13719: TextView: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 읽으려 
+시도했습니다。<BR><BR>skin.cpp: #13720: TextViewAlpha: Unknown type. %d<BR>정의되지 않은 파일명의 스킨을 
+읽으려 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">sndeff.cpp: 
+#13803: LoadTTB0File: Header error. %08x!=%08x<BR>효과음 포함시 정의되지 않은 헤더를 가진 파일을 TTB 
+디코드 하려고 했습니다。<BR><BR>sndeff.cpp: #13801: Sound data is too large! %d,%d<BR>효과음 포함시 지정된 음성데이터 크기보다 큰 파일을 읽으려 했습니다。<BR><BR>sndeff.cpp: #13805: Sound_Init: 
+sndeff.dat not found or internal error.<BR>효과음 전체 내부설정 파일이 
+없거나 파일 내용이 비정상입니다。<BR><BR>sndeff.cpp: #13802: sound 
+effect illigal channels count.<BR>효과음 파일의 채널수가 단채널이거나 스테레오가 아닌 다채널입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">splash.cpp: 
+#13901: Splash: Illigal key frame?<BR>시동 애니매이션의 키 프레임이 비정상입니다。<BR><BR>splash.cpp: 
+#13902: Splash: Exists multiple key frame?<BR>시동 
+애니메이션의 무압축 키 프레임이 다수 존재 합니다。<BR><BR>splash.cpp: #13903: Splash: Exists multiple key frame?<BR>시동 애니메이션의 ZLIB 압축 키 
+프레임이 다수 존재합니다。<BR><BR>splash.cpp: #13904: Splash: Key frame 
+decompress error.<BR>시동 애니메이션의 ZLIB 압축 키 프레임 전개에 
+실패했습니다。<BR><BR>splash.cpp: #13905: Splash: Not found key 
+frame.<BR>시동 애니메이션에 키 프레임이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">strpcm.cpp: 
+#14001: strpcm unknown format. (%d)<BR>정의되지 않은 
+음성 출력 디바이스 입니다。<BR><BR>strpcm.cpp: #14002: strpcmStart: Driver setting error.<BR>음성 출력 디바이스 초기화 
+파라미터가 비정상입니다。<BR><BR>strpcm.cpp: 
+#14003: strpcmUpdate: strpcmRingLRBuf is NULL.<BR>음성 출력 디바이스의 링버퍼가 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">zlibhelp.cpp: 
+#19101: zliberror: deflateInit: %s<BR>ZLIB 라이브러리에서 압축할 때 초기화에 
+실패했습니다。<BR><BR>zlibhelp.cpp: #19102: zliberror: deflate: %s<BR>ZLIB 라이브러리에서 압축할 때 에러가 
+발생했습니다。<BR><BR>zlibhelp.cpp: #19103: zliberror: deflateEnd: %s<BR>ZLIB 
+라이브러리에서 압축할 때 메모리 릴리즈에 실패했습니다。<BR><BR>zlibhelp.cpp: #19104: zliberror: 
+inflateInit: %s<BR>ZLIB 라이브러리에서 전개할 때 초기화에 
+실패했습니다。<BR><BR>zlibhelp.cpp: #19105: zliberror: dist buffer memory 
+overflow.<BR>ZLIB 라이브러리에서 전개할 때 출력버퍼를 확보해야 합니다。<BR><BR>zlibhelp.cpp: #19106: zliberror: 
+inflateEnd: %s<BR>ZLIB 라이브러리에서 전개할 때 메모리 릴리즈에 실패했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">skin_colortbl.h: #14303: line%d error. The section name doesn't end 
+correctly.<BR>스킨의 색 정의 파일에 올바르지 않은 섹션정의줄이 
+있습니다。<BR><BR>skin_colortbl.h: #14304: 
+line%d error. There is a key ahead of the section 
+name.<BR>스킨의 색 정의 파일에 어느 곳에도 속하지 않은 줄이 존재합니다。<BR><BR>skin_colortbl.h: #14305: line%d error. The key name doesn't end 
+correctly.<BR>스킨의 색 정의 파일에 항목명과 내용이 = 로 연결되지 않은 줄이 존재합니다。<BR><BR>skin_colortbl.h: #14306: line%d 
+error. The value doesn't end correctly.<BR>스킨의 색 정의 파일에
+128문자를 넘는 줄이 존재합니다。<BR><BR>skin_colortbl.h: #14307: line%d 
+error. current section [%s] unknown key=%s value=%s<BR>스킨의 색 정의 파일에 정의되지 
+않은 항목에속한 줄이 존재합니다。<BR><BR>skin_colortbl.h: #14301: Skin file '%s' not 
+found.<BR>스킨의 색 정의 파일이 없습니다。<BR><BR>skin_colortbl.h: #14308: File is empty. [%s]<BR>스킨의 색 
+정의 파일이 비었습니다。<BR><BR>skin_colortbl.h: 
+#14302: The item doesn't suffice for this file. '%s'<BR>스킨의 색 정의 파일이 불완전 
+합니다。 지정되지 않은 색항목이 존재합니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">skin_SkinFile.h: #14401: Skin header 
+size too long. %d,%d<BR>스킨 파일의 헤더가 너무 큽니다。<BR><BR>skin_SkinFile.h: #14404: ZLIB 
+decompress error.<BR>스킨 파일의 ZLIB 전개에 실패했습니다。<BR><BR>skin_SkinFile.h: #14405: Skin B15 
+file '%s' not found.<BR>스킨파일이 불완전 합니다。 지정된 B15 
+파일이 없습니다。<BR><BR>skin_SkinFile.h: #14406: Skin file TGF '%s' not 
+found.<BR>스킨파일이 불완전 합니다。 지정된 TGF 파일이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">strpcm_ARM7_SelfCheck.h: #14501: ARM7/SVC stack overflow signal 
+received.<BR>ARM7 시스템에서 이상 신호를 받았습니다。 BIOS용 스택이 부족합니다。<BR><BR>strpcm_ARM7_SelfCheck.h: 
+#14502: ARM7/IRQ stack overflow signal received.<BR>ARM7 시스템에서 이상 신호를 
+받았습니다。 끼어들기용 스택이 부족합니다。<BR><BR>strpcm_ARM7_SelfCheck.h: #14503: ARM7/SYS stack overflow 
+signal received.<BR>ARM7 시스템에서 이상 신호를 받았습니다。 시스템용 스택이 부족합니다。<BR><BR>strpcm_ARM7_SelfCheck.h: 
+#14504: ARM7/Unknown(0x%x) stack overflow signal 
+received.<BR>ARM7 시스템에서 이상 신호를 받았습니다。 알 수 없는 에러가 발생했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">clibdpg.cpp: 
+#14604: Horizontal sizes other than 256 pixels became unsupported.<BR>256 
+픽셀 이외의 크기를 가진 동영상은 재생할 수 없습니다。<BR><BR>clibdpg.cpp: 
+#14601: pClibmpg-&gt;ProcMoveFrame failed.<BR>프레임 단위 동영상 탐색에 실패했습니다。<BR><BR>clibdpg.cpp: #14602: pClibmpg-&gt;ProcMoveFrameGOP 
+failed.<BR>GOP 단위의 동영상 탐색에 실패했습니다。<BR><BR>clibdpg.cpp: 
+#14603: unknown audio format. (%d)<BR>지정되지 않은 음성 포맷이 포함된 동영상 파일입니다。（예전 
+버전의 MoonShell 
+용 OGG 음성등）<BR><BR>clibmpg.cpp: #14701: Video width (%dpix) != Screen width (%dpix).<BR>비디오와 화면의 옆크기가 
+일치하지 않습니다。<BR><BR>clibmpg.cpp: #14702: Not support pixel 
+format.<BR>지원되지 않은 색밀도를 포함한 동영상 파일입니다。（예전 MoonShell 용 
+RGB15/18/21비디오 등）<BR><BR>clibmpg.cpp: 
+#14703: Unknown pixel format.<BR>지정되지 않은 색밀도 
+이미지가 포함된 동영상 입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">plug_jpeg.cpp: 
+#14801: Jpeg decode: Not support seek function. (%d,%d)<BR>Jpeg 디코더가 탐색을 
+지원하지 않습니다。<BR><BR>plug_jpeg.cpp: #14802: Jpeg decode: Decode 
+error.<BR>Jpeg 디코더에 에러가 발생했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">plug_midi.cpp: 
+#14901: Null MID track.<BR>비어있는 표준 MIDI 파일은 재생할 수 
+없습니다。<BR><BR>plug_midi.cpp: #14902: Null RCP 
+track.<BR>비어있는 RCP 파일은 재생할 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">plug_ndsrom.cpp: 
+#15001: Can not open NDS file.<BR>실행하려는 NDS 파일이 없습니다。<BR><BR>plug_ndsrom.cpp: #15002: 
+Large file size!! (Limit 2MByte)<BR>2MByte를 초과하는 NDS 
+파일은 실행할 수 없습니다。<BR><BR>plug_ndsrom.cpp: #15003: Unknown 
+error.<BR>NDS 파일 실행중 알 수 없는 에러가 발생했습니다。<BR><BR>plug_ndsrom.cpp: #15004: Can not 
+open DLDI patch backup file. (%s)<BR>DLDI 백업파일이 없습니다。<BR><BR>plug_ndsrom.cpp: #15005: DLDI patch backup write error. 
+(%s)<BR>DLDI 백업파일의 쓰기에 실패했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">_dpgfs.cpp: 
+#15101: cluster link pre-search stopped.<BR>동영상 파일 직접 액세스 검사에 실패했습니다。 
+FAT 가 비정상입니다。<BR><BR>_dpgfs.cpp: 
+#15102: cluster link search stopped.<BR>동영상 파일 직접 액세스를 위한 클러스터 작성에 
+실패했습니다。 FAT 가 비정상입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">clibmpg_diskcache.h: #15201: DiskCache_Init: Already exists disk 
+cache memory.<BR>동영상 파일의 읽기 디스크 캐쉬가 초기화되는 중 또다시 
+초기화를 시도 했습니다。<BR><BR>clibmpg_diskcache.h: #15203: DiskCache_LoadAllBuffer(); Already exists disk cache blocks. r=%d/w=%d<BR>동영상 
+파일의 읽기 디스크 캐쉬가 비어있지 않은 채 미리 읽기를 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">clibmpg_framecache.h: #15301: Not 
+empty main memory for frame cache. request size is 
+%dbyte.<BR>동영상 파일의 프레임 캐쉬가 요구하는 최저 메모리 크기보다 사용가능한 메모리가 
+작습니다。<BR><BR>clibmpg_framecache.h: 
+#15302: Frame cache memory overflow.<BR>동영상 파일의 프레임 캐쉬가 요구하는 최저 메모리 프레임보다 사용가능한 프레임 수가 
+작습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">plug_jpeg_prgjpeg_dfs.h: #15401: 
+cluster link pre-search stopped.<BR>프로그래시브 
+Jpeg용 스왑파일에 직접 액세스를 위한 검사가 
+실패했습니다。 FAT 가 비정상입니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15402: cluster link search 
+stopped.<BR>프로그래시브 Jpeg 
+용 스왑파일에 직접 액세스를 위한 클러스터링크 작성에 실패했습니다。 FAT 가 비정상입니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15403: Insufficient swap memory 
+for seek.<BR>프로그래시브 Jpeg 
+용 스왑파일의 탐색중 스왑파일의 마지막에 도달했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15404: Insufficient swap memory 
+for write.<BR>프로그래시브 Jpeg 
+용 스왑파일의 쓰기중 스왑파일의 마지막에 도달했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15405: Insufficient swap memory 
+for read.<BR>프로그래시브 Jpeg 
+용 스왑파일의 읽기중 스왑파일의 마지막에 도달했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15406: DFS_PrgJpeg_Free: internal opened error.<BR>프로그래시브 Jpeg 용 스왑파일의 모든 내부 핸들러가 닫히지 않은 채 시스템을 
+릴리즈 하려고 했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15407: DFS_PrgJpeg_fopen: Allocate area overflow. %dbyte, %d/%d<BR>프로그래시브 
+Jpeg 용 스왑파일의 내부 나머지 용량 부족으로 내부 
+파일을 열 수 없습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15408: DFS_PrgJpeg_fopen: Not found closed file 
+handle.<BR>프로그래시브 Jpeg 
+용 스왑파일의 내부 나머지 용량 부족으로 내부 파일을 열 수 없습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15409: 
+DFS_PrgJpeg_fclose: is closed file. 
+(%d)<BR>프로그래시브 Jpeg 용 
+스왑파일의 내부 핸들이 열리지 않은 채 닫으려 시도했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15410: 
+DFS_PrgJpeg_fread: is closed file. 
+(%d)<BR>프로그래시브 Jpeg 용 
+스왑파일의 내부 핸들이 열리지 않은 채 읽기를 시도했습니다。<BR><BR>plug_jpeg_prgjpeg_dfs.h: #15411: 
+DFS_PrgJpeg_fwrite: is closed file. 
+(%d)<BR>프로그래시브 Jpeg 용 
+스왑파일의 내부 핸들이 열리지 않은 채 쓰기를 시도했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">pch.cpp: #15503: 
+PCMStack_Unregist: Can not 
+unregist null pointer.<BR>사운트 폰트의 음색 데이터를 릴리즈하려 했으나 대상 주소가 
+NULL입니다。<BR><BR>pch.cpp: #15504: PCMStack_Unregist: Not found target in stack 
+list.<BR>사운드 폰트의 음색 데이터를 릴리즈하려 했으나 대상주소가 관리목록에 
+없습니다。<BR><BR>pch.cpp: #15505: Not support TTA compressed sound 
+font.<BR>사운드 폰트의 음색 데이터는 TTA로 압축되고 있습니다。 리얼타임 배치모드에서 TTA압축은 사용할 
+수 없습니다。<BR><BR>pch.cpp: #15506: Unknown WAVE 
+format.<BR>사운드 폰트의 음색 데이터가 정의되지 않은 음색 포맷입니다。<BR><BR>pch.cpp: #15507: PCH_UnloadProgram: 
+is NULL.<BR>사운트 폰트의 음색목록을 릴리즈하려 했으나 대상주소가 NULL입니다。<BR><BR>pch.cpp: #15508: PCH_Init: Not 
+found power table file. [%s]<BR>음량조절에 사용하는 제곱테이블 파일이 없습니다。<BR><BR>pch.cpp: #15509: PCH_Init: Not 
+found sin table file. [%s]<BR>모듈레이션으로 사용하는 
+정현파 테이블 파일이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">sndfont.cpp: 
+#15601: SndFont_Open: File not found. 
+[%s]<BR>소프트웨어 MIDI 음원의 
+사운드폰트 파일이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">sndfont_dfs.h: #15801: cluster link 
+pre-search stopped.<BR>소프트웨어 음원의 사운드폰트 파일에 직접 
+액세스를 위한 검사에 실패했습니다。 FAT가 비정상입니다。<BR><BR>sndfont_dfs.h: #15802: cluster link 
+search stopped.<BR>소프트웨어 음원의 사운드폰트 파일에 직접 액세스를 
+위한 클러스터 링크 작성에 실패했습니다。 FAT가 비정상입니다。<BR><BR>sndfont_dfs.h: #15803: ReadSkip: size align error. 
+(0x%x)<BR>건너뛰려한 크기의 얼라인먼트가 비정상입니다。<BR><BR>sndfont_dfs.h: #15804: Read16bit: pbuf align error. (0x%x)<BR>읽어드리려는 출력주소의 얼라인먼트가 비정상입니다。<BR><BR>sndfont_dfs.h: #15805: Read16bit: size 
+align error. (0x%x)<BR>일어드리려는 크기의 얼라인먼트가 비정상입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_chkdsk.cpp: 
+#16101: Can not change root path.<BR>간이 디스크 
+검사에서 루트폴더 검사에 실패했습니다。 루트 폴더로 이동할 수 없습니다。<BR><BR>proc_chkdsk.cpp: #16102: A necessary file doesn't 
+suffice.<BR>간이 디스크 검사에서 루트폴더 검사에 실패했습니다。 파일이 충분하지 않습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_Launch.cpp: 
+#16303: DrawSubScreen create canvas 
+failed.<BR>보조프로그램 모드에서 위아래 화면의 비트맵 작성에 실패했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_chkdsk_body.h: #16401: Error 
+found in checking duplicate cluster.<BR>간이 디스크 검사의 클러스터링크 검사에 실패했습니다。 주요 
+원인은 정지한 &nbsp;화면과 
+로그파일을 참조해 주세요。<BR><BR>proc_chkdsk_body.h: #16402: Not support disk size or cluster 
+size.<BR>간이 디스크 검사의 클러스터링크 검사에 실패했습니다。 클러스터 크기를 너무 크게한 디스크이거나 디스크용량이 너무 큽니다. SDHC 대응이 
+가능한 SDFormatter 로 포맷을 시도하세요。<BR><BR>proc_chkdsk_body.h: #16405: Unknown 
+FAT type. (FAT%d)<BR>간이 디스크 검사의 FAT 종류검사에 실패했습니다。 FAT16 과FAT32 만 지원합니다。<BR><BR>proc_chkdsk_body.h: #16406: Write test error. Please reffer log file.<BR>간이 디스크 검사의 쓰기 테스트에 실패했습니다。 주요 원인은 
+정지시 화면과 로그 파일을 참조해 주세요。<BR><BR>proc_chkdsk_body.h: #16408: 16bit read check error. Please 
+refer [/misctools/Additional/Ignore16.txt]<BR>간이 디스크 검사의 
+DLDI16bit 읽기 검사에 실패했습니다。 /misctools/Additional/Ignore16.txt 를 참조해 주세요。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_DPGPlay.cpp: #16601: can not open 
+file.<BR>동영상 파일을 열 수 없습니다。<BR><BR>proc_DPGPlay.cpp: 
+#16602: can not open DPG format.<BR>알 수 없는 포맷으로 
+인해 DPG 아리브러리를 시작할 수 없습니다。<BR><BR>proc_DPGPlay.cpp: #16604: Unknown DPG play mode. 
+(%d)<BR>정의되지 않은 동영상 재생모드 입니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_DPGPlay_BGM.h: #16701: Can not found Long filename entry.<BR>동영상 파일의 재생목록을 
+작성할 때 LFN 을 찾을 수 없습니다。<BR><BR>proc_DPGPlay_BGM.h: #16702: Can 
+not found files.<BR>동영상 파일의 재생목록을 작성할 때 파일이 발견되지 않았습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_FileList_DeleteFileDialog.h: 
+#16801: Not found extention.<BR>확장자가 없는 파일은 
+삭제(휴지통으로 이동)할 수 
+없습니다。<BR><BR>proc_FileList_DeleteFileDialog.h: #16802: Alias entry overflow.<BR>파일을 삭제(휴지통에 
+이동)할 경우 이동할 곳의 앨리어스명 생성에 
+실패했습니다。<BR><BR>proc_FileList_DeleteFileDialog.h: #16803: CB_KeyLongPress_ins_ExecuteDelete: Not found source 
+alias.<BR>파일을 삭제(휴지통에 이동)할 경우 이동할 파일의 앨리어스명 취득에 실패했습니다。<BR><BR>proc_FileList_DeleteFileDialog.h: 
+#16805: CB_KeyLongPress_ins_ExecuteDelete: Can not create move-to file.<BR>파일을 삭제(휴지통에 이동)할 경우 이동한 파일 쓰기에 실패했습니다。<BR><BR>proc_FileList_DeleteFileDialog.h: 
+#16806: CB_KeyLongPress_ins_ExecuteDelete: Not found 
+dist alias.<BR>파일을 삭제(휴지통에 이동)할 경우 이동한 파일의 앨리어스명을 취득에 
+실패했습니다。<BR><BR>proc_FileList_DeleteFileDialog.h: #16807: CB_KeyLongPress_ins_ExecuteDelete: FAT2_Move() failed.<BR>파일을 삭제(휴지통에 
+이동)할 경우 이동에 실패했습니다。 로그파일을 참조해 주세요。<BR><BR>proc_FileList_DeleteFileDialog.h: 
+#16808: CB_KeyLongPress: Can 
+not create dustbox folder.<BR>파일을 
+삭제(휴지통에 이동)할 경우 휴지통 폴더의 작성에 
+실패했습니다。 폴더 자동 생성 기능은 현재 지원하지 않습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_FileList_NDSFiles.h: #17004: 
+Can not change path. [%s]<BR>파일목록 작성시 대상 폴더이름이 
+없거나 대상폴더로 이동할 수 없습니다。<BR><BR>proc_FileList_NDSFiles.h: #17002: Can 
+not read unicode filename.<BR>파일목록 작성시 
+LFN 취득에 실패했습니다。<BR><BR>proc_FileList_NDSFiles.h: #17005: Illigal FileType. 
+(%d)<BR>파일목록 작정시 정의되지 않은 파일타입이 검색되었습니다。<BR><BR>proc_FileList_NDSFiles.h: #17003: 
+Can not move current folder.<BR>NDSROM 아이콘 
+취득시 대상 폴더로 이동할 수 없었습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_FileList_NDSFiles_TextPool.h: 
+#17102: TextPool saferealloc 
+error. 0x%x!=0x%x<BR>파일목록 작성시 텍스트풀 크기변경에 실패했습니다。<BR><BR>proc_FileList_NDSFiles_TextPool.h: #17103: TextPool memory overflow. 
+size=%dbyte<BR>파일목록 작성시 텍스트풀 메모리가 부족합니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_FileList_ScrollBar.h: #17201: 
+ScrollBar_MouseDown psb-&gt;CurMode(%d)!=ESBCM_Idle<BR>마우스 이벤트 처리중 
+마우스 다운 이벤트를 수신했습니다。<BR><BR>proc_FileList_ScrollBar.h: #17202: ScrollBar_MouseIdle psb-&gt;MaxPos==0<BR>마우스 이벤트 처리중 
+에러가 발생했습니다。 파일목록이 비었습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView.cpp: #17401: RelationalToBack: File not found.<BR>이미지 파일 이동시 이전파일을 찾을 수 없습니다。<BR><BR>proc_ImageView.cpp: #17402: RelationalToNext: File not found.<BR>이미지 파일 이동시 다음파일을 찾을 수 없습니다。<BR><BR>proc_ImageView.cpp: #17404: Data file not found. 
+[%s]<BR>이미지 파일을 열 수 
+없습니다。<BR><BR>proc_ImageView.cpp: #17405: This plugin is not image type. (%s)<BR>시작하려던 플러그인은 이미지용 플러그인이 아닙니다。<BR><BR>proc_ImageView.cpp: #17406: Plugin 
+load error.<BR>알 수 없는 에러로 플러그인을 시작할 수 없습니다。 
+로그파일을 참조해 주세요。<BR><BR>proc_ImageView.cpp: #17403: File not 
+found.<BR>이미지파일 목록 작성에 
+실패했습니다。 이미지파일이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView_createbg.h: #17501: 
+Open for write failed.<BR>배경파일 작성중 출력할 파일이 열리지 
+않았습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView_dfs.h: #17601: cluster 
+link pre-search stopped.<BR>이미지파일용 스왑파일에 직접 액세스를 위한 검사에 실패했습니다。 FAT 
+가 비정상입니다。<BR><BR>proc_ImageView_dfs.h: #17602: cluster link search 
+stopped.<BR>이미지파일용 스왑파일의 직접 액세스를 위한 클러스터링크 작성에 실패했습니다。 FAT가 비정상입니다。<BR><BR>proc_ImageView_dfs.h: #17603: Insufficient swap memory for 
+seek.<BR>이미지파일용 스왑파일의 탐색중 스왑파일의 끝에 도달했습니다。<BR><BR>proc_ImageView_dfs.h: #17604: Insufficient swap memory for 
+write.<BR>이미지파일용 스왑파일의 쓰기중 스왑파일의 끝에 도달했습니다。<BR><BR>proc_ImageView_dfs.h: #17605: Insufficient swap memory for 
+read.<BR>이미지파일용 스왑파일의 읽기중 스왑파일의 끝에 도달했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView_mcu.h: #17704: Can not found last MCU.<BR>이미지전개 데이터 캐쉬 시스템에 이상이 발생했습니다。 릴리즈를 
+시도할 수 있는 MCU 블록이 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView_preview.h: #17801: 
+Create preview error. height overflow. (%d,%d %d,%d)<BR>이미지파일의 미리보기 화면정보가 비정상입니다。 크기 조정 후의 세로크기가 규정을 초과했습니다。<BR><BR>proc_ImageView_preview.h: #17802: 
+Create preview error. width overflow. (%d %d,%d)<BR>이미지파일의 미리보기 화면정보가 비정상입니다。 크기 조정 후의 옆크기가 규정을 초과했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_ImageView_relationalto.h: #17902: 
+Can not change path. [%s]<BR>이미지파일 목록 작성시 대상폴더 
+이름이 비었거나 대상폴더로 이동할 수 없습니다。<BR><BR>proc_ImageView_relationalto.h: #17901: Can not read unicode 
+filename.<BR>이미지파일목록 작성시 
+LFN 을 취득할 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_TextView.cpp: #18101: Illigal font 
+size. (%d)<BR>문서의 줄간격 설정시 지원되지 않는 높이의 폰트를 기준으로 했습니다。<BR><BR>proc_TextView.cpp: #18102: Can not 
+open text file.<BR>문서 파일을 열 수 없습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_TextView_bookmark_fileio.h: 
+#18205: Bookmark_ChangeExtBKM: Not found extention.<BR>문서북마크 파일의 
+LFN 를 생성할 때 확장자가 발견되지 않아 'BKM' 
+으로 변경할 수 없었습니다。<BR><BR>proc_TextView_bookmark_fileio.h: #18201: Not found extention.<BR>문서북마크 파일을 생성할 
+때 확장자가 발견되지 않습니다。<BR><BR>proc_TextView_bookmark_fileio.h: #18202: Alias entry overflow.<BR>문서북마크 파일의 
+앨리어스명 작성에 실패했습니다。（같은 이름을 가진 파일이 100개 이상 존재합니다。）
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_TextView_dfs.h: #18301: cluster 
+link pre-search stopped.<BR>문서파일용 스왑파일의 직접 액세스를 
+위한 검사에 실패했습니다。 FAT가 비정상입니다。<BR><BR>proc_TextView_dfs.h: #18302: 
+cluster link search stopped.<BR>문서파일용 스왑파일의 직접 
+액세스를 위한 클러스터링크 작성에 실패했습니다。 FAT가 비정상입니다。<BR><BR>proc_TextView_dfs.h: #18303: 
+Insufficient swap memory for seek.<BR>문서파일용 스왑파일의 탐색중 스왑파일의 끝에 도달했습니다。<BR><BR>proc_TextView_dfs.h: #18304: Insufficient swap memory for 
+write.<BR>문서파일용 스왑파일의 쓰기중 스왑파일의 끝에 도달했습니다。<BR><BR>proc_TextView_dfs.h: #18305: 
+Insufficient swap memory for read.<BR>문서파일용 스왑파일의 읽기중 스왑파일의 끝에 도달했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_TextView_extfont.h: #18402: ExtFont: Not found font width file.<BR>문서리더가 확장 폰트를 
+읽을 때 가로폭 목록 파일을 찾지 못했습니다。<BR><BR>proc_TextView_extfont.h: #18403: 
+ExtFont: Not found clear type font 
+file.<BR>문서리더가 확장폰트를 읽을 때 클리어타입 폰트 파일을 찾지 
+못했습니다。<BR><BR>proc_TextView_extfont.h: #18404: ExtFont_LoadBody: Not found font glyph file.<BR>문서리더가 
+확장폰트를 읽을 때 폰트데이터 파일을 찾지 못했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt">proc_TextView_libconv_ansi.h: #18601: 
+Not found Codepage to Unicode convert table.<BR>문서리더가 다언어 code page로부터 UNICODE 로 변환하기 위한 테이블 파일을 찾지 
+못했습니다。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+</DIV>
+fpga_helper.cpp: #19201: Can not ROMEO2 configration. 
+(process:REG_IME)<BR>ROMEO2에 설정코드를 전송하기 위해 인터럽트를 금지할 필요가 있습니다。<BR><BR>fpga_helper.cpp: 
+#19202: FPGA configration 
+failed.<BR>설정 완료 플래그를 수신하지 못했습니다。초기화에 실패했습니다。<BR><BR>fpga_helper.cpp: #19203: 
+Can not ROMEO2 shutdown. 
+(process:REG_IME)<BR>ROMEO2를 정지하기 위해 인터럽트를 금지할 필요가 있습니다。<BR><BR>fpga_helper.cpp: 
+#19204: Can not ROMEO2 shutdown. 
+(process:TimeOut)<BR>정지 완료 플래그를 수신하지 못했습니다。정지에 실패했습니다。<BR><BR>
+
+<HR>
+lang_TextPool.h: #19301: TextPool saferealloc error. 
+0x%x!=0x%x<BR>언어파일 읽기시에 텍스트풀 사이즈 변경에 실패했습니다。<BR><BR>lang_TextPool.h: #19302: 
+TextPool memory overflow. size=%dbyte<BR>언어파일 읽기시에 텍스트풀 메모리가 충분하지 않습니다。<BR><BR>
+
+<HR>
+memtool_MM.h: #19401 :Unknown memory manager 
+ID.<BR>알 수 없는 ID를 가지는 MS-DOS메모리 관리 프로그램의 사용이 감지되었습니다。<BR><BR>
+
+<HR>
+shell_FAT_Read.h: #19501: Not found plugin in plugin package. 
+[%s]<BR>플러그인 패키지에 없는 플러그인을 읽어드리려 시도했습니다。<BR><BR>shell_FAT_Read.h: #19502: 
+Plugin load error.<BR>알 수 없는 오류로 플러그인 읽기를 실패했습니다。<BR><BR>
+
+<HR>
+plug_mp3.cpp: #19601: Samples buffer overflow. 
+%d/%dsamples.<BR>MP3 전개 버퍼를 넘는 정보가 입력되었습니다。<BR><BR>
+
+<HR>
+proc_FileList.cpp: #19701: Relational file 
+error.<BR>윈도우간 제휴 파일 정보값이 NULL입니다。<BR><BR>
+
+<HR>
+proc_MemoEdit.cpp: #19801: Not found BMP file. 
+[%s]<BR>메모장모드로 BMP파일을 읽어올 수 없습니다。<BR><BR>proc_MemoEdit.cpp: #19802: Can not 
+open BMP file for write. [%s]<BR>메모장모드로 BMP파일을 저장할 수 없습니다。<BR><BR></body>
+
+</html>

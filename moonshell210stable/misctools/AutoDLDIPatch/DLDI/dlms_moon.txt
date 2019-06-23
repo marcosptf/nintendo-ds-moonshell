@@ -1,0 +1,14 @@
+
+Device: DSLink (microSD Card)
+DeviceID: DLMS
+Version: 1.0
+Download: http://mdxonline.dyndns.org/
+Source: Open (Edit ok, License free)
+Author: Moonlight
+Orignal: MoonShell1.51 internal driver. (Orignal by Rudolph (Original by EZ Team (aladdin)))
+Read/Write: R/W
+Tested?: Yes
+Manufacturer: DSLink
+Manufacturer's Website: http://www.ds-link.net/english/
+Last Modified: 2006-12-30
+

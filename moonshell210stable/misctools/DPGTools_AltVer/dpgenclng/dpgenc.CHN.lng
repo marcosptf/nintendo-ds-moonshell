@@ -1,0 +1,65 @@
+DPG Encoder Language file for Chinese by Fachman. (2006/02/23)
+宋体
+9
+134
+源视频文件 :
+选择
+取消
+确定
+显示选项
+音频选项
+采样率
+Hz
+Bitrate
+kbps
+音量
+使用mencoder.exe 一个特殊的音频编/解码器不符合。
+使用ffmpeg.exe 最高速模式
+使用extractwave.exe DirectShow 正常模式 128kbyte/block
+使用extractwave.exe DirectShow 选择模式 4byte/block
+使用预先分离的同名音频文件(MediaFilename.wav)
+视频流重新编码
+视频流重新编码选项
+显示宽度
+象素点
+视频分辨率
+自动检测
+4:3 (正常)
+16:9 (宽屏)
+1:2.35 (长屏)
+视频流码率
+kbps
+视频帧率
+fps
+视频亮度
+模糊
+深度
+亮度
+翻转视频
+致命错误:视频文件分辨率不能超过256x192象素。
+关于帧率\n\n这是一个%ffps的MPEG文件。\推荐不大于24ffps的帧率，继续？
+无法检测到视频尺寸
+无法检测到总播放时间。
+非法的分辨率
+创建管道错误。
+改变管道属性错误。
+无法提取音频流。\n请尝试其它方法。
+直接使用DirectShow转换(WMP支持的格式)(快)
+使用ffmpeg准备视频(特殊格式)(慢)
+使用mencoder准备视频(暂不支持)
+输出路径 : 
+更改
+选择输出路径
+选择输出路径，并按下右边的保存按钮
+文件 (&F)
+退出 (&X)
+选项 (&O)
+预览 (&S)
+语言 (&L)
+关于 (&A)
+将视频文件拖放进来\n不相应的文件请不要进行拖放操作
+停止转换\n(不可继续)
+中断中...
+已停止
+无法检测源视频祯数
+不支持的格式[WMV3/Windows Media Video 9]

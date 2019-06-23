@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ANSI" />
+</head>
+
+<body>
+<DIV class=Section1>
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p>&bull;직접 
+구동 방법
+
+    <P style="MARGIN-BOTTOM: 12pt"><BR>각 닥터별로 간편하게 MoonShell2 를 실행하기 위한 방법입니다。<BR>일반적인 상태로 설치를 하시고 
+올바르게 동작하는 것을 확인하신 후 시도해 주세요。<BR><BR><A 
+href="../KOR/fixboot.html#DSTT">DSTT 다이렉트 실행 방법</a><BR><A href="../KOR/fixboot.html#R4Direct">R4 다이렉트 실행 방법</a><BR><A href="../KOR/fixboot.html#R4Media">R4 멀티미디어 버튼 사용 방법</a><BR><a href="../KOR/fixboot.html#EDGE">EDGE 멀티미디어 버튼 사용 방법</a><BR>
+<A 
+href="../KOR/fixboot.html#CYCRO1">CYCRO DS(FW 1.55 Beta2 이전)로 MoonShell 1.71+1과 같이 사용할 때 MoonShell2.0을 멀티미디어 버튼으로 실행 방법</a><BR><A href="../KOR/fixboot.html#CYCRO2">CYCRO DS(FW&nbsp;1.55&nbsp;Beta2&nbsp;이전) 멀티미디어 버튼 사용 방법(MoonShell1.71+1은 삭제했을 때)</a><BR><A href="../KOR/fixboot.html#CYCRO3">CYCRO DS(FW&nbsp;1.55&nbsp;Beta3&nbsp;이후) 멀티미디어 버튼 사용 방법</a><BR>
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p>&bull;<a name="DSTT">DSTT다이렉트 실행 방법</a><BR><BR>DSTT에서 MoonShell2로 직접 부팅하는 방법입니다。짝퉁 DSTT 에는 시도하지 말아주세요。<BR>이 방법은 DSTT의 커널을 바꾸기 때문에 다른 메뉴는 사용할 수 없게 
+됩니다。<BR><BR>'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' 를 실행후 OK버튼을 누르신 후 Create 버튼을 선택해 주세요<BR>생성된 &nbsp;'moonshl2_TTIOSDHC_TTCARD IO Library(SDHC).nds' 를 'TTMENU.DAT' 로 이름을 바꾼 후 메모리의 루트 폴더에 덮어쓰기 해주세요。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p>&bull;<a name="R4Direct">R4다이렉트 실행 방법</a><BR><BR>R4에서 MoonShell2로 직접 부팅하는 방법입니다。짝퉁&nbsp; R4에는 시도하지 말아주세요。<BR>이 방법은 R4의 커널을 바꾸기 때문에 다른 메뉴는 사용할 수 없게 됩니다。<BR><BR>'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe'를 실행후 OK버튼을 누르신 후 Create 버튼을 선택해 주세요。<BR>생성된 &nbsp;'moonshl2_R4TF_M3Simply-R4DS 
+(MicroSD Card).nds' 를 'DEFAULT.NDS' 
+로 이름을 바꾼 후 메모리의 루트에 복사하세요。<BR 
+style=""><BR 
+style="">
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p>&bull;<a name="R4Media">R4 멀티미디어 버튼 사용 방법</a><BR><BR>R4에서 중간의 
+멀티미디어 버튼으로 MoonShell2 를 실행하는 
+방법입니다。짝퉁 R4 에서는 시도하지 
+말아주세요。<BR>이 방법은 커널과 상관이 
+없습니다。<BR>이전 문쉘（moonshl폴더）은 필요가 없으므로 삭제하셔도 됩니다。<BR><BR>DLDI 패치는 하지 않으셔도 됩니다. 'moonshl2.nds'를 '_DS_MSHL.NDS' 로 이름을 바꾸고 메모리의 루트에 복사하세요。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+
+        <p align="left">&bull;<a name="EDGE">EDGE 멀티미디어 버튼 실행 방법</a>
+
+        <p align="left">1) MoonShell2.0의 압축을 해제한 후 moonshl2폴더를 메모리의 루트에 복사합니다。<BR>2) 
+메모리의 루트에 있는 moonshl폴더속의 모든 파일을 삭제(moonshl폴더는 삭제하시 마세요）합니다。<BR>3) 
+moonshl2.nds를 moonshell.nds로 이름을 바꾸신 후 메모리 루트에 있는 moonshl폴더에 복사합니다。<BR>※ EDGE의 멀티미디어 버튼은 오직 /moonshl/moonshell.nds를 실행해 주는 기능만을 하기 때문에<BR>  &nbsp;&nbsp;&nbsp;&nbsp;어떤 NDS파일이라도 moonshell.nds로 이름을 바꾸시면 실행을 시킬 수 있게 됩니다。 다만 파일이 지정한<BR> &nbsp;&nbsp;&nbsp;&nbsp;PATH는 변경이 불가능 하기 때문에 moonshl폴더는 반드시 있어야만 합니다。<BR>
+
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+</DIV>
+<p>&bull;<a name="CYCRO1">CYCRO DS(FW 1.55 Beta2 이전)로 MoonShell 1.71+1과 같이 사용할 때 MoonShell2.0을 멀티미디어 버튼으로 실행</a><BR>(leopon님께서 알려주셨습니다. 감사드립니다。)
+<p>1) MoonShell2.0의 압축을 해제한 후 moonshl2폴더를 메모리의 루트에 복사합니다。<BR>2) 메모리의 루트에 있는 moonshl폴더속의 moonshel.nds를 moonshell171.nds등의 이름으로 변경합니다。<BR>3) 
+moonshl2.nds를 moonshell.nds로 이름을 변경한 후 메모리 루트에 있는 moonshl폴더에 복사합니다。<BR>※ 
+MoonShell1.71+1를 실행하실 때는 CYCRO DS의 파일목록에서 이름을 변경하신 파일을 실행하세요。<BR>※ 
+moonshell171.nds등으로 변경되어진 파일은 어느 폴더에 있더라도 실행이 가능합니다。
+<HR align=center width="100%" SIZE=2>
+<p><a name="CYCRO2">&bull;CYCRO DS(FW&nbsp;1.55&nbsp;Beta2&nbsp;이전) 멀티미디어 버튼 사용 방법(MoonShell1.71+1은 삭제했을 때)</a><BR>(leopon님께서 알려주셨습니다. 감사드립니다。)<BR><BR>1) MoonShell2.0의 압축을 해제한 후 moonshl2폴더를 메모리의 루트에 복사합니다。<BR>2) 
+메모리의 루트에 있는 moonshl폴더속의 모든 파일을 삭제(moonshl폴더는 삭제하시 마세요）합니다。<BR>3) 
+moonshl2.nds를 moonshell.nds로 이름을 바꾸신 후 메모리 루트에 있는 moonshl폴더에 복사합니다。<BR>※ CYCRO 
+DS의 멀티미디어 버튼은 오직 /moonshl/moonshell.nds를 실행해 주는 기능만을 하기 때문에<BR> 어떤 NDS파일이라도 moonshell.nds로 이름을 바꾸시면 실행을 시킬 수 있게 됩니다。 다만 파일이 지정한<BR>PATH는 변경이 불가능 하기 때문에 moonshl폴더는 반드시 있어야만 합니다。<BR>
+<HR align=center width="100%" SIZE=2>
+<p><a name="CYCRO3">&bull;CYCRO DS(FW&nbsp;1.55&nbsp;Beta3&nbsp;이후) 멀티미디어 버튼 사용 방법</a><BR>(leopon님께서 알려주셨습니다. 감사드립니다。)<BR><BR>1) setup.exe를 사용해 MoonShell2.0을 메모리에 설치합니다。<BR>2) 
+메모리의 루트에 있는 CycloDS 폴더속의 config.xml을 문서편집기(메모장등)로 엽니다。<BR>3) 
+config.xml 위에서부터 21번째 줄의 &lt;moonshellPath&gt;/moonshl/moonshell.nds&lt;/moonshellPath&gt;를<BR> &nbsp;&nbsp;&nbsp;&nbsp;&lt;moonshellPath&gt;/moonshl2.nds&lt;/moonshellPath&gt;로 수정합니다。<BR>4) CycloDS를 켠 후 미디어버튼을 누르면 문쉘 2.0이 실행됩니다。<BR>
+</body>
+
+</html>

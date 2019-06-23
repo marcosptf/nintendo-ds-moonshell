@@ -1,0 +1,65 @@
+German DPG Encoder Language File by Filb. (2006-08-20)
+Tahoma
+8
+0
+Quelldatei:
+&Durchsuchen
+Ab&brechen
+&Starten
+&Optionen
+Audio Optionen
+Sampling-Rate:
+Hz
+Bitrate:
+kbps
+Lautstärke:
+mencoder.exe benutzen - Standard Methode
+ffmpeg.exe benutzen - Schnellste Methode
+extractwave.exe benutzen - Normale DirectShow Methode (128 KByte/Block)
+extractwave.exe benutzen - Alternative DirectShow Methode (4 Byte/Block)
+Demuxte Datei benutzen (Dateiname.wav)
+Video-Stream neu &encoden
+Video-Encode-Optionen
+Bildbreite:
+Pixel
+Bildseitenverhältnis:
+Automatisch erkennen
+4:3 (Vollbild)
+16:9 (Breitbildformat)
+1:2.35 (Kinoformat)
+Video-Bitrate:
+kbps
+Video-Framerate:
+fps
+Helligkeit:
+Weichzeichnen:
+Viel
+Wenig
+Video s&piegeln
+Schwerer Fehler: Bitte wähle eine MPEG-Datei, die im Bildformat 256x192 Pixel oder kleiner vorliegt.
+Hinweis: Die gewählte MPEG-Datei hat eine Framerate von %ffps.\nEmpfohlen sind 24fps oder weniger.\n\nTrotzdem fortfahren?
+Die Videogröße konnte nicht erkannt werden.
+Die Videolänge konnte nicht erkannt werden.
+Das Bildseitenverhältnis ist ung?tig.
+Fehler (Create pipe)!
+Fehler (Change pipe attribute)!
+Der Audio-Stream konnte nicht verarbeitet werden.\nBitte versuche es mit einer anderen Methode erneut.
+Automatisch erkennen (Bei Fehlschlag bitte manuell einstellen)
+Video mit ffmpeg vorbereiten (f? spezifisches Format) (langsam)
+Video mit mencoder vorbereiten (nicht unterst?zt)
+Ausgabeordner: 
+&Durchsuchen
+Ausgabeordner wählen
+Ausgabeordner wählen und Speichern klicken.
+&Datei
+Be&enden
+&Optionen
+&Log anzeigen
+&Sprache/Language
+&Info
+Bitte die Videodateien hier per Drag & Drop ablegen.\nBitte nur kompatible Videodateien verwenden.
+Abbrechen
+Warte auf Abbruch...
+Abgebrochen.
+Die FPS-Zahl konnte nicht gelesen werden.
+Nichtunterst?ztes Format (WMV3 / Windows Media Video 9)

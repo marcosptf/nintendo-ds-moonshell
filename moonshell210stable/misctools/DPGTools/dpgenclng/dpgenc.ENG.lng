@@ -1,0 +1,52 @@
+DPG Encoder Language file for (clearer) English by copb.phoenix (2009/04/12) - Kir (2006/02/23) - Moonlight(2006/12/13)
+Tahoma
+8
+0
+Source video file :
+Select
+Cancel
+Apply
+Show options
+Audio encoding options
+Bitrate
+kb/s
+Volume
+Video encoding options
+Aspect Ratio
+Autodetect
+Academy (4:3)
+Widescreen (16:9)
+Cinemascope (1:2.35)
+Bitrate
+kb/s
+Framerate
+fps
+Auto adjust
+Brightness
+Blur
+Deep
+Light
+Flip video
+Frame rate warning:\n\nThe curent framerate is %ffps.\n24fps or less is recommended. Continue anyway?
+Create pipe error.
+Change pipe attribute error.
+The audio stream was not able to be acquired.\nPlease try a different method.
+Autodetect. (If DirectShow fails, try preparation.)
+Convert with ffmpeg. (for certain formats) (slow)
+Output path : 
+Change
+Select output path.
+Move to output path and press "Save".
+Options (&O)
+Show Log (&L)
+About (&A)
+Auto Shutdown (&S)
+Please drag and drop video files here.\nOnly attempt to drop video files here, please.
+Cancel this
+Waiting for encoder to stop...
+Cancelled.
+Cannot get framerate from file.
+[WMV3 / Windows Media Video 9] format is not supported.
+Advanced settings
+Elapsed time: %s Estimated time remaining: %s
+Computer set to shutdown upon encoder completion.\nThis option will be cleared upon program restart.

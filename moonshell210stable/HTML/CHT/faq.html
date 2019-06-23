@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT COLOR=#ff0000 SIZE=+1><B>如果您使用的是 M3Perfect / M3Professional / M3Sakura出現問題、請聯絡供應商。</B></FONT><BR>
+<BR>
+如果看完全部仍不能解決問題、請附上以下內容寄信給我。<BR>
+<BR>
+・備份卡照片（R4/DSTT等）<br>
+・備份卡內核版本<br>
+・當機畫面照片<br>
+・'/moonshl2/logbuf.txt'檔案<br>
+・問題的詳細情況<BR>
+<BR>
+不明白的項目請儘可能的弄齊。<BR>
+我設定了垃圾郵件過濾，請儘量不要使用免費的電子郵件（Yahoo等）和我聯絡。<BR>
+MoonShell是免費的自製軟體…。一點點的讚賞會讓我很高興…。<BR>
+<BR>
+moonshellnds@gmail.com<BR>
+<BR>
+<HR>
+<FONT SIZE=-1>
+<A HREF="#giveup">已經放棄的內容</A><BR>
+<BR>
+<A HREF="#notwindows">Windows用附加工具無法運行。</A><BR>
+<A HREF="#notboot">為何無法啟動？</A><BR>
+<A HREF="#notopenfile">為什麼不能打開檔案？</A><BR>
+<A HREF="#notskin">主題無法使用</A><BR>
+<A HREF="#notdpgplay">找不到影片檔案</A><BR>
+<A HREF="#notdpgenc">影片編碼器（dpgenc.exe）無法啟動。</A><BR>
+<A HREF="#notdpgconvert">無法轉換影片。</A><BR>
+<A HREF="#dpgslow">影片播放緩慢</A><BR>
+<A HREF="#dpgslip">DPG播放時改變進度（變更播放位置）音像不同步。</A><BR>
+<A HREF="#notolddpgplay">無法播放舊版本的DPG檔案。</A><BR>
+<A HREF="#notfoundmoonshlfolder">啟動時顯示訊息'can not found moonshl folder.'。</A><BR>
+<A HREF="#notbootr4">無法在R4上啟動。</A><BR>
+<BR>
+</FONT>
+<A NAME="giveup">
+<HR>
+・已經放棄的內容<BR>
+<BR>
+dpgenc.exe在編碼即將完成時停止的一個BUG。<BR>
+MP3歌詞顯示（lrc）。<BR>
+頻譜分析，顯示設定，均衡器和播放列表編輯<BR>
+文字文件更改閱讀方向<BR>
+開始播放音樂或啟動螢幕保護時的小噪音。<BR>
+播放DPG以外的影片檔案。<BR>
+<BR>
+<A NAME="notwindows"><HR>
+・Windows用附加工具無法運行。<BR>
+<BR>
+MoonShell2附加的PC端工具為Windows2000/XP/Vista專用。<br>
+沒有測試Windows95/98、可能無法啟動。<BR>
+<BR>
+<A NAME="notboot"><HR>
+・為何無法啟動？<BR>
+<BR>
+請參考'/misctools/Additional'資料夾的'Clust64k.txt'和'Ignore16.txt'特殊磁碟設定。<br>
+使用的舊型號備份卡、請嘗試/misctools/AutoDLDIPatch/AutoDLDIPatch.exe。<br>
+現在M3Sakura和R4SDHC和EZ4無法運行。<BR>
+<BR>
+<A NAME="notopenfile"><HR>
+・為什麼不能打開檔案？<BR>
+<BR>
+請確認是MoonShell2所<A HREF="readme.html#supportformat">支持的檔案格式</A>。<BR>
+可能是同種副檔名但不同種類的檔案。非常大的檔案也可能無法打開。<BR>
+<BR>
+<A NAME="notskin"><HR>
+・主題包無法使用<BR>
+<BR>
+請確認對應每個版本的主題包。<BR>
+舊版本的主題包在讀取時、'會在/moonshl2/logbuf.txt' 的[Illigal ID.]輸出錯誤記錄。<BR>
+<BR>
+<A NAME="notdpgplay"><HR>
+・找不到影片檔案<BR>
+<BR>
+無法播放avi/mpg/wmv之類的檔案。請務必轉換為DPG格式播放。<BR>
+<BR>
+<A NAME="notdpgenc"><HR>
+・影片編碼器（dpgenc.exe）無法啟動。<BR>
+<BR>
+MoonShell2附加的影片轉換工具為Windows2000/XP/Vista專用。<br>
+沒有測試Windows95/98、可能無法啟動。<BR>
+不支持的操作系統上轉換，EzBuilder、BatchDPG和SuperC等第三方軟體可能可以使用。<BR>
+我無法回答EzBuilder、BatchDPG和SuperC等工具的問題<BR>
+<BR>
+<A NAME="notdpgconvert"><HR>
+・無法轉換影片。<BR>
+<BR>
+MPG格式是最簡單轉換的格式。<BR>
+AVI/WMV等轉換發生問題時，可以先用其他工具轉換為MPG檔案再使用dpgenc轉換。<BR>
+目前只確認特殊格式支持Youtube的轉換。<BR>
+<BR>
+MP4，DivX、ogm等特殊格式需要WindowsMediaPlayer可以播放才能轉換。<BR>
+嘗試使用WindowsMediaPlayer測試檔案是否可以播放<BR>
+不支持WMV3和120fps的影片檔案的轉換。<BR>
+<BR>
+<A NAME="dpgslow"><HR>
+・影片播放緩慢<BR>
+<BR>
+影片播放中拖動進度條的進度問題。<BR>
+DPG播放控制介面左上的小棒變為紅色，會延遲。<BR>
+請嘗試在轉換影片時降低畫面更新率和位元速度。<BR>
+<BR>
+<A NAME="dpgslip"><HR>
+・DPG播放時改變進度（變更播放位置）音像不同步。<BR>
+<BR>
+請嘗試多拖動幾次進度條。<BR>
+<BR>
+<A NAME="notolddpgplay"><HR>
+・無法播放舊版本的DPG檔案。<BR>
+<BR>
+無法播放 使用OGG格式的DPG檔案和使用RGB15/18/21編碼的DPG檔案。<BR>
+<BR>
+<A NAME="notfoundmoonshlfolder"><HR>
+・啟動時顯示訊息'can not found moonshl folder.'。<BR>
+<BR>
+這是舊版本moonshell出現的錯誤。新版可以和舊版本MoonShell共存不用刪除，請確認您運行的是'moonshl2.nds'（或大寫的'MOONSHL2.NDS'）。<BR>
+<BR>
+<A NAME="notbootr4"><HR>
+・無法在R4上啟動。<BR>
+<BR>
+可能有很多原因，舊的R4內核版本不支持自動DLDI補丁。<BR>
+R4v1.10以後有自動DLDI補丁功能、請嘗試更新內核。<BR>
+需要在內核介面的多媒體按鈕啟動請參考<A HREF="fixboot.html">直接啟動的方法</A>。<BR>
+<BR>
+<HR>
+</body>
+
+</html>

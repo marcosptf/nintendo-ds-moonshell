@@ -1,0 +1,50 @@
+DPG Encoder Language file for Swedish by Mithos. (2006/02/24) Edited by GizmoTheGreen (same)
+Tahoma
+8
+0
+Videokälla:
+Välj
+Avbryt
+Starta
+Visa alternativ
+Ljudinställningar
+Samplingsfrekvens
+Hz
+Kvalitet
+kbps
+Volym
+använd mencoder.exe - Standard Metod
+använd ffmpeg.exe - Snabbaste Metod
+använd extractwave.exe - DirectShow Normal Metod (128kbyte/block)
+använd extractwave.exe - DirectShow Alternativ Metod (4byte/block)
+använd Demux fil. (MediaFileamn.wav)
+Omkodning av videostömmen
+Omkodningsalternativ
+Bildbredd
+pixlar
+Bildproportion
+automatisk
+4:3 (Standard TV)
+16:9 (Widescreen)
+2.35:1 (Cinemascope)
+Bildkvalitet
+Kbps
+Bildhastighet
+fps
+Ljusstyrka
+Oskärpa
+Stark
+Svag
+Spegla horizontalt
+Allvarligt fel: Var god välj en MPEG-fil som är 256x192 pixlar eller mindre.
+Information\n\nDen valda MPEG-filen har en bildhastighet på %ffps.\n24fps eller mindre rekommenderas.\n\nVill du fortsätta?
+kan inte avläsa videostorleken.
+kan inte avläsa total speltid. 
+Otillåten bildproportion.
+"Create pipe" Fel!
+"Change pipe attribute" Fel!
+Ljudströmmen kunde inte förvärvas.\nVar god försök med en annan metod.
+
+
+2006/02/24 06:41 GMT+9 Lines add by Moonlight. (Please delete this line when you confirm this.)
+

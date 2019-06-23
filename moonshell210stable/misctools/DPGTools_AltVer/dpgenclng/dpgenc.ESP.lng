@@ -1,0 +1,48 @@
+DPG Encoder Language file for Spanish by RazielDSM. (2006/02/23)
+Tahoma
+8
+0
+Video fuente:
+Seleccionar
+Cancelar
+Comenzar
+Mostrar Opciones
+Opciones de Audio
+Frecuencia de Audio
+Hz
+BitRate
+Kbps
+Volumen
+Usar mencoder.exe Codec de Audio especial.
+Usar ffmpeg.exe (Mas rapido).
+Usar extractwave.exe Metodo normal de DirectShow a 128kbytes el bloque
+Usar extractwave.exe Metodo Alternativo de DirectShow a 4bytes el bloque
+El archivo especificado esta usandose. (MediaFilename.wav)
+Re-encodear video
+Opciones de Re-encoder
+Anchura del Video
+pixels
+Relacion Ancho-Alto
+Detectar Automaticamente
+4:3 (Tamaño academico)
+16:9 (Panoramico)
+1:2.35 (Cinemascope)
+BitRate del Video
+Kbps
+Fotogramas del Video
+Fps
+Brillo del Video
+Desenfocar
+Alto
+Ligero
+Invertir Video
+Error Fatal: Especifica un archivo MPEG inferior a 256x192 pixeles.
+Sobre los Fotogramas\n\nEste MPEG tiene %ffps .\nSe recomienda 24 o menos fotogramas.¿Continuar?
+No se pudo detectar el tamaño del video.
+No se pudo detectar la duracion del video.
+Relacion Ancho-Alto no permitida.
+Error (Create Pipe).
+Error (Change Pipe).
+El audio no se ha podido adquirir.\nPor favor, prueba otro metodo.
+
+

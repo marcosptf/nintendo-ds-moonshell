@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ANSI" />
+</head>
+
+<body>
+<DIV class=Section1>
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p><FONT size=-1><a href="../KOR/changelog.html#209">2010/01/01 Version 2.09 Stable</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#208">2009/12/02 Version 2.08 Stable</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#207">2009/11/12 Version 2.07 Stable</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#206">2009/11/05 Version 2.06 Stable</a><BR><a href="../KOR/changelog.html#205">2009/07/25 Version 2.05 Stable</a><BR><a href="../KOR/changelog.html#204">2009/07/19 Version 2.04 Stable</a><BR><A href="../KOR/changelog.html#203">2009/07/14 Version 2.03 
+Stable</a><BR><A href="../KOR/changelog.html#202">2009/06/12 Version 2.02 Stable</a><BR><A href="../KOR/changelog.html#201p">2009/06/03 Version 
+2.01 Patch</a><BR><A href="../KOR/changelog.html#201s">2009/06/02 
+Version 2.01 Stable</a><BR><A 
+href="../KOR/changelog.html#200">2009/05/02 
+Version 2.00 Stable.</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#beta_12">2009/03/18 Version 2.00 beta.12</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#beta_11">2009/03/18 Version 2.00 beta.11</a></FONT><BR><FONT size=-1><a href="../KOR/changelog.html#beta_10">2009/03/18 Version 2.00 beta.10</a><BR><a href="../KOR/changelog.html#beta8_2">2009/03/18 Version 2.00 beta.8.2</a><BR><a href="../KOR/changelog.html#beta8_1">2009/03/18 Version 2.00 beta.8.1</a><BR><A href="../KOR/changelog.html#beta8">2009/03/18 Version 2.00 
+beta.8</a><BR><A href="../KOR/changelog.html#beta7">2009/03/13 Version 2.00 beta.7</a><BR><A href="../KOR/changelog.html#beta6_1">2009/03/07 Version 
+2.00 beta.6.1</a><BR><A href="../KOR/changelog.html#beta6">2009/03/06 
+Version 2.00 beta.6</a><BR><A 
+href="../KOR/changelog.html#beta5">2009/01/16 
+Version 2.00 beta.5 번역 및 스킨제작자용.</a><BR><A 
+href="../KOR/changelog.html#beta4">2009/01/12 Version 2.00 beta.4</a><BR><A 
+href="../KOR/changelog.html#beta3_1">2009/01/09 Version 2.00 
+beta.3.1</a><BR><A href="../KOR/changelog.html#beta3">2009/01/09 Version 
+2.00 beta.3</a><BR><A href="../KOR/changelog.html#beta2">2009/01/04 Version 
+2.00 beta.2</a><BR><A href="../KOR/changelog.html#beta1">2008/12/31 Version 
+2.00 beta.1</a><BR></FONT>    
+    <HR align=center width="100%" SIZE=2>
+    <p>&nbsp;
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="209">2010/01/01 Version 2.09 Stable</a><BR><BR>
+시스템부분        <UL>
+        <LI>CycloDS등의 닥터에서 비정상인 섹터를 읽어들일 때 문쉘이 정지하던 호환성 문제를 수정하였습니다.
+        <LI>디스크의 읽기/쓰기 캐쉬에 인터럽트(IRQ)거는 것을 금지함으로 발생하던 소리중단이나 노이즈 현상을 수정하였습니다.
+        <LI>보다 안전하게 인터럽트(IRQ)를 걸거나 해제하게 수정하였습니다.
+        <LI>디스크 엑세싱의 병목현상을 제거하였습니다.
+        <LI>Norton Internet Security 프로그램에 보안경고가 되는 문제를 수정하였습니다.</UL>
+    <P>파일목록&nbsp;부분
+    <UL style="LIST-STYLE-TYPE: disc">
+        <LI>확장자가 없거나 0바이트 파일은 표시하지 않도록 수정하였습니다.
+        <LI>SELECT 버튼의 선택메뉴에 오프 타이머를 추가하였습니다.
+        <LI>moonshl2.ini의 [FileList]섹션에 PowerOffTimerWhileNoInput를 추가하였습니다. 파일목록에서 입력이 
+없을 경우 꺼질때까지의 시간을 설정할 수 있습니다.</UL>
+    <P>음악재생도구 부분
+    <UL>
+        <LI>ROMEO2의 음성출력이 좌우가 바뀌어 출력되던 버그를 수정하였습니다.
+        <LI>음악재생목록&nbsp;파일에서 A버튼을 길게 눌러도 음악파일과 같이 플레이어가 작동되도록 하였습니다.
+        <LI>M4A 파일의 모노로된 음성을 재생할 수 없지만 조작 불능이 되지 않게 하였습니다.
+        <LI>TTA 파일의[8bits/1ch]과 [8bits/2chs]로 [16bits/1chs]을 재생할 수 없던 버그를 수정하였습니다.
+        <LI>moonshl2.ini의 [FileList]섹션의 BButtonToFolderUp가 1 일때 R버튼을 세번 클릭하여 음악을 
+멈추도록&nbsp;하였습니다.</UL>
+    <P>문서편집기부분
+    <UL>
+        <LI>한줄로만 된 파일을 읽지 못하던 버그를 수정하였습니다.
+        <LI>NULL문자를 포함한 파일을 읽지 못하던 버그를 수정하였습니다.</UL>
+    <P>&nbsp;기타
+    <UL style="LIST-STYLE-TYPE: disc">
+        <LI>1.6버전때부터 사용되던 DPGEnc를 DPGTools_AltVer 폴더로 옮겼습니다.
+        <LI>초기에 나온 닌텐도로 문서를 열었을 때 클리어타입 폰트가 제대로 동작하지 않던 버그를 수정하였습니다.</UL>    <HR align=center width="100%" SIZE=2>
+    <P><a name="208">2009/12/02 Version 2.08 Stable</a><BR><BR>
+시스템부분        <UL>
+        <LI>문쉘 시작시에 사용할 수 있는 암호 기능이 추가되었습니다. '/misctools/SetPassword/SetPassword.exe'를 
+참조해 주세요. 이기능은 사용자의 편리성을 위한 기능일 뿐입니다.
+        <LI>MyMeloDS 등을 위해 4032에서 4077KB 크기의 NDS 파일 실행이 가능하게 되었습니다.
+        <LI>'/moonshl2/moonshl2.ini' 각 항목에 간단한 영어설명을 곁들였습니다.(한글 설명을 붙이도록 하겠습니다.)
+        <LI>DS 브라우저의 확장 메모리를 인식하지 못하던 버그를 수정하였습니다.</UL>
+    <P>파일목록&nbsp;부분
+    <UL style="LIST-STYLE-TYPE: disc">
+        <LI>moonshl2.ini 의&nbsp; [DiskAdapter] 섹션에 파일의 속성에 따라 파일의 표시유무를 설정하는 
+'HideAttribute_Archive, HideAttribute_Hidden, HideAttribute_System, 
+HideAttribute_ReadOnly' 를 추가하였습니다.</UL>
+    <P>음악재생도구 부분
+    <UL>
+        <LI>DPG 동영상 플레이어와 거의 비슷한 수준의 음악 플레이어를 추가하였습니다. MP3 파일목록에서 A버튼을 길게 누르시거나 음악 재생중 
+SELECT버튼을 눌러 선택하실 수 있습니다.
+        <LI>'WMA/32kbps/22kHz' 형식의 음악이 제대로 재생되지 않던 버그를 수정하였습니다.
+        <LI>moonshl2.ini 의[PlayList] 섹션에 'IgnorePlayMode_AlwaysOne_FromUserRequest'를 
+추가하였습니다. 이 셋팅을 1로 하면 음악 재생중 이전곡/다음곡을 선택할 때 재생목록을 무시하고 항상 이전곡/다음곡으로 이동하게 
+됩니다.
+        <LI>재생모드가 한 곡 반복재생일&nbsp;때 NSF/GBS/HES/AY/SAP/KSS/SPC등의 총연주 시간을 제대로 인식하지 못했을 시, 자동으로 
+무한반복 재생을 하도록 하였습니다. 항상 무한반복 재생을 하려면&nbsp;moonshl2.ini의 [SPCPlugin]섹션의 
+DefaultLengthSec과 [GMEPlugin]섹션의 DefaultLengthSec을&nbsp;0으로 변경해 주시기 
+바랍니다.<BR></UL>
+    <P>문서편집기부분
+    <UL>
+        <LI>문서편집기의 수기입력 모델을 조정하였습니다.</UL>    <HR align=center width="100%" SIZE=2>
+    <P><a name="207">2009/11/12 Version 2.07 Stable</a><BR><BR>
+시스템부분        <ul>
+        <li>환경설정에서 &quot;문쉘 구동 후 최근 사용파일 다시시작&quot;을 설정하지 않으시면 문쉘 구동 이력을 저장하지 않도록 수정했습니다.
+        <li>짧은 파일명의 체크섬 계산 오류를 수정하였습니다. 예를 들어 'S3400074.JPG'등의 파일명 식별을 실패하던 버그등이 수정되었습니다.
+        <li>음악과 동영상 재생시 개별적으로 볼륨을 조절할 수 있도록 수정하였습니다.
+</ul>
+    <p>홈브류부분
+    <ul>
+        <li>특수한 DLDI를 사용하는 홈브류의 경우 ARM7에도 DLDI 패치를 적용하도록 수정하였습니다.
+        <li>iQue에서 문쉘을 사용하여 홈브류를 실행할 때 터치 패널이 정상적으로 작동하지 않던 버그를 수정하였습니다.
+        <li>상업용 NDS파일을 실행했을 때 에러 메시지는 출력하지만 멈추지 않도록 수정하였습니다.
+        <li>&quot;GBALdr&quot;을 상업용 NDS파일로 잘못 인식해서 실행하지 못하던 버그를 수정하였습니다.
+        <li>3072KB에서 4032 KB까지의 용량이 큰 NDS파일을 실행할 수 있게 되었습니다. 최소의 NDS로더를 사용합니다만 3 MB 이하의 NDS파일은 지금까지와 같이 직접 실행합니다.
+</ul>
+    <P>파일목록부분
+    <ul>
+        <li>moonshl2.ini의[FileList]섹션에 화면 보호기의 사용여부를 설정할 수 있는 &quot;EnabledScreenSaver&quot; 옵션을 추가하였습니다.
+        <li>moonshl2.ini의[M4APlugin]섹션에 M4A 앨범아트의 배경색을 지정하는 ArtWorkBGColor 옵션을 추가하였습니다. (RRGGBB의 순서로 색을 설정하시면 됩니다.)
+        <li>moonshl2.ini의[M4APlugin]섹션의 ShowCoverImage를[FileList]섹션으로 이동하고 jacket.bmp/mp3 앨범아트/M4A 앨범아트를 ON/OFF 할 수 있도록 수정하였습니다. (이 부분은 설정의 편의를 위해 현재 문라이트씨와 환경설정이나 화면보호기 설정에서 선택할 수 있도록 수정을 하는 방향으로 협의중입니다만, 이 경우 모든 번역자분들에게 양해를 구해야 되는 관계로 시간이 걸릴 듯 합니다.)
+        <li>moonshl2 폴더내에서 START 버튼을 사용한 파일 삭제가 되던 버그를 수정하였습니다. (이 버그에 대해 이메일 주셨던 분께 감사드립니다. 문라이트씨도 나도 전혀 몰랐었음.)
+</ul>
+    <P>문서편집기부분
+    <ul>
+        <li>북마크 파일이 있으면 문서편집기가 열리지 않던 버그를 수정하였습니다.
+        <li>문서 인코딩 방식 판별 기능을 대폭 향상시켰습니다.
+        <li>L+X/Y로 화면밝기를 변경할 수 있도록 하였습니다.
+        <li>textedit.ini의[System]섹션에 작동효과음등의 볼륨을 설정하는 SoundEffectVolume 옵션을 추가하였습니다.
+</ul>
+    <p>기타부분
+    <ul>
+        <li>DPG 재생시 자주 음성이 멈추던 버그를 수정하였습니다.
+</ul>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="206">2009/11/05 Version 2.06 Stable</a><BR><BR>
+        <UL style="LIST-STYLE-TYPE: disc">
+        <LI><FONT color=#e31600>간편한 설치 프로그램 추가</FONT>
+        <LI><FONT color=#e31600>EZ3in1에 대한 지원&nbsp;부분 수정(EZ3in1+ 지원)</FONT>
+        <LI><FONT color=#e31600>moonshl2.ini 의 system 섹션에 VRAMCacheEnabled 
+추가</FONT>
+        <UL>
+            <LI>EZ5나 SCDSONE 사용중 멈춤현상이 자주 발생한다면
+            <LI>VRAMCacheEnabled=0 으로 바꾸시기 바랍니다.</UL>
+        <LI><FONT color=#e31600>파일목록, 텍스트리더, 이미지뷰어에서 터치를 사용한<BR>부드러운 스크롤 지원</FONT>
+        <LI><FONT color=#e31600>EXIF 이미지를 불러들일 때 발생하던 멈춤현상 수정</FONT>
+        <LI><FONT color=#e31600>텍스트에디터 통합지원</FONT>
+        <UL>
+            <LI>커서를 문서파일로 옮긴 후 A버튼을 길게누름
+            <LI>128Kbyte가 넘는 문서는 지원하지 않음</UL></UL>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="205">2009/07/25 Version 2.05 Stable</a><BR><BR>M4A/JPG, M4A/PNG, MP3/JPG, MP3/PNG를 위한 아트워크 이미지 지원        (M4A나 MP3 파일에 앨범쟈켓 이미지가 포함되어 있을 경우 이미지를 <BR>
+    보여주는 기능)<BR>
+    파일 목록창의 터치 감도 조절<BR>
+    사이즈가 큰 이미지와 문서 열기 속도 향상<BR>
+    문서보기에 부드러운 스크롤 기능 추가<BR>
+        <HR align=center width="100%" SIZE=2>
+    <P><a name="204">2009/07/19 Version 2.04 Stable</a><BR><BR>잘못 적용되었던 스킨을 수정        &quot;. ay/.it/.xm&quot; 파일을 열지 못하던 버그를 수정<BR>
+    사용자 인터페이스를 일부 수정<BR>
+    &quot;MonoBlack.skn&quot; 을 테스트로 추가<BR>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="203">2009/07/14 Version 2.03 Stable</a><BR><BR>
+        <UL style="LIST-STYLE-TYPE: disc">
+        <LI>메모리 절약과 고속실행을 위한 플러그 인 시스템 갱신을 위해 수백 곳에 이르는 코드 수정
+        <LI>&nbsp;M4A 파일과 M4A 쟈켓이미지 서포트
+        <LI>UI 일부 조정
+        <LI>moomshl2.ini 사용을 통한 내부 폴더 변경 및 조정</UL>
+    <P>불행히도 이번 버전을 패킹하면서 네오스킨을 기본스킨으로 사용하면서<BR>
+    '*.ay/*.it/*.xm' 등의 파일을 읽지 못하는 버그가 발생을 했습니다.<BR>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="202">2009/06/12 Version 2.02 Stable</a><BR><BR>
+    START/SELECT 버튼 수정<BR>
+    colortbl.ini 파일에 &quot;ID3TagProgressBarAdd=404040&quot; 추가<BR>
+    misctools 에 &quot;MakeBGPack&quot; 추가<BR>
+    화면보호기 옵션에 ID3 Tag 보이기 추가<BR>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="201p">2009/0/03 Version 2.01 Patch</a>
+    <P>2.01 업데이트 이후 START/SELECT 키 반응에 문제가 있다는 의견에 따라 패치버전 발표
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="201s">2009/06/02 Version 2.01 Stable</a><BR><BR>
+    DPG고속처리 옵션을 끈 채 탐색을 할 때 #15203에러와 함께 정지하는 버그 수정。<BR>
+    Additional 폴더에 한곡 재생이후 정지하게 하는 옵션파일인 StpEvery.txt 추가。<BR>
+    Exif2.1/DCF 규격 지원。<BR>
+    첫 번째 문쉘 구동시에 사용언어를 선택하도록 수정。<BR>
+    외부 스위치의 키 매핑에러 수정。<BR>
+    재시작(Resume)시 실패하던 버그 수정。<BR>
+    DSi를 자동인식해 조정하게 함。<BR>
+    2kbyte 클러스터로 포맷 된 FAT16 메모리에서 실행 시 로그파일이 열리지 않던 버그 수정。<BR>
+    Additional 폴더에 SELECT 버튼 길게누를 때 화면캡처 기능을 끄는 옵션파일인 DisScCap.txt 추가。<BR>
+    <HR align=center width="100%" SIZE=2>
+    <P><a name="200">2009/05/02 Version 2.0 Stable</a><BR><BR>
+    오랫동안 기다려 오셨습니다.<BR>
+    드디어 오늘 문라이트씨께서 문쉘2.0의 안정화 버전을 배포하셨습니다.<BR>
+    새로운 수정사항에 대한 언급은 없었습니다. 이메일 문의에도 별다른<BR>
+    변경사항은 없다고 했습니다.<BR>
+    <HR align=center width="100%" SIZE=2>
+    <p><a name="beta_12">2009/04/25 Version 2.00 beta.12</a><BR><BR>DPG플레이: 
+일시정지중 탐색기능을 사용해도 일시정지 상태를 유지하도록 수정。<BR>시스템: 
+DSTT용 소프트리셋 파일 추가。<BR>파일목록: 
+셔플 플레이 지원。（DPG재생은 랜덤재생을 사용합니다）<BR>파일목록: 
+각각의 재생모드로 재생 후 반복/정지/전원끄기를 선택할 수 있도록 함。<BR>파일목록: ID3TagV1의 마지막 문자가 표시되지 않던 버그 수정。<BR>문서보기: 옵션설정 화면의 항목위치를 융통성있게 개선。<BR>
+시스템: 
+추가기능의 POffMEnd.txt 삭제。<BR>시스템: 구형 DS에서 화면밝기 설정이 비정상이던 버그 수정。<BR>화면보호기: 
+대기시간(화면보호기 시작까지의 시간）을 변경할 수 있도록 수정。<BR>화면보호기: 
+시계표시 대신에 화면을 끌 수 있도록 수정。<BR>화면보호기: 요일을 표시하도록 수정。<BR>
+스킨파일: MP3Cnt_p4_random.png 를 
+MP3Cnt_p4_shuffle.png 로 변경。<BR>스킨파일: Custom_BG.bmp 
+의 크기를 256x384픽셀에서 256x512픽셀로 변경。<BR>언어파일: 
+SSC_ScreenSaverTimeOutSecTitle, SSC_ScreenSaverTimeOutSec10sec, 
+SSC_ScreenSaverTimeOutSec30sec, SSC_ScreenSaverTimeOutSec60sec, 
+SSC_ScreenSaverTimeOutSecOff 에 실제기능 추가。<BR>언어파일: FL_Popup_PlayMode_Random 을 
+FL_Popup_PlayMode_Shuffle 로 변경。<BR>언어파일: CS_PlayListEndTitle, CS_PlayListEndLoop, CS_PlayListEndStop, CS_PlayListEndPowerOff를 추가。<BR>스킨파일: SCN_WeekStr.png, SCD_WeekStr.png, SCE_WeekStr.png 추가。    
+<HR align=center width="100%" SIZE=2>
+<a name="beta_11">2009/04/24 Version 2.00 beta.11</a><BR><BR>시스템: 보다 안전하고 확실한 부트로더를 만들었습니다.<BR>파일목록: MP3/ID3TagV2.2/V2.3에 대응합니다(한글 ID3Tag 지원됨). 재생시간이 제대로 표시되지 않고 잡음이 들어가던 부분 수정. APIC(커버 이미지)지원 안됨.<BR><BR>언어파일: TCS_DetectCharCode_ANSI, TCS_DetectCharCode_UTF8, 
+TCS_DetectCharCode_SJIS, TCS_DetectCharCode_UTF16BE, TCS_DetectCharCode_UTF16LE 
+삭제.<BR>언어파일: DV_Popup_Pause_Play, DV_Popup_Pause_Pause, 
+DV_Popup_PreviousFile, DV_Popup_NextFile, DV_Popup_Volume, DV_Popup_Seek, 
+DV_Popup_BacklightLevel 추가.<BR>스킨파일: mp_modelbl_allrep.png, 
+mp_modelbl_random.png, mp_modelbl_repeat.png 삭제.<BR>언어파일: 
+SSC_ScreenSaverTimeOutSecTitle, SSC_ScreenSaverTimeOutSec10sec, 
+SSC_ScreenSaverTimeOutSec30sec, SSC_ScreenSaverTimeOutSec60sec, 
+SSC_ScreenSaverTimeOutSecOff 추가. (아직 실행안됨.)<BR><HR align=center width="100%" SIZE=2>
+<a name="beta_10">2009/04/13 Version 2.00 beta.10</a><BR><BR>문서보기: 현재행 표시가 100%까지 표시 안되던 버그 수정.<BR>파일목록 &amp; 문서보기: 반복 스크롤 추가.<BR>파일목록: 파일을 이동한 직 후 플레이목록을 읽어들이면 에러(#10802)를 내며 정지하던 버그 수정.<BR>이미지보기: 커서 키 이동 속도를 높임.<BR>DPG 플레이어: 
+EZ5에서 DPG 파일이 재생되지 않던 버그 수정.<BR>시스템: 구동된 MoonShell2 버전과 moonshl2 폴더의 버전이 같은지 검사함.<BR>DPG 플레이어: 오래된 인코딩 프로그램으로 만들어진 DPG 파일 재생시 에러(#16001)를 내며 정지하던 버그 수정.<BR>파일목록: 
+MoonMemo 폴더가 없을 때 파일목록에서 L/R 버튼을 누르면서 화면을 터치할 때 이상동작이 발생하던 버그 수정.<BR>메모장목록: START 버튼을 길게 누르면 파일을 삭제할 수 있도록 수정.
+<BR>스킨: MemoList_BG.bmp 
+추가.<BR>DPG 인코더: dpgenc.exe 의 안정성 향상시킴. 종료되 버리는 상황이 줄어든 것으로 생각중
+.<BR>DPG 인코더: 인코딩을 할 때 같은 이름의 사진파일이 있으면 쟈켓이미지로 추가함.<BR>파일목록: MP3 
+콘트롤 바의 이전/다음곡 버튼을 길게 누르면 탐색이 되도록 함.<BR>MiscTools: JacketImageConverter 
+추가. 음악파일에 쟈켓사진을 추가할 수 있게함.<BR>시스템: 
+한글 공식지원함.<BR>MiscTools: ThumbnailIconMaker 
+추가. 이미지파일에 썸네일 아이콘을 추가할 수 있게함.<BR><BR>
+SSC_ScreenSaverXXX, SSC_ScreenSaverBGXXX, ICS_StartPosXXX, 
+TCS_TopScrModeXXX의 라디오체크 버튼이 옵션글에 따라 재배치되도록 함.<BR>언어파일에 MemoList_Title, MemoList_Help0, MemoList_Help1, 
+MemoList_Help2, MemoList_Help3, TV_Popup_MoveToTop, TV_Popup_MoveToLast, 
+FL_Popup_NotFoundMoonMemoFolder 추가.<BR>언어파일에서 Setup_LRClickLongSeek, 
+CS_LRClickLongSeek, CS_DisableLRKeyOnPanelClosed 삭제.<BR>언어파일에 
+CS_LRKeyLockTitle, CS_LRKeyLockAlwayOff, CS_LRKeyLockRelationalPanel, 
+CS_LRKeyLockAlwayOn 추가.<BR><DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <p><a name="beta8_2">2009/03/23 Version 2.00 beta.8.2</a>
+    <p>ROMEO 호환코드 삽입 (이퀄라이저 셋팅은 터치화면의 네귀퉁이에 있습니다&nbsp;- 오랜 시간 재생중 일어나는 스킵현상은 아직 고치지 못했습니다
+)<BR>이미지보기에서 위화면에 보여지는 파일숫자가 항상 
+&quot;1/0&quot; 로 보여지던 것 수정<BR>재생도중 이전곡이나 다음곡을 선택했을 때 플레이어 아이콘이 변하지 않던 것 수정
+
+<BR> DPG 영화재생중 파워 LED를 끄게함, 일시정지시에는 깜박이게 함
+<BR>메모장에 지우개와 되돌리기 기능 추가
+<BR>화면보호기 설정이 음악을 연주하고 있지 않을 때만 나오게 수정
+<BR>파일목록의 순서와 음악파일 연주순서가 다르던 점 수정
+<BR>긴파일이름일때 파일정보와 겹쳐지던 문제 수정
+
+
+    <HR align=center width="100%" SIZE=2>
+    <p><a name="beta8_1">2009/03/18 Version 2.00 
+beta.8.1</a><BR><BR>ROMEO2를 일부 수정。사용법은 beta.8과 같음。<BR>
+    <HR align=center width="100%" SIZE=2>
+    <p><a name="beta8">2009/03/18 Version 2.00 
+beta.8</a><BR><BR>몇단계 아래 폴더(또는 아주 긴 폴더명)로 이동을 하므로써 긴&nbsp;파일명을 가진 파일을 재생할 때 크기경고(#13505）를 출력하며 멈추던 버그 수정。<BR>느린속도 문제로 환경 설정 보관파일의 ZLIB 압축을 안하게 설정。<BR>AM/PM 표시가 세계표준과 다르던 12시간 표시사항을 수정。<BR>DPG파일 재생중 환경설정을 하려고 하면 DTCM 스택오버플로우 （#11701）와 함께 멈추던 버그 수정。<BR>[Launch_NotFoundRelationalFile]에서 다국언어 지원을 안하던 버그 수정。<BR>화면보호기의 시계설정을 24시간으로 설정할 수 있는 옵션
+추가。<BR>파일목록에서
+각파일의 우측에 파일정보(연주시간등)를 표시하지 않는 옵션 추가。<BR>언어파일에 FL_Popup_???, IV_Popup_???, TV_Popup_???를 추가。<BR>파일목록에서 B버튼 동작을 이전폴더로 돌아가기에서 음악재생 멈추기로 수정, 이전과 같은 동작을 원하면 /misctools/Additional/BBtn_FUP.txt를 참조해 주세요。<BR>    
+
+    <HR align=center width="100%" SIZE=2>
+    <p>2009/03/13 Version 2.00 
+beta.7<BR><BR>일본어 스킨 이외의 타 언어용 스킨파일 수정。<BR>화면보호기 설정화면의 메모리 손실발생 버그&nbsp;수정。<BR>소프트 리셋을 포함한 홈브류 프로그램들이 실행되지 않던 버그 수정。<BR>MP3의 지연없는 연속연주 지원(완벽하지 않음 마지막에 약 0.026초 정도 짤림현상 있음。<BR>MP3를 들으면서 문서보기나 이미지보기를 동시에 할 때 다음 음악이 재생되지 않던 버그 수정<BR>이미지보기나 문서보기등에서 나온뒤 B버튼(BBtnStop.txt를 사용)으로 음악을 정지하지 못하던 버그 수정。<BR>음악 재생도중 파일이 많은 폴더를 열면 음악이
+제대로 나오지 않던 버그 수정。<BR>GBA 카트리지에서 읽어들일때 메모리 충돌로 제대로 읽어드리지 못하던
+버그 수정（EZ4 와 SC가 해당）。<BR>EZV에서 화면왼쪽에
+검은색 상자가 나타나던 버그 수정。<BR>재생목록의 파일을 전부 삭제했을 때 메모리 손실이 발생하며 멈추던 버그 수정。<BR>조작음 사용시 잘못된 변수를 호출하던 버그 수정。<BR>사용자 그리기 화면의 NULL 포인터 액세스가 있던 버그 수정。<BR>폴더명이나 파일명의 앞글자에 「蟲」을 사용시 디스크 검사가 정지하고 폴더나 파일을 열지 못하던 버그 수정。<BR>R4, AK2, AKRPG, SCDSONE 등을 위한 DLDI 패치내역 수정。<BR>파일목록의 각 파일정보창과 재생아이콘이 겹치던 버그 수정。<BR>언어파일에 
+SSC_Use24hFormat, CS_EnableFileInfo 추가。현재는 사용하지 않음。
+
+    <HR align=center width="100%" SIZE=2>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta6_1">2009/03/07 Version 2.00 beta.6.1</a><BR><BR>메모리 체크기능 충돌로 인해 일부 닥터가 
+정상동작 하지 않던 버그 수정。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta6">2009/03/06 Version 2.00 beta.6</a><BR><BR 
+style="">&bull;오디오파일 관련<BR>플레이리스트 지원(Winamp5 와 WMP9의 플레이 리스트 지원)<BR>MP1/MP2 재생불가 버그 수정<BR>NSF/GBS/HES/AY/SAP/KSS 호환성 추가( 선두 트랙만 가능)<BR>TTA 재생가능<BR>M4A/AAC/WMA 호환성 추가（비암호파일만）<BR>MID/RCP/R36 호환성 추가<BR>MOD 플러그인의 메모리 누출 버그 수정<BR>MP3 이외의 파일도 ID3Tag 나 파일정보、연주시간 등을 표시하도록 수정<BR>음악파일 정보와 연주시간 표시가 겹치는 버그 수정<BR>MP3 연주시간 측정을 빠르게 수정<BR>음악을 들으면서 이미지와 문서파일 보기를 동시에 할 수 있도록 수정<BR>사운드처리를 어셈블러 수준에서 최적화<BR>M4A/AAC 파일 고속 재생옵션 추가 (탐색 불가)
+    <P style="MARGIN-BOTTOM: 12pt">&bull;그 외 파일 포맷 관련<BR>프로그래시브 모드 Jpeg 호환성 추가<BR>약 3648x2736 픽셀（약 1000만 화소）까지의 이미지파일(GIF 포맷은 제외）을 열도록 수정<BR>문서파일의 용량제한을 없앰(약 8M 까지 동작확인)<BR>자동 낱말 맞추기 기능 수정<BR>클리어타입 폰트의 굵기(진함)를 조절할 수 있도록 수정
+    <P style="MARGIN-BOTTOM: 12pt">&bull;기능관련<BR>파일폭록에서 폴더숨기기 기능 추가<BR>파일목록의 각 파일에 정보를 표시하도록 수정(MP3, Jpeg, BMP, PSD, DPG 만）<BR>이미지파일의 표시 시작위치를 선택할 수 있도록 추가(왼쪽상단, 오른쪽상단, 왼쪽하단, 오른쪽하단)<BR>R+A 버튼으로 폴더내의 전곡재생 플레이리스트를 작성해 재생하도록 함<BR>L+R+A 버튼으로 메모리내의 전곡재생 플레이리스트를 작성해 재생하도록 함<BR>L/R 버튼을 길게누름으로서 도움말을 표시하도록 함<BR>문서파일을 여는 도중 B 버튼으로 취소할 수 있도록 함<BR>START 버튼을 길게누름으로서 파일을 삭제하도록 함(휴지통폴더로 파일이동)
+    <P style="MARGIN-BOTTOM: 12pt">&bull;시스템관련<BR>개발자 홈페이지 배포판의 폴더명에 일본어 사용 안함。<BR>스킨 캐쉬 시스템을 수정 보다 작은 확장 메모리에서도 작동하도록 효율성을 높임。<BR>슬롯2용의 GBA 확장팩 메모리를 사용할 수 있도록 수정 (DS브라우저 메모리 확장 카트리지、EZ3in1、SuperCard、범용 메모리 등)。（범용 메모리 외에는 테스트 안함）<BR>로그파일 출력코드의 치명적 버그 수정으로 닥터 호환성 향상。<BR>이상 메모리 검출기능을 외부 플그러인에도 적용하도록 함。<BR>스왑파일의 사이즈 조절로 디스크용량 확보。<BR>디스크의 빈 공간이 극히 작을 경우 나타날 가능성이 있던 디렉토리 엔트리 파괴버그를 수정。<BR>플러그인을 실행하다 에러가 발생할 경우 다음 번 실행 시 자동 실행하지 않도록 수정。<BR>설명서 등을 HTML 방식으로 교체。<BR>터치패널 처리를 libnds-1.3.1 
+에 준해 수정。<BR>DSTT 표준 DLDI 드라이버로도 SDHC 를 정상처리 할 수 있도록 함。(Thank you ???)<BR>부가기능에&nbsp; 
+NoGBAMem.txt 을 추가。<BR>화면보호기의 종류를 늘리고 사용자의 배경화면을 사용할 수 있도록 함。<BR>ID3Tag표시하지 않음 옵션이 제대로 동작하지 않던 버그 수정。
+    <P style="MARGIN-BOTTOM: 12pt">&bull;자원관련<BR>언어파일에&nbsp; 
+ICS_StartPosXXX... 추가。<BR>언어파일에&nbsp; 
+FL_HelpLeft_XXX..., FL_HelpRight_XXX... 추가。<BR>언어파일에&nbsp; 
+FL_DeleteFileDialog_XXX...&nbsp; 추가。<BR>스킨파일에&nbsp; 
+MemoEdit_XXX...&nbsp; 추가。<BR>색 정의목록에 MemoEdit 섹션추가。<BR>언어파일에&nbsp; 
+ME_HelpX&nbsp; 추가。<BR>언어파일에&nbsp; 
+MemoEdit_XXX... 추가。<BR>언어파일에서 TCS_ClearTypeFont&nbsp; 삭제。<BR>언어파일에&nbsp; 
+TCS_ClearTypeFontTitle, TCS_ClearTypeFontNone, TCS_ClearTypeFontLite, TCS_ClearTypeFontNormal, TCS_ClearTypeFontHeavy 추가。<BR>언어 파일에서&nbsp; 
+TV_PRG_LoadSkinData&nbsp; 삭제。<BR>색 정의목록 FileList 섹션에서 ID3TagWhiteModeText, 
+ID3TagBlackModeText 삭제。<BR>색 정의목록 FileList 섹션에 ID3TagText 
+추가。<BR>언어파일에서 CS_ScreenSaver_BlackMode, TCS_ScreenSaver_BlackMode 삭제。<BR>언어파일에 TCS_ScreenSaverTitle, TCS_ScreenSaverNormal, TCS_ScreenSaverDigital, TCS_ScreenSaverExtend 추가。<BR>언어파일에 SSC_Title, SSC_ScreenSaverTitle, 
+SSC_ScreenSaverNormal, SSC_ScreenSaverDigital, SSC_ScreenSaverExtend, SSC_ScreenSaverBGTitle, SSC_ScreenSaverBGSkinDefault, SSC_ScreenSaverBGTopScreen, SSC_ScreenSaverBGBottomScreen, SSC_ShowID3Tag, SSC_HideScreenSaverCustom, SSC_TimeoutMsg, SSC_Back 
+추가。<BR>언어파일에서 CS_ShowID3Tag 
+삭제。<BR>색 정의목록에 ScreenSaverCustom 섹션 추가。<BR>스킨파일에서 SCW_BG.bmp, 
+SCW_CalenderFont.png, SCW_CalenderTodayFont.png, SCW_Font16.png, SCW_Font24.png, 
+SCW_Font56.png, SCB_BG.bmp, SCB_CalenderFont.png, SCB_CalenderTodayFont.png, 
+SCB_Font16.png, SCB_Font24.png, SCB_Font56.png 삭제。<BR>스킨파일에 SCN_BG.bmp, 
+SCN_CalenderFont.png, SCN_CalenderTodayFont.png, SCN_Font16.png, SCN_Font24.png, 
+SCN_Font56.png, SCD_BG.bmp, SCD_CalenderFont.png, SCD_CalenderTodayFont.png, 
+SCD_Font16.png, SCD_Font24.png, SCD_Font56.png, SCE_BG.bmp, 
+SCE_CalenderFont.png, SCE_CalenderTodayFont.png, SCE_Font16.png, SCE_Font24.png, 
+SCE_Font56.png, 추가。
+    <DIV class=MsoNormal style="text-align:center; margin-bottom:12pt;" 
+align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta5">2009/01/16 Version 2.00 beta.5 번역 및 
+스킨제작자용</a>.<BR><BR>스킨 포맷과 언어의 내역이 거의 마무리 되었습니다。<BR>.SPC 파일이 재생되지 않던 버그를 고쳤습니다(음향 품질은 조금 떨어졌습니다)。<BR>버튼 제어 부분에 있어 MP3 탐색키를 L/R 
+두번클릭 후 계속누르기로 
+바꿨습니다(기존은 L/R 한번클릭 후 계속누르기 였습니다)。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta4">2009/01/12 Version 2.00 beta.4</a><BR><BR>EZ5i에서 동작안하던 버그 수정。<BR>초기화되지 않은 변수사용으로 인해 발생되던 
+불안정요소 수정。<BR>NES 
+플러그인 포함(.NES 게임을 문쉘2에서 직접 하실 수 있습니다)。<BR>IPK 
+파일에 큰 크기의 사진이 포함되 있을 경우 발생하던 메모리 부족현상 수정。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta3_1">2009/01/09 Version 2.00 beta.3.1</a><BR><BR>IPK 파일에 커서가 올라갈 경우 
+파일의 첫번째 이미지가 프리뷰로 보이게 함。<BR>스택 오버플로우 검사 개선。<BR>DSTT 
+소프트리셋에 관한 문제점을 이메일로 
+받은 후 TTIO.nds를 배포에서 제외함。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta3">2009/01/09 Version 2.00 beta.3</a><BR><BR>동영상 재생중 닌텐도의 폴더를 덮었을 경우 동영상 재생이 일시정지 할 수 
+있도록 사용자설정 기능 추가。<BR>문서 파일 리더에 클리어타입 폰트를 사용할 수 있도록 추가(기본으로는 사용안함)。<BR>auto-DLDI 패치기능으로 패치되지 않는 닥터들을 
+위한 DLDI 패치툴을 추가。<BR>문쉘2를 시작할때 
+메모리 체크 추가(GUID 체커)。<BR>플러그인 스펙 추가 점검 및 메모리 사용량 감소시킴。<BR>MOD 
+플러그인 추가(확신하지는 못하지만 아마도
+mod/it/mtm/s3m/xm/669/med/stm/amf/gdm/ult/uni/asy/imf/okt/stx 등의 파일을 지원할 것임)<BR>동영상 재생중 자동적으로 화면이 꺼지던 현상 제거(아래화면의 파일이름 
+바를 터치해서 끌 수 있음)。<BR>GIF 
+플러그인 추가。<BR>문쉘2에서 닥터의 펌웨어로 돌아갈 수 있음.&nbsp; 리셋 플러그인에 따라서 동작。
+    <P style="MARGIN-BOTTOM: 12pt">여러개의 키들이 동시에 눌렸을 경우 발생하던 이상동작 상황 수정。<BR>MDX 
+플러그인 추가되 있었으나 이번 배포에서 삭제함。<BR>스택 오버플로우시 MP3 
+디코더가 멈춰버리던 버그 수정。<BR>부트로더의 오류 수정.&nbsp; 문쉘2의 부트업 시간이 조금 줄어들었음。
+    <P style="MARGIN-BOTTOM: 12pt">이번에 추가한 추가 기능들: <BR>SwapDisp.txt: 문쉘2의 위 아래 화면 상태를 교환하기 위한 파일입니다。<BR>BBtnStop.txt: 오디오 파일의 재생도중 B 버튼을 누르면 
+재생이 정지될 것입니다。<BR>CarSuply.txt: 자동차 모드 지원。<BR>Clust64k.txt: 특정 MicroSD 메모리를 사용하기 위함(사용하기전 파일을 자세히 읽어볼 것)。<BR>ChkDskT1.txt: 상세한 DiskCheck 로그 생성(일반적으로 사용안함)。<BR>Ignore16.txt: 만약 사용하는 닥터가 FAT16으로 포맷된 
+메모리를 엑세스하지 못할경우 강제적으로 사용하게함(권장하지 않음)。<BR>UseM4A.txt: AAC/M4A 플러그인 사용을 가능하게 함. 
+대부분의 곡을 재생하지 못함。<BR>POffMEnd.txt: 재생목록의 마지막 오디오 파일을 재생한 후 닌텐도를 끔。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta2">2009/01/04 Version 2.00 beta.2</a><BR><BR>특정 확장자의 파일을 선택할 경우 사용할 외부 프로그램을 연개시켜 실행함(실행 후 문쉘2로 
+돌아올 수 없음)。 
+(/moonshl2/extlink/Extended Link 
+Readme.txt를 참조)<BR>사진 보기에 확장 연결 프로그램방식을 
+추가(.IPK 파일을 위함)。<BR>위 아래 화면상태 전환을 위해 &quot;Misc Tools/Extras&quot; 폴더에 기능 추가。<BR>어떤 방식으로 포맷되어 있는지에 
+상관없이 8GB 메모리에서 문쉘2 작동가능(Panasonic SD Formatter 사용 
+포맷권장)。<BR>이미지가 512 
+픽셀보다 작다면 파일목록에서와 같이 파일 런처에서 월페이퍼로 보여짐。<BR>터치판넬을 통해 문서를 스크롤 할 수 있음(스크롤 바가 아닌 
+곳에서 가능)。<BR>닌텐도 판넬이 덮였을 경우
+L/R 버튼을 사용 할지 여부를 결정하는 옵션 추가。<BR>&quot;Launch_Tab0_Launch.png&quot; 와
+&quot;Launch_Tab1_NDS.png&quot; 의 사이즈를 256x192 픽셀로 변경。<BR>SELECT 
+버튼을 3초 정도 누름으로서 스크린캡춰 가능(스킨을 만들때 유용함)。
+    <P style="MARGIN-BOTTOM: 12pt">문쉘2 시동시 A+B+L+R 키를 동시에 눌러 모든 셋팅을 초기화 할때 제대로 안되던 버그 수정。<BR>파일의 확장자를 숨기기로 지정했을때 폴더이름에 있는 확장자가 보이지 
+않던 버그 수정。<BR>지원되지 않는 파일이 목록에 보이던 버그 
+수정。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+    <P style="MARGIN-BOTTOM: 12pt"><a name="beta1">2008/12/31 Version 2.00 beta.1</a><BR><BR>메모리가 충분하기에 4kbyte 
+제한을 갖던 io_dldi.s의 제한 
+해제。<BR>문서 파일 리더의 기본 코드 셋팅 가능。<BR>문서 파일 리더 사용시 위 화면을 문서파일 
+보이기, 시간, 끄기 등으로 선택 가능。<BR>문서의 줄간격을 변경 가능。<BR>충전기가 연결되었을 경우 가능한 몇가지 기능 추가(어떤 것들을 포함할지 결정하지 못함)。<BR>L/R 
+기능들 추가(한번클릭, 클릭 후 계속 누르기 등)。 (KeyMap.txt 참조)<BR>부트업 과정 추가 수정으로 부트업 시간 단축。<BR>홈브류 프로그램을 로드할 때 문쉘2가 메모리를 안전하게 초기화 하도록 변경。<BR>슬라이드 콘트롤 제거와 키 누르기에 따른 새로운 핵심 코드 설계(핵심 
+코드를 제작하지는 못했음)。<BR>파일이 하일라이트 되어 있을때 다른 파일을 터치로 선택하더라도 터치 
+한번으로 파일 열기 가능(한번의 터치로 하일라이트 
+되게한 후 다시 한번 터치로 파일을 열던것에 반한 
+기능)。<BR>DiskCheck의 쓰기 테스트로 인해 닥터가 멈추던 버그 수정。<BR>디스크 캐쉬의 메모리 할당 이상으로 메모리(약 100KByte)가 버려지던 버그 수정。<BR>DPG 
+파일을 끝까지 재생하지 못하던가 때때로 멈춰버리던 버그 수정。<BR>홈브류 파일의 auto-DLDI 패치가 제대로 적용되지 않던 버그 
+수정。<BR>문서 파일 리더의 문자 코드 변환이 메모리 
+엑세스 위반을 하던 버그 수정。<BR>DPG 
+디코더의 YUV-RGB 변환 알고리즘 버그 
+수정。<BR>MP3 
+파일 재생중 닌텐도를 덮거나 열경우 NDS가 멈추던 버그 수정。<BR>새로운 환경설정을 저장할 경우 설정저장 파일이 
+훼손되던 버그 수정。<BR>사진 보기 모드에서 파일 목록 숫자가 다르게 
+보이던 버그 수정。<BR>초기 셋업 백그라운드 대신 시스템 메뉴 백그라운드가 보이던 버그 수정。
+    <DIV class=MsoNormal style="text-align:center;" align=center>
+        <HR align=center width="100%" SIZE=2>
+</DIV>
+</DIV>
+<p>&nbsp;
+</body>
+
+</html>

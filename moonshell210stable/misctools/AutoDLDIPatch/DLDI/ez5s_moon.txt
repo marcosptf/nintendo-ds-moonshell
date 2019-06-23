@@ -1,0 +1,15 @@
+
+Device: EZ Flash 5 (SD Card)
+DeviceID: EZ5S
+Version: 1.0
+Download: http://mdxonline.dyndns.org/
+Source: Open (Edit ok, License free)
+Author: Moonlight
+Orignal: io_ez5.cpp 2006/12/29 By EZ Group
+Request: farmware [The newest 06-12-27 loader V1.31]
+Read/Write: R/W
+Tested?: Yes
+Manufacturer: EZ-Group
+Manufacturer's Website: http://www.ezflash.cn/
+LastModified=2007-01-05
+

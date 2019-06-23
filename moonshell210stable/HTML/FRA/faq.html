@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT COLOR=#ff0000 SIZE=+1><B>Possesseurs de M3Perfect / M3Professional / M3Sakura, en cas de problème, veuillez contacter le constructeur.</B></FONT><BR>
+<BR>
+En cas de problème, veuillez d'abord à prendre connaissance de toute cette documentation. Si elle ne résout pas le problème, veuillez me contacter uniquement en dernier recours avec les renseignements suivants.<BR>
+<BR>
+ * Nom et photo numérique du linker (R4/DSTT, etc...) utilisé.<BR>
+ * Version du système et firmware utilisé.<BR>
+ * Description (avec photos si possible) du problème.<BR>
+ * Veuillez joindre le dernier fichier /moonshl2/logbuf.txt<BR>
+ * Détaillée autant que possible les symptômes du problème<BR>
+<BR>
+Ce n'est pas la peine de mettre ce que vous ne pouvez pas mettre mais essayez d'en fournir le plus possible.<BR>
+S'il vous plaît éviter autant que possible d'utiliser les adresses mail gratuite (Yahoo, etc) pour me contacter car j'ai configuré mon anti-spam de façon sévère.<BR>
+MoonShell est un logiciel gratuit sans but de profit. Je suis heureux lorsque je recevoir quelques encouragements.<BR>
+<BR>
+moonshellnds@gmail.com<BR>
+<BR>
+<HR>
+<FONT SIZE=-1>
+<A HREF="#giveup">J'en ai marre, j'abandonne !</A><BR>
+<BR>
+<LI><A HREF="#notwindows">Les outils fournis pour Windows ne peuvent pas démarrer.</A><BR></LI>
+<LI><A HREF="#notboot">Moonshell2 ne démarre pas.</A><BR></LI>
+<LI><A HREF="#notopenfile">Je ne peux pas ouvrir les fichiers.</A><BR></LI>
+<LI><A HREF="#notskin">Ce skin ne peut être appliqué.</A><BR></LI>
+<LI><A HREF="#notdpgplay">Je ne peux pas visionner cette vidéo.</A><BR></LI>
+<LI><A HREF="#notdpgenc">L'encodeur vidéo (dpgenc.exe) ne se lance pas.</A><BR></LI>
+<LI><A HREF="#notdpgconvert">Je ne peux pas convertir ma vidéo.</A><BR></LI>
+<LI><A HREF="#dpgslow">Il y a des ralentissements dans la vidéo.</A><BR></LI>
+<LI><A HREF="#dpgslip">Le son se décale par rapport à l'image après avoir bouger le curseur de la barre d'état.</A><BR></LI>
+<LI><A HREF="#notolddpgplay">Je ne peux pas visionner mes anciennes vidéo.</A><BR></LI>
+<LI><A HREF="#notfoundmoonshlfolder">Ça bloque sur le message "can not found moonshl folder." au démarrage.</A><BR></LI>
+<LI><A HREF="#notbootr4">Moonshell2 ne démarre pas sur mon R4.</A><BR></LI>
+<LI><A HREF="#notbootak2">Moonshell2 ne démarre pas sur mon Acekard 2.</A><BR></LI>
+<LI><A HREF="#notbootgbasc">Moonshell2 ne démarre pas sur mon SuperCard slot-2.</A><BR></LI>
+<BR>
+</FONT>
+<A NAME="giveup"><HR>
+<B>J'en ai marre, j'abandonne !</B><BR>
+<BR>
+dpgenc.exe a un bogue qui stoppe l'encodage peu avant de la fin.<BR>
+L'affichage des paroles d'un MP3 (lrc).<BR>
+Affichage des paramètres, équaliseur et édition de la playlist.<BR>
+Lecteur de texte vertical<BR>
+Le petit bruit juste après avoir joué un fichier sonore ou au démarrage de l'écran de veille.<BR>
+Lecture des fichiers vidéos autre que le DPG.<BR>
+<BR>
+<A NAME="notwindows"><HR>
+<B>Les outils fournis pour Windows ne peuvent pas démarrer.</B><BR>
+<BR>
+Les outils fournis avec MoonShell2 sont prévus pour Windows2000/XP/Vista.<BR>
+Je pense qu'ils ne fonctionnent pas sous Windows95/98/Me.<BR>
+<BR>
+<A NAME="notboot"><HR>
+<B>Moonshell2 ne démarre pas.</B><BR>
+<BR>
+Si votre disque a des cluster de 64Ko, veuillez vous référer aux fichiers Clust64k.txt et Ignore16.txt du dossier /misctools/Additional/.<BR>
+Si vous avez un vieux linker, il est possible que vous devez appliquer le patch DLDI avec /misctools/AutoDLDIPatch/AutoDLDIPatch.exe.<BR>
+Les linkers EZ4, R4SDHC et maintenant M3Sakura sont exclus.<BR>
+<BR>
+<A NAME="notopenfile"><HR>
+<B>Je ne peux pas ouvrir les fichiers.</B><BR>
+<BR>
+Veuillez vérifier que le format du fichier soit supporté par MoonShell2.<BR>
+Il est possible aussi que l'extension soit la même mais que le format soit différent.<BR>
+De plus, Moonshell2 ne peut pas ouvrir les fichiers de taille exceptionnellement importante.<BR>
+Veuillez vous référer à la <A HREF="readme.html#supportformat">liste des formats compatibles</A><BR>
+<BR>
+<A NAME="notskin"><HR>
+<B>Ce skin ne peut être appliqué.</B><BR>
+<BR>
+Veuillez vérifier que le fichier corresponde bien à la version actuelle de Moonshell.<BR>
+Si vous essayez de charger un ancien skin, l'erreur [Illegal ID.] sera inscrite dans le /moonshl2/logbuf.txt.<BR>
+<BR>
+<A NAME="notdpgplay"><HR>
+<B>Je ne peux pas visionner cette vidéo.</B><BR>
+<BR>
+Les fichiers avi/mpg/wmv ne peuvent pas être visionnés. Seul le format DPG est visionnable.<BR>
+<BR>
+<A NAME="notdpgenc"><HR>
+<B>L'encodeur vidéo (dpgenc.exe) ne se lance pas.</B><BR>
+<BR>
+Cet encodeur vidéo n'est prévu que pour Windows2000/XP/Vista.<BR>
+Ne fonctionne pas sous Windows95/98/Me.<BR>
+Il est possible que les vidéos encodées avec un autre encodeur (BatchDPG, etc..) ne puissent être visionnées.<BR>
+Je ne répondrais pas aux questions concernant les autres encodeurs.<BR>
+<BR>
+<A NAME="notdpgconvert"><HR>
+<B>Je ne peux pas convertir ma vidéo.</B><BR>
+<BR>
+Le format MPG est le plus simple à convertir.<BR>
+Si vous avez des problèmes pour convertir un fichier AVI/WMV, essayez de le convertir auparavant en MPG avec un autre convertisseur.<BR>
+Personnellement, le seul format différent que j'ai essayé de convertir directement, c'est celui de Youtube.<BR>
+<BR>
+Normalement, les formats (MP4, DivX, ogm, etc...) visionnablent avec Windows Media Player peuvent être convertis.<BR>
+Donc, visionner les vidéos avec WindowsMediaPlayer avant de les convertir.<BR>
+Cependant, le WMV3 n'est pas pris en charge par le convertiseur.<BR>
+Les vidéos ayant 120fps ne peuvent pas être converties.<BR>
+<BR>
+<A NAME="dpgslow"><HR>
+<B>Il y a des ralentissements dans la vidéo.</B><BR>
+<BR>
+Après avoir bouger le curseur de la barre d'état en cours de lecture, il peut arriver qu'il y ait un problème repositionnement.<BR>
+Aussi, si la petite barre horizontale qui apparaît de temps en temps à gauche sous la barre d'état vire au rouge, c'est que la vidéo est trop lourde.<BR>
+Dans ce cas, veuillez ré-encoder la vidéo avec nombre d'images par seconde moins élevé.<BR>
+<BR>
+<A NAME="dpgslip"><HR>
+<B>Le son se décale par rapport à l'image après avoir bouger le curseur de la barre d'état.</B><BR>
+<BR>
+On ne peut pas y faire grand chose. Essayez de bouger le curseur plusieurs fois, avec de la chance ça se resynchronisera.<BR>
+<BR>
+<A NAME="notolddpgplay"><HR>
+<B>Je ne peux pas visionner mes anciennes vidéo.</B><BR>
+<BR>
+Les fichiers DPG ayant le son au format OGG en streaming ou bien, l'image en RGB15/18/21 ne sont pas compatibles avec Moonshell2.<BR>
+<BR>
+<A NAME="notfoundmoonshlfolder"><HR>
+<B>Ça bloque au démarrage sur le message "can not found moonshl folder.".</B><BR>
+<BR>
+C'est un message d'erreur de l'ancien MoonShell。 Il n'est pas nécessaire de désinstaller l'ancien Moonshell, ils peuvent coexister. Vérifiez que vous avez bien lancer le fichier "moonshl2.nds".<BR>
+<BR>
+<A NAME="notbootr4"><HR>
+<B>Moonshell2 ne démarre pas sur mon R4.</B><BR>
+<BR>
+Il peut y avoir diverses raisons, telle que le système de votre linker n'a pas été mis à jour. Les anciennes versions n'ont peut-être pas de fonction de patch DLDI automatique.<BR>
+Veuillez vérifier que votre linker soit bien à jour.<BR>
+<BR>
+<A NAME="notbootak2"><HR>
+Moonshell2 ne démarre pas sur mon AceKard 2<BR>
+<BR>
+Après avoir installé Moonshell 2, veuillez remplacer le moonshl2.nds qu'il y a sur votre carte flash par /misctools/MoonShell2_AlternativeLoader/<BR>
+Si ça ne marche toujours pas, veuillez installer AKAIO.<BR>
+<BR>
+<A NAME="notbootgbasc"><HR>
+Moonshell2 ne démarre pas sur mon SuperCard slot-2<BR>
+<BR>
+Il y a un problème avec le patch DLDI automatique.<BR>
+Après avoir installé Moonshell 2, veuillez remplacer le moonshl2.nds qu'il y a sur votre carte flash par moonshl2_SCCF_SuperCard (Compact Flash).nds soit moonshl2_SCDS_SuperCard DS (Slot-1).nds. Applique le patch DLDI avec /misctools/AutoDLDIPatch/AutoDLDIPatch.exe.<BR>
+<BR>
+<HR>
+</body>
+
+</html>

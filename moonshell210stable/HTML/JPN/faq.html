@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT COLOR=#ff0000 SIZE=+1><B>M3Perfect / M3Professional / M3Sakura を御利用の際は、販売元に問い合わせてください。 </B></FONT><BR>
+<BR>
+全部読んでも解決しない問題を問い合わせるときは、以下の情報を添付してメールしてください。<BR>
+<BR>
+・アダプタ（R4/DSTTなど）をデジカメ等で撮った写真<BR>
+・アダプタのファームウェアバージョン<BR>
+・停止してしまった状態の写真<BR>
+・'/moonshl2/logbuf.txt'の添付<BR>
+・不具合の症状をできるだけ詳しく<BR>
+<BR>
+わからない項目は無しでもいいですができるだけ全部揃えて下さい。<BR>
+かなりきっつい設定のspamフィルタを通しますので、フリーメール(Yahooなど)はできるだけ避けてください。<BR>
+また、MoonShellは非営利のフリーウェアです…。少しだけ、ほんの少しでいいので言葉を選んでくれると嬉しいです…。<BR>
+<BR>
+moonshellnds@gmail.com<BR>
+<BR>
+<HR>
+<FONT SIZE=-1>
+<UL>
+<LI><A HREF="#giveup">できないこと、あきらめたこと。</A></LI>
+<BR>
+<LI><A HREF="#notwindows">Windows用付属ツール類を起動できない。</A></LI>
+<LI><A HREF="#notboot">なんだか起動できない。</A></LI>
+<LI><A HREF="#notopenfile">なんだかファイルが開けない。</A></LI>
+<LI><A HREF="#notskin">スキンが適用されない。</A></LI>
+<LI><A HREF="#notdpgplay">動画が見られない。</A></LI>
+<LI><A HREF="#notdpgenc">動画エンコーダ（dpgenc.exe）が起動しない。</A></LI>
+<LI><A HREF="#notdpgconvert">動画が変換できない。</A></LI>
+<LI><A HREF="#dpgslow">動画再生が遅い。</A></LI>
+<LI><A HREF="#dpgslip">動画再生中にシーク（再生位置変更）すると音と絵がずれる。</A></LI>
+<LI><A HREF="#notolddpgplay">古い動画ファイルが再生できない。</A></LI>
+<LI><A HREF="#notfoundmoonshlfolder">'can not found moonshl folder.'という行で停止する。</A></LI>
+<LI><A HREF="#notbootr4">R4で起動できない。</A></LI>
+<LI><A HREF="#homebrewnotbootr4">R4でHomeBrewが起動できない。</A></LI>
+<LI><A HREF="#notbootak2">AceKard2で起動できない。</A></LI>
+<LI><A HREF="#notbootgbasc">GBAカートリッジ版SuperCardで起動できない。</A></LI>
+</UL>
+<BR>
+</FONT>
+<A NAME="giveup"><HR>
+・できないこと、あきらめたこと。<BR>
+<BR>
+dpgenc.exeがエンコード最終端付近で停止してしまうことがあるバグがある。<BR>
+MP3歌詞（lrc）表示。<BR>
+スペアナとかパラメータビュアとかイコライザとかプレイリストの編集とか。<BR>
+縦持ちテキストリーダー<BR>
+音声ファイルを再生開始直後やスクリーンセーバ起動時にプチノイズが入る（処理落ちする？）バグがある。<BR>
+DPG以外の動画ファイルの再生。<BR>
+<BR>
+<A NAME="notwindows"><HR>
+・Windows用付属ツール類を起動できない。<BR>
+<BR>
+MoonShell2に付属するWindows用ツールはWindows2000/XP/Vista専用です。<BR>
+Windows95/98では動作確認していませんが、おそらく起動できません。<BR>
+<BR>
+<A NAME="notboot"><HR>
+・なんだか起動できない。<BR>
+<BR>
+特殊なディスクへの対応は、'/moonshl2/moonshl2.ini'の[DiskAdapter]セクションを参照してください。
+<BR>
+一部の古いアダプタをお使いの際は、'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' を試みてください。<BR>
+現在M3SakuraとR4SDHCとEZ4は動作対象外です。<BR>
+<BR>
+<A NAME="notopenfile"><HR>
+・なんだかファイルが開けない。<BR>
+<BR>
+MoonShell2が<A HREF="readme.html#supportformat">対応しているファイル形式</A>か確認してください。<BR>
+同じ拡張子でも違う種類かもしれません。異常に巨大なファイルも開けないかもしれません。<BR>
+<BR>
+<A NAME="notskin"><HR>
+・スキンが適用されない。<BR>
+<BR>
+各バージョンに対応したスキンファイルであるか確認してください。<BR>
+古いスキンフォーマットのファイルを読み込んだ場合、'/moonshl2/logbuf.txt' に[Illigal ID.]というログを書き出して無視します。<BR>
+<BR>
+<A NAME="notdpgplay"><HR>
+・動画が見られない。<BR>
+<BR>
+avi/mpg/wmvなどのファイルは再生できません。必ずDPGフォーマットに変換してから再生してください。<BR>
+<BR>
+<A NAME="notdpgenc"><HR>
+・動画エンコーダ（dpgenc.exe）が起動しない。<BR>
+<BR>
+MoonShell2付属の動画エンコーダはWindows2000/XP/Vista専用です。<BR>
+Windows95/98では動作確認していませんが、おそらく起動できません。<BR>
+非対応OSで変換したいときは、BatchDPGやSuperC等などのサードパーティアプリが動くかもしれません。<BR>
+BatchDPGやSuperC等に関する質問には一切お答えしません。<BR>
+<BR>
+<A NAME="notdpgconvert"><HR>
+・動画が変換できない。<BR>
+<BR>
+MPGファイルが一番確実に変換できるフォーマットです。<BR>
+AVI/WMV等で問題が発生したときは、他のツールでMPGに変換してからdpgencに入れると変換できます。<BR>
+特殊フォーマットで直接変換できるのを確認しているのはYouTubeだけです。<BR>
+MP4とDivXは、Windows7に何もコーデックをインストールしない環境でエンコードできるように調整しています。<BR>
+<BR>
+mkv、ogmなどの特殊フォーマットはWindowsMediaPlayerで再生できるようになって初めて変換できるようになります。<BR>
+まずWindowsMediaPlayerで再生できるようにしてください。<BR>
+WMV3は非対応です。WMPで再生できてもWMV3だけはダメです。<BR>
+<BR>
+<A NAME="dpgslow"><HR>
+・動画再生が遅い。<BR>
+<BR>
+動画再生中に、途中で引っかかるように停止するときは、再生処理が間に合っていません。<BR>
+また、動画再生の下画面左上あたりの小さな横棒が赤くなっているときも重い報告です。<BR>
+動画エンコード設定で秒間フレーム数を落としたり、ビットレート落とすなど、色々試してみてください。<BR>
+<BR>
+<A NAME="dpgslip"><HR>
+・動画再生中にシーク（再生位置変更）すると音と絵がずれる。<BR>
+<BR>
+シークするとずれるのは仕様です。何度かシークすると同期するかもしれません。<BR>
+<BR>
+<A NAME="notolddpgplay"><HR>
+・古い動画ファイルが再生できない。<BR>
+<BR>
+OGGを音声ストリームに使用していたDPGファイル、及び、RGB15/18/21を使用してエンコードしたDPGファイルは再生できません。<BR>
+<BR>
+<A NAME="notfoundmoonshlfolder"><HR>
+・'can not found moonshl folder.'という行で停止する。<BR>
+<BR>
+古いMoonShellが出力するエラーです。古いMoonShellとの共存が可能なのでアンインストールする必要はありませんが、実行したNDSファイルが'moonshl2.nds'（または大文字の'MOONSHL2.NDS'）であることを確認して下さい。<BR>
+<BR>
+<A NAME="notbootr4"><HR>
+・R4で起動できない。<BR>
+<BR>
+様々な原因が考えられますが、古いR4ファームウェアは自動DLDIパッチに対応していないものがあるそうです。<BR>
+R4v1.10以降は自動DLDIパッチ機能があるとのことなので、ファームウェアの更新を試みて下さい。<BR>
+起動時真ん中のボタン（マルチメディアボタン）から起動させるときは、<A HREF="fixboot.html">直接起動について</A>を参照して下さい。<BR>
+<BR>
+<A NAME="homebrewnotbootr4"><HR>
+・R4でHomeBrewが起動できない。<BR>
+<BR>
+R4でMoonShell2からHomeBrew（自作アプリ）を使う場合、起動しない、タッチパネルが使えない、などの問題が発生することがあります。<BR>
+正直なところ、所持していないので原因がわかりません。他のアダプタを使う等、現場合わせで宜しくお願いします。<BR>
+<BR>
+<A NAME="notbootak2"><HR>
+・AceKard2で起動できない。<BR>
+<BR>
+通常通りSetup.exeでインストールした後、/misctools/MoonShell2_AlternativeLoader/moonshl2.nds を起動してみてください。<BR>
+これでも起動できないときはAKAIOを使用してください。<BR>
+<BR>
+<A NAME="notbootgbasc"><HR>
+・GBAカートリッジ版SuperCardで起動できない。<BR>
+<BR>
+自動DLDIパッチに問題がある可能性があります。<BR>
+/misctools/AutoDLDIPatch/AutoDLDIPatch.exe を実行して出来た、moonshl2_SCCF_SuperCard (Compact Flash).nds（CF版）または、moonshl2_SCDS_SuperCard DS (Slot-1).nds（SD版）を起動してみてください。<BR>
+<BR>
+<HR>
+</body>
+
+</html>

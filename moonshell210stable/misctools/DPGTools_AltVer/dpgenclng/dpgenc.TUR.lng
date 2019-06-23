@@ -1,0 +1,46 @@
+DPG Encoder Türkçe Dil Dosyasý Hazýrlayan:patient.x (2006/02/24)
+Tahoma
+10
+162
+Kaynak videoyu seçiniz :
+Seç
+Ýptal
+Baþlat
+Ayarlarý göster
+Ses ayarlarý
+Ses örnekleme oraný
+Hz
+Verioraný
+kbps
+Ses
+mencoder.exe'yi kullan : Bir ses sýkýþtýrmasý yanýt vermiyor.
+ffmpeg.exe'yi kullan : En hýzlý yöntem.
+extractwave.exe DirectShow normal yöntemi kullan : 128kbyte/block
+extractwave.exe DirectShow alternatif yöntemi kullan : 4byte/block
+Ayrýþtýrýlmýs dosya kullanýmda. (MediaFilename.wav)
+Video'yu yeniden hazýrla.
+Video yeniden hazýrlama seçenekleri
+Video geniþliði
+pixeller
+Video boyut oranlarý
+otomatik bul
+4:3 (standart TV)
+16:9 (geniþ ekran)
+1:2.35 (sinemaskop)
+Video verioraný
+kbps
+Video kare/sn
+kare/sn
+Video parlaklýk
+Keskinlik
+Derinlik
+Iþýk
+Video'yu ters çevir
+Ölümcül Hata:Lütfen 256x192 pixel altýnda mpeg dosyasý gösteriniz.
+Kare oraný hakkýnda\n\nBu video %ffps.\n24fps veya daha altý önerilir. Devam etsin mi?
+Video büyüklüðünü hesaplanamýyor.
+Toplam süre hesaplanamýyor.
+Ýzin verilmeyen video boyut oraný.
+Video veriyolu açma hatasý.
+Veriyolu deðiþikliði yapýlamýyor.
+Ses çýkartýlamadý.\nLütfen baþka bir yöntem deneyiniz.

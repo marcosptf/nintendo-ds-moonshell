@@ -1,0 +1,70 @@
+DPG Encoder Language file for French by Takuya. (2006/02/24) Updated by AsmodeuS (2006/09/03)
+Tahoma
+8
+0
+Video à encoder :
+Parcourir
+Annuler
+Encoder
+Options avancées
+Options audio
+Fréquence
+Hz
+Taux
+kbps
+Volume
+Utiliser mencoder.exe - Methode normale.
+Utiliser ffmpeg.exe - Methode la plus rapide.
+Utiliser extractwave.exe - Methode normale DirectShow 128kbyte/block
+Utiliser extractwave.exe - Methode DirectShowalternative  4byte/block
+Utiliser le fichier demuxed(defrosted). (MediaFilename.wav)
+Re-encoder le flux video
+Options video
+Largeur de la video
+pixels
+Format video
+Détection auto
+4:3 (Normal)
+16:9 (Ecran large)
+1:2.35 (Cinemascope)
+Taux
+kbps
+Images par seconde
+fps
+Luminosité
+Flou
+Profond
+Léger
+Inverser la video
+Erreur critique : Veuillez spécifier une résolution video inférieure a 256x192 pixels
+Image par seconde\n\nVideo de %ffps.\n24fps ou moins est recommandé. Continuer?
+Ne peux pas detecter la taille de la video.
+Ne peux pas detecter la durée totale de lecture.
+Format video invalide.
+Créer erreur pipe .
+Changer les attributs de l'erreur pipe.
+Le flux audio n'a pas pu etre aquis.\nVeuillez essayer une autre méthode.
+Détection auto. (Quand il n'est pas possible d'encoder avec DirectShow, essaye la préparation.)
+Prépare la video en utilisant ffmpeg. (pour les formats specifiques) (lent)
+Prépare la video en utilisant mencoder. (non reconnu)
+Destination : 
+Changer
+Sélectionnez la destination
+Déplacez dans le répertoire de destination et cliquez sur le bouton sauver.
+Fichier (&F)
+Quitter (&X)
+Options (&O)
+Log (&S)
+Langue (&L)
+A propos (&A)
+Déplacez le(s) fichier(s) video ici.\nNe deplacez pas de fichier dans un format non reconnu.
+Annuler
+En attente d'annulation...
+Annulé.
+Ne peut pas obtenir le FPS du fichier video.
+Format non reconnu [WMV3 / Windows Media Video 9].
+Format de pixel
+RGB15 meilleure vitesse d'encodage
+RGB18 par défaut
+RGB21 meilleure qualité d'encodage
+RGB24 par défaut (ancienne version)

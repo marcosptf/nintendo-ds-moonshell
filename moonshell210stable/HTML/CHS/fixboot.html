@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+・直接启动的方法<BR>
+<BR>
+各烧录卡简单启动MoonShell2的方法。<br>
+请在正常安装，运行正常的情况下尝试。<BR>
+<BR>
+<A HREF="#fordsttdirect">DSTT开机直接进MoonShell2的方法</A><BR>
+<A HREF="#forr4direct">R4开机直接进MoonShell2的方法</A><BR>
+<A HREF="#forr4withmm">R4设置为“多媒体”的方法</A><BR>
+<BR>
+</FONT>
+<A NAME="fordsttdirect">
+<HR>
+・DSTT开机直接进MoonShell2的方法<BR>
+<BR>
+<p>DSTT启动时直接启动MoonShell2的方法。假DSTT可能不适用。。<br>
+  此方法会覆盖内核、其他的菜单将无法使用。</p>
+<p>请使用'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' 的自动DLDI补丁工具。<br>
+  将生成的 'moonshl2_TTIO_TTCARD IO Library.nds' 改名为 'TTMENU.DAT'、并复制到烧录卡的根目录。<BR>
+  <BR>
+  <A NAME="forr4direct"></p>
+<HR>
+・R4开机直接进MoonShell2的方法<BR>
+<BR>
+<p>R4启动时直接启动MoonShell2的方法。假R4可能不适用。<br>
+  此方法会覆盖内核、其他的菜单将无法使用。</p>
+<p>请使用'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' 的自动DLDI补丁工具。<br>
+  将生成的 'moonshl2_R4TF_M3Simply-R4DS (MicroSD Card).nds' 改名为 'DEFAULT.NDS'、并复制到烧录卡的根目录。<BR>
+  <BR>
+  <A NAME="forr4withmm"></p>
+<HR>
+・R4设置为“多媒体”的方法<BR>
+<BR>
+<p>R4启动后按中间的按钮（多媒体按钮）启动MoonShell2的方法。假R4可能不适用。<br>
+  此方法无需覆盖内核。<br>
+  老的MoonShell（moonshl文件夹）已经不需要你可以删除。</p>
+<p>请使用'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' 的自动DLDI补丁工具。<br>
+  将生成的 'moonshl2_R4TF_M3Simply-R4DS (MicroSD Card).nds' 改名为 '_DS_MSHL.NDS'、并复制到烧录卡的根目录。<BR>
+</p>
+<HR>
+</body>
+
+</html>

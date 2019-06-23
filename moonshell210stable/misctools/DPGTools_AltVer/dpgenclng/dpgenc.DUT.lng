@@ -1,0 +1,46 @@
+DPG Encoder Language file for Dutch by Snuk the Great. (2006/02/24)
+Tahoma
+8
+0
+Videobestand:
+Bladeren...
+Annuleren
+Start
+Opties weergeven
+Geluid opties
+Frequentie
+Hz
+Bitsnelheid
+kbps
+Volume
+Gebruik mencoder.exe Speciale audio codecs werken niet.
+Gebruik ffmpeg.exe Snelste methode.
+Gebruik extractwave.exe Normale DirectShow methode 128kbyte/blok
+Gebruik extractwave.exe Alternatieve DirectShow methode 4byte/blok
+Gebruik externe geluidsfile als [videoBestand].wav
+Video opties aanpassen
+Video opties
+Video breedte
+pixels
+Hoogte breedte verhouding
+automatisch detecteren
+4:3 (Standaard)
+16:9 (Breedbeeld)
+1:2.35 (Cinemascope)
+Bitsnelheid
+kbps
+Beelden per seconde
+bps
+Helderheid
+Vervagen
+Vager
+Scherper
+Video omdraaien
+Ernstige fout!\nGeef een mpeg bestand van 256x192 pixels op a.u.b.
+Deze mpeg heeft %f beelden per seconde.\n24 Beelden per seconde of minder is aangeraden. Doorgaan?
+Kan de videogrote niet vinden.
+Kan de totale speeltijd niet vinden.
+Incorrecte hoogte breedte verhouding.
+Fout bij het aanmaken van een 'pipe'
+Fout bij het veranderen van een attribuut van een 'pipe'
+Het geluid van de video kon niet worden gevonden\nProbeer een andere methode.

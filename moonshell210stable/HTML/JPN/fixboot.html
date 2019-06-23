@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+・直接起動について<BR>
+<BR>
+各アダプタで手軽にMoonShell2を起動するための方法です。<BR>
+通常通りインストールして、正しく動作することを確認してから試みて下さい。<BR>
+<BR>
+<UL>
+<LI><A HREF="#fordsttdirect">DSTTダイレクトブートの方法</A></LI>
+<LI><A HREF="#forr4direct">R4ダイレクトブートの方法</A></LI>
+<LI><A HREF="#forr4withmm">R4マルチメディアボタンの方法</A></LI>
+<LI><A HREF="#forcycrodswithms171p1">CYCRO DS(FW1.55Beta2以前)で既存MoonShell1.71+1と併用する時 (MoonShell2.xをメディアボタンで起動)</A></LI>
+<LI><A HREF="#forcycrodswithoutms171p1">CYCRO DS(FW1.55Beta2以前)でメディアボタンから起動する時 (MoonShell1.71+1は削除)</A></LI>
+<LI><A HREF="#forcycrodswithoutms171p1B3">CYCRO DS(FW1.55Beta3以降)でメディアボタンから起動する時</A></LI>
+</UL>
+<BR>
+</FONT>
+<A NAME="fordsttdirect"><HR>
+・DSTTダイレクトブートの方法<BR>
+<BR>
+DSTTで起動時に直接MoonShell2を起動する方法です。亜種（偽？）DSTTには適用しないでください。<BR>
+この方法はファームウェアを上書きしますので、他のメニューは使用できなくなります。<BR>
+<BR>
+'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' にある自動DLDIパッチを当てて下さい。<BR>
+作成された 'moonshl2_TTIO_TTCARD IO Library.nds' を 'TTMENU.DAT' に名前を変えて、ディスクのルートに上書きコピーして下さい。<BR>
+<BR>
+<A NAME="forr4direct"><HR>
+・R4ダイレクトブートの方法<BR>
+<BR>
+R4で起動時に直接MoonShell2を起動する方法です。亜種（偽？）R4には適用しないでください。<BR>
+この方法はファームウェアを上書きしますので、他のメニューは使用できなくなります。<BR>
+<BR>
+'/misctools/AutoDLDIPatch/AutoDLDIPatch.exe' にある自動DLDIパッチを当てて下さい。<BR>
+作成された 'moonshl2_R4TF_M3Simply-R4DS (MicroSD Card).nds' を 'DEFAULT.NDS' に名前を変えて、ディスクのルートに上書きコピーして下さい。<BR>
+<BR>
+<BR>
+<A NAME="forr4withmm"><HR>
+・R4マルチメディアボタンの方法<BR>
+<BR>
+R4で起動時の真ん中ボタン（マルチメディアボタン）でMoonShell2を起動する方法です。亜種（偽？）R4には適用しないでください。<BR>
+この方法はファームウェアを上書きしません。<BR>
+古いMoonShell（moonshlフォルダ）は不要ですので削除して構いません。<BR>
+<BR>
+DLDIパッチは不要ですので、'moonshl2.nds' を '_DS_MSHL.NDS' に名前を変えて、ディスクのルートに上書きコピーして下さい。<BR>
+<BR>
+<A NAME="forcycrodswithms171p1"><HR>
+・CYCRO DS <U>FW 1.55 Beta2以前</U>で既存MoonShell1.71+1と併用する時 (MoonShell2.xをメディアボタンで起動)<BR>
+（leopon様に御示唆頂きました。ありがとうございます。）<BR>
+<BR>
+<OL>
+<LI>MoonShell2.xを解凍しmoonshl2フォルダをMicroSDのルートにコピーする。</LI>
+<LI>MicroSDルートにあるmoonshlフォルダ内のmoonshel.ndsをmoonshell171.nds等にリネームする。</LI>
+<LI>moonshl2.ndsをmoonshell.ndsにリネームしMicroSDルートのmoonshlフォルダにコピーする。</LI>
+</OL>
+※ MoonShell1.71+1を起動する時はCYCRO DSのファイルリストから起動して下さい。<BR>
+※ moonshell171.ndsはどのフォルダからでも起動できます。<BR>
+<BR>
+<A NAME="#forcycrodswithoutms171p1"><HR>
+・CYCRO DS <U>FW 1.55 Beta2以前</U>でメディアボタンから起動する時 (MoonShell1.71+1は削除)<BR>
+（leopon様に御示唆頂きました。ありがとうございます。）<BR>
+<BR>
+<OL>
+<LI>MoonShell2.xを解凍しmoonshl2フォルダをMicroSDのルートにコピーする。</LI>
+<LI>MicroSDルートのmoonshlフォルダの中を全削除（moonshlフォルダは削除しないで下さい）する。</LI>
+<LI>moonshl2.ndsをmoonshell.ndsにリネームしMicroSDルートのmoonshlフォルダにコピーする。</LI>
+</OL>
+※ CYCRO DSのメディアボタンはただ単に/moonshl/moonshell.ndsを呼び出しているだけなのでmoonshell.ndsにリネームすればどのndsファイルでも起動できます。ただし、ファイルPATHが変更できないのでmoonshlフォルダは必須になります。<BR>
+<BR>
+<A NAME="forcycrodswithoutms171p1B3"><HR>
+・CYCRO DS <U>Fw 1.55 Beta3以降</U>でメディアボタンから起動する時
+ (MoonShell1.71+1は併用でも削除でもかまいません)<BR>
+（leopon様に御示唆頂きました。ありがとうございます。）<BR>
+<OL>
+<LI>Setup.exeでMoonShell2を普通にインストールする。</LI>
+<LI>MicroSDのRootに有るCycloDSフォルダ内のconfg.xmlをテキストエディタ（メモ帳等）で開く。</LI>
+<LI>config.xmlの上から21行目<BR>
+&lt;moonshellPath&gt;/moonshl/moonshell.nds&lt;/moonshellPath&gt;<BR>
+の部分を<BR>
+&lt;moonshellPath&gt;/moonshl2.nds&lt;/moonshellPath&gt;<BR>
+に書き換える。</LI>
+<LI>CYCRO DSを起動して、メディアボタンを押す。</LI>
+</OL>
+※ (併用する場合)MoonShell1.71+1を起動する時はCYCRO DSのファイルリストから起動して下さい。<BR>
+<BR>
+<HR>
+</body>
+
+</html>

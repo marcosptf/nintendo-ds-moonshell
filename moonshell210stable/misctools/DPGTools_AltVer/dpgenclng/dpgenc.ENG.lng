@@ -1,0 +1,75 @@
+DPG Encoder Language file for English by Kir. (2006/02/23) Moonlight(2006/12/13)
+Tahoma
+8
+0
+Source videofile :
+Select
+Cancel
+Apply
+Show options
+Audio Options
+Sampling rate
+Hz
+Bitrate
+kbps
+Volume
+use mencoder.exe A special audio codec doesnt correspond.
+use ffmpeg.exe Fastest method.
+use extractwave.exe DirectShow normal method 128kbyte/block
+use extractwave.exe DirectShow alternative method 4byte/block
+The demuxed(defrosted) file is used. (MediaFilename.wav)
+Re-encode video stream
+Video stream re-encode options
+Video width
+pixels
+Video aspect ratio
+auto detect
+4:3 (academy size)
+16:9 (wide screen)
+1:2.35 (Cinemascope)
+Video bitrate
+kbps
+Video framerate
+fps
+Video brightness
+Blur
+Deep
+Light
+Flip video
+FatalError:Please specify the mpeg file below 256x192 pixels.
+About the frame rate\n\nThis is mpeg of %ffps.\n24fps or less is recommended. Continue?
+can not detect VideoSize.
+can not detect total play time.
+Illigal aspect ratio.
+Create pipe error.
+Change pipe attribute error.
+The audio stream was not able to be acquired.\nPlease try by another method.
+Auto detect. (When it is not possible to convert with DirectShow, try preparation.)
+Prepares video with using ffmpeg. (for specific format) (slow)
+Prepares video with using mencoder. (not support)
+Output path : 
+Change
+Select output path.
+Move to output path. and press save button.
+File (&F)
+Exit (&X)
+Option (&O)
+ShowLog (&S)
+Language (&L)
+About (&A)
+Please drag and drop the movie file(s).\nPlease never drop the format that cannot correspond.
+Cancel this
+Wait for cancel...
+Canceled.
+can not get FPS from movie file.
+not support [WMV3 / Windows Media Video 9] format.
+Pixel format
+RGB15 for speed
+RGB18 default
+RGB21 for quality
+RGB24 old version default
+Advance settings
+custom edit
+MEncoder: Custom comand line
+MEncoder: Low-quality profile (fast encode)
+MEncoder: High-quality profile (slow encode)

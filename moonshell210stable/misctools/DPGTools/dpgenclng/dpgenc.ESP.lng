@@ -1,0 +1,52 @@
+DPG Encoder Idioma Español por Boriar (2009/04/13)
+Tahoma
+8
+0
+Fuente video:
+Seleccione
+Cancelar
+Aplicar
+Mostrar opciones
+Opciones de codificación de audio
+Tasa de bits
+kbps
+Volumen
+Opciones de codificación de vídeo
+Relación de aspecto
+detección automática
+4:3 (tamaño normal)
+16:9 (pantalla ancha)
+1:2.35 (Cinemascope)
+Tasa de bits
+kbps
+Fotogramas
+fps
+Ajuste automático
+Nivel de brillo
+Difuminado
+Mucho
+Poco
+Voltear vídeo
+Acerca de la velocidad de cuadros\n\nEste MPEG tiene %ffps. \nSe recomienda 24fps o menos. ¿Continuar?
+Crear línea de error.
+Cambiar línea de error de atributo.
+El audio no ha podido ser leido. \nInténtelo por otro método.
+Auto detectar. (si no es posible usar DirectShow, intente prepararlo)
+Preparar vídeo usando ffmpeg. (para el formato específico) (lento)
+Carpeta de salida:
+Cambiar
+Seleccione la carpeta de salida.
+Mover a la carpeta de la salida, y pulse el botón de guardar.
+Opciones (&O)
+MostrarLog (&L)
+Acerca de (&c)
+AutoApagado (&A)
+Arrastre y suelte el archivo de la película(s). \nNunca arrastre un formato que no esté soportado.
+Cancelar este
+Espere para cancelar ...
+Cancelar
+no se puede obtener FPS del archivo de vídeo.
+formato no soportado [WMV3/Windows Media Video 9].
+Ajustes avanzados
+Tiempo transcurrido:% s Tiempo estimado restante:% s
+El programa se cerrará cuando termine la codificación. \nSiempre que inicie, esta opción se desactivará.

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+<A HREF="#install">Installation / Désinstallation</A><BR>
+<A HREF="#notboot">Que faire lorsque ça ne démarre pas</A><BR>
+<BR>
+<A HREF="#supportformat">Liste des formats compatibles</A><BR>
+<A HREF="#restrictformat">Contraintes avec certains formats</A><BR>
+<A HREF="#largefile">Restrictions dans la taille des fichiers</A><BR>
+<A HREF="#heavyfile">Limites pour les fichiers lourds</A><BR>
+<BR>
+</FONT>
+<A NAME="install"><HR>
+<B>Installation / Désinstallation</B><BR>
+<BR>
+Sous Windows, il est fortement recommandée de formater votre carte mémoire avec <A HREF="http://www.sdcard.org/about/downloads/">SDFormatter.</A><BR>
+Veillez à laissez au moins 64Mo d'espace libre sur la carte flash pour que tout fonctionne bien.<BR>
+<BR>
+Vous pouvez installer Moonshell 2 soit avec le Setup.exe, soit manuellement.<BR>
+<BR>
+En général, pour installer Moonshell 2, il suffit simplement de copier le dossier <span style="color: indigo">/moonshl2</span> ainsi que le fichier <span style="color: indigo">moonshl2.nds</span> sur la carte mémoire à la racine.<BR>
+Pour désinstaller, supprimer le dossier <span style="color: indigo">/moonshl2</span> et le fichier <span style="color: indigo">moonshl2.nds</span> de la carte mémoire.<BR>
+<BR>
+Veuillez consulter la <A HREF="install.html">Méthode d'installation manuelle</A> pour plus de détails.<BR>
+<BR>
+<A NAME="notboot"><HR>
+<B>Que faire lorsque ça ne démarre pas</B><BR>
+<BR>
+Vérifiez que le dossier <span style="color: indigo">/moonshl2</span> soit bien à la racine.<BR>
+Si les homebrews ne se lancent pas, vérifiez le format du disque ou le firmware par exemple.<BR>
+Lorsque c'est seulement MoonShell 2 qui ne démarre pas, veuillez-vous référer aux <A HREF="faq.html">Questions fréquement posées</A><BR>
+<BR>
+<A NAME="supportformat"><HR>
+<B>Liste des formats compatibles</B><BR>
+<BR>
+Audio :<BR>
+MP1, MP2, MP3, OGG, WAV, M4A, AAC, WMA, TTA, MID, RCP, R36 et FLAC.<BR>
+Amiga et dérivés (MOD, IT, MTM, S3M, XM, 669, MED, STM, AMF, GDM, ULT, UNI, ASY, IMF, OKT et STX).<BR>
+ChipTune et dérivés (SPC, NSF, GBS, HES, AY, SAP et KSS).<BR>
+<BR>
+Playlist : M3U et WPL.<BR>
+<BR>
+Images : JPG, BMP, GIF, PNG et PSD.<BR>
+<BR>
+Vidéo : DPG.<BR>
+<BR>
+Documents : Texte.<BR>
+<BR>
+<A NAME="restrictformat"><HR>
+<B>Contraintes avec certains formats</B><BR>
+<BR>
+NDS : Les fichiers NDS de ROM commerciales ne peuvent être lancés.<BR>
+WMA : Le mode sans perte et le mode voix ne peuvent être jouées.<BR>
+M4A, AAC, WMA : Les fichiers avec DRM ne peuvent être joués.<BR>
+MID : Les fichiers MIDI au format.2 ne peuvent être joués.<BR>
+SPC : L'émulation du SPC-700 donne une qualité sonore assez mauvaise.<BR>
+FLAC: Les échantillonnages sur 32bits ne sont pas gérés.<BR>
+ChipTune et dérivés : Les sons de la puce FM ne sont pas gérés.<BR>
+ChipTune et dérivés : Depuis la sortie de de version 2.41.2005.0711 de "KbMedia Player" pour Windows, ne gère plus les Playlists de fichiers sonores chiptune comprenant plusieurs pistes sauf pour le M3U.
+Playlist : Seuls les codages ANSI, S-JIS, UTF-8, CP437, CP850 et CP1252 sont gérés.<BR>
+Textes: Seuls les codages ANSI, S-JIS, UTF-8, UTF-16BE et UTF-16LE sont gérés.<BR>
+<BR>
+Seules les informations des formats MP3, Jpeg, BMP, PSD et DPG s'affichent dans le navigateur de fichiers.<BR>
+<BR>
+<A NAME="largefile"><HR>
+<B>Restrictions dans la taille des fichiers</B><BR>
+<BR>
+Images : Peut afficher les images jusqu'à 3648x2736pixels (10 mega pixel).<BR>
+Textes : Pas de limite de taille de fichier mais les lignes au delà le la 131.072 ème seront ignorées.<BR>
+MOD et dérivés : Ne peut pas jouer la plupart des fichiers de plus de 500ko.<BR>
+MID, RCP, R36 : Ne peut pas jouer la plupart des fichiers de plus de 500ko.<BR>
+<BR>
+<A NAME="heavyfile"><HR>
+<B>Limites pour les fichiers lourds</B><BR>
+<BR>
+J'ai simplifié l'affichage pour pouvoir jouer les fichiers WMA de plus de 128 kbps avec l'utilisation des instruments MIDI logiciels en même temps parce que ça prend beaucoup de ressources.<BR>
+<BR>
+Les Jpeg progressives prennent beaucoup de temps à s'afficher (30 secondes pour 3 mega pixels) et il n'est pas possible d'interrompre l'affichage en cours.<BR>
+<BR>
+Il peut se produire de nombreuses saccades lorsqu'on joue un fichier MIDI et qu'on affiche une image en même temps.<BR>
+<BR>
+<HR>
+</body>
+
+</html>

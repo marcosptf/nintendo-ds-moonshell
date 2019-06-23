@@ -1,0 +1,1202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+Liste des erreurs fatales qui stoppent le fonctionnement de Moonshell 2.<BR>
+La plupart de ces erreurs servent à faire une vérification interne afin d'éviter tout problème. Je pense qu'elles se produiront rarement.<BR>
+Un code d'erreur comporte 5 chiffres précédés d'un #. Recherchez l'erreur avec ce code.<BR>
+<BR>
+<HR>
+memtool.cpp: #00101: Insufficient memory. malloc(%d)<BR>
+Se produit lorsque la mémoire n'a pas pû être réservée.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00102: Request free null pointer in safefree.<BR>
+Se produit lorsque vous essayez d'ouvrir un pointeur NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00103: Insufficient memory. realloc(%d)<BR>
+Se produit lorsque la taille de la mémoire à réserver n'a pas pû être changée.<BR>
+Cette erreur se base sur les informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00104: Not found target ptr in MM->pLists.<BR>
+Se produit lorsque le pointeur de la mémoire non sécurisé a été libérée.<BR>
+Cette erreur se base sur les informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00105: Memory check error. Illegal writing code?<BR>
+Un débordement de cache (changement anormal) a été détecté lors de la libération de mémoire.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00106: MemMgr is NULL.<BR>
+Le gestionnaire de mémoire a fait un appel à un safemalloc NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00107: MemMgr is NULL.<BR>
+Le gestionnaire de mémoire a fait un appel à un safemalloc_chkmem NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00108: MemMgr is NULL.<BR>
+Le gestionnaire de mémoire a fait un appel à un safefree NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00109: MemMgr is NULL.<BR>
+Le gestionnaire de mémoire a fait un appel à un safecalloc NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+memtool.cpp: #00110: MemMgr is NULL.<BR>
+Le gestionnaire de mémoire a fait un appel à un safereallo NULL.<BR>
+Cette erreur se base sur les Informations de la fonction d'appel.<BR>
+<BR>
+<HR>
+InternalPlugin: #99999: Plugin internal error.<BR>
+Une erreur fatale s'est produite pendant l'exécution d'un plug-in.<BR>
+La cause s'inscrit dans le fichier de jounalisation.<BR>
+<BR>
+<HR>
+BootROM.cpp: #10002: Can not found NDS file.<BR>
+Le fichier NDS que vous avez lancé n'a pas été trouvé.<BR>
+<BR>
+BootROM.cpp: #10003: ExtLink: Create error. [%s]<BR>
+Le fichier d'information lié par l'extension ne peut être créé.<BR>
+<BR>
+BootROM.cpp: #10004: Can not open NDS file. [%s]<BR>
+Le fichier NDS que vous avez lancé ne peut pas s'ouvrir.<BR>
+<BR>
+BootROM.cpp: #10005: Not support commercial NDSROM file.<BR>
+Les fichiers NDS commerciaux ne peuvent pas être lancés.<BR>
+<BR>
+<HR>
+cctf.cpp: #10101: CTF: Illegal header ID. ['%s'!='%s']<BR>
+La version du fichier de police lissée est différente.<BR>
+<BR>
+cctf.cpp: #10104: Deleted CCTF: DrawFont_Fast2 function.<BR>
+La fonction appelée n'est pas définie.<BR>
+<BR>
+<HR>
+cctf_dfs.cpp: #10201: CTF cluster link pre-search stopped.<BR>
+La requête pour accéder directement au disque à la police lissée a échouée. La FAT est anormale.<BR>
+<BR>
+cctf_dfs.cpp: #10202: CTF cluster link search stopped.<BR>
+Impossible de créer un cluster pour accéder directement au disque à la police lissée. La FAT est anormale.<BR>
+<BR>
+<HR>
+dll.cpp: #10301: Plugin header array overflow.<BR>
+Les informations sur le plug-in sont trop nombreuses.<BR>
+<BR>
+dll.cpp: #10302: DLLList_GetPluginFilename: resfn is NULL.<BR>
+Le nom de fichier source qui détermine le type de plugin est vide.<BR>
+<BR>
+dll.cpp: #10303: Not found dll in list. [0x%08x]<BR>
+Ce plug-in n'est pas dans informations qui définissent les plug-in.<BR>
+<BR>
+dll.cpp: #10304: Unknown or none plugin type. [%s]<BR>
+Ce plug-in n'est pas utilisable.<BR>
+<BR>
+<HR>
+extlink.cpp: #10401: ExtLink: Create error. [%s]<BR>
+Impossible d'initialiser le fichier lié par l'extension.<BR>
+<BR>
+extlink.cpp: #10402: ExtLink_Init: Not found folder. [%s]<BR>
+Le dossier du fichier NDS lié par l'extension n'a pas été trouvé.<BR>
+<BR>
+extlink.cpp: #10403: ExtLink_GetNDSFullPathFilenameUnicode index overflow. %d/%d<BR>
+Tentative d'accès au-delà de la chaine définie par le nom de l'extension.<BR>
+<BR>
+<HR>
+hiddenpaths.cpp: #10501: HiddenPaths_Init: File not found. [%s]<BR>
+Le fichier de la liste des dossiers cachés n'a pas été trouvé.<BR>
+<BR>
+<HR>
+main.cpp: #10602: Not found default font file.<BR>
+Le fichier de police par défaut (autre langue) n'a pas été trouvé.<BR>
+<BR>
+main.cpp: #10603: Boot warn screen unknown compress format.<BR>
+La méthode de compression de l'écran de démarrage est inconnue.<BR>
+<BR>
+main.cpp: #10604: Boot warn screen ZLIB decompress error.<BR>
+La décompression ZLIB de l'écran de démarrage a échouée.<BR>
+<BR>
+main.cpp: #10605: Saved preview files. successed.<BR>
+La capture des écrans a été sauvegardé. (Ce n'est pas une erreur)<BR>
+<BR>
+main.cpp: #10606: Not found skin package.<BR>
+Ni le skin indiqué, ni celui par défaut n'a été trouvé.<BR>
+<BR>
+main.cpp: #10607: Illegal process error! NextProc==ENP_Loop<BR>
+Les informations sur le statut sont anormales. Ça ne devient pas ENP_Loop.<BR>
+<BR>
+main.cpp: #10608: Unknown process error! NextProc==%d<BR>
+Les informations sur le statut ne sont pas définies.<BR>
+<BR>
+main.cpp: #10610: There is a file handle not closed. [%d]<BR>
+Un descripteur de fichier (file handle) non fermé a été trouvé en quittant.<BR>
+<BR>
+<HR>
+playlist.cpp: #10801: Can not change current path. [%s]<BR>
+Le dossier ne peut pas être déplacé pendant la création de la playlist de ce dossier.<BR>
+<BR>
+playlist.cpp: #10802: Can not change current path. [%s]<BR>
+Le dossier ne peut pas être déplacé pendant la lecture de la playlist de ce dossier.<BR>
+<BR>
+playlist.cpp: #10803: Play list file not found.<BR>
+Il y a aucun fichier de musique dans ce dossier.<BR>
+<BR>
+playlist.cpp: #10804: Resume play list file write error.<BR>
+La playlist ne peut pas être créé si elle est vide.<BR>
+<BR>
+playlist.cpp: #10805: Play list resume sector is NULL.<BR>
+Le numéro de secteur pour charger les info. de reprise de la playlist n'a pas été indiqué.<BR>
+<BR>
+<HR>
+sjis2unicode.cpp: #10901: Not found S-JIS to Unicode convert table file.<BR>
+Le fichier table de conversion S-JIS vers UNICODE n'a pas été trouvé.<BR>
+<BR>
+sjis2unicode.cpp: #10903: SJIS2Unicode_Convert: Table not loaded.<BR>
+Il y a eu tentative de conversion avant le chargement du fichier table pour convertir le code S-JIS vers UNICODE.<BR>
+<BR>
+<HR>
+_console.cpp: #11001: Log file size error!!<BR>
+La taille du fichier de jounalisation est plus petite que la taille spécifiée.<BR>
+<BR>
+<HR>
+dllsound_internal_mp3.h: #11101: Table load error. [%s]<BR>
+Le fichier table pour la lecture MP3 n'a pas été trouvé.<BR>
+<BR>
+<HR>
+dll_StdLib.h: #11201: MWin_ProgressShow: Already showed.<BR>
+Une commande d'affichage a été reçu bien que la barre de progression soit déjà affichée.<BR>
+<BR>
+dll_StdLib.h: #11202: MWin_ProgressSetPos: MWin_pTitleStr is NULL.<BR>
+Le titre de la barre de progression est NULL. (l'affichage n'a probablement pas commencé.)<BR>
+<BR>
+dll_StdLib.h: #11203: MWin_ProgressHide: No show.<BR>
+Une commande d'arrêt a été reçu pourtant l'affichage de la barre de progression n'a pas commencé.<BR>
+<BR>
+<HR>
+main_savepreview.h: #18701: can not open file for write.<BR>
+Le fichier de prévisualisation ne peut pas être créé (Il y a eu 10 tentatives).<BR>
+<BR>
+<HR>
+playlist_ConvertM3U.h: #11302: Check flag error.<BR>
+Un nom de fichier anormal a été détecté lors de la modification de la playlist.<BR>
+<BR>
+playlist_ConvertM3U.h: #11303: Play list file open error.<BR>
+Un fichier de la playlist ne peut pas être ouvert.<BR>
+<BR>
+playlist_ConvertM3U.h: #11305: Resume play list file write error.<BR>
+Un fichier ne peut pas être mis dans la playlist.<BR>
+<BR>
+<HR>
+playlist_ConvertM3U_CP2Unicode.h: #11401: Not found CP1252 to Unicode convert table file.<BR>
+La table de conversion Cp1252 vers UNICODE pour la playlist n'a pas été trouvée.<BR>
+<BR>
+playlist_ConvertM3U_CP2Unicode.h: #11402: Not found CP437 to Unicode convert table file.<BR>
+La table de conversion CP437 vers UNICODE pour la playlist n'a pas été trouvée.<BR>
+<BR>
+playlist_ConvertM3U_CP2Unicode.h: #11403: Not found CP850 to Unicode convert table file.<BR>
+La table de conversion CP850 vers UNICODE pour la playlist n'a pas été trouvée.<BR>
+<BR>
+<HR>
+playlist_MakeFolder.h: #11502: Can not pre-read unicode filename.<BR>
+Un long nom de fichier n'a pas pu être vérifié lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+playlist_MakeFolder.h: #11504: Can not read unicode filename.<BR>
+Un long nom de fichier n'a pas pu être obtenu lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+playlist_MakeFolder.h: #11505: Can not change to deep path. [%s]<BR>
+Un dossier ayant un chemin trop long n'ont pas pu être déplacés lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+playlist_MakeFolder.h: #11506: Can not recovery path. [%s]<BR>
+Un dossier ayant un chemin trop long n'ont pas pu revenir lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+playlist_MakeFolder.h: #11507: Resume play list file write error.<BR>
+La playlist n'a pas pu être créée lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+playlist_MakeFolder.h: #11508: Can not change current path.<BR>
+Le dossier sélectionné n'a pas pu être déplacé lors de la création de la playlist de tous les éléments suivant le dossier.<BR>
+<BR>
+<HR>
+playlist_TextPool.h: #11602: TextPool saferealloc error. 0x%x!=0x%x<BR>
+Il y a eu une erreur de changement de taille du TextPool lors de la création de la playlist.<BR>
+<BR>
+playlist_TextPool.h: #11603: TextPool memory overflow. size=%dbyte<BR>
+La mémoire réservée au TextPool était insufisante lors de la création de la playlist.<BR>
+<BR>
+<HR>
+_const.h: #11701: DTCM Stack overflow!!<BR>
+Il y a eu un débordement de pile pendant le fonctionnement normal.<BR>
+<BR>
+_const.h: #11702: MTCM Stack overflow!!<BR>
+Il y a eu un débordement de pile pendant la lecture de le vidéo.<BR>
+<BR>
+<HR>
+disc_io.c: #11801: DISCIO_ShowAdapterInfo: Not ready active interface.<BR>
+Tentative d'affichage des informations sur le linker avant l'initialisation DLDI.<BR>
+<BR>
+disc_io.c: #11802: System disk write verify error on cache.<BR>
+Une anomalie a été détectée lors de la vérification de l'écriture au disque via le cache pour secteurs. La FAT est probablement endomagée.<BR>
+<BR>
+disc_io.c: #11803: System disk write verify error on direct.<BR>
+Une anomalie a été détectée lors de la vérification de l'écriture au disque via le cache pour secteurs. La FAT est probablement endomagée.<BR>
+<BR>
+<HR>
+gba_nds_fat.c: #11901: FAT_DirEntFromPath: Not support find from LFN path.<BR>
+La fonction de recherche d'entrée de dossier ne gère pas les longs noms de fichier.<BR>
+<BR>
+gba_nds_fat.c: #11902: Unknown file open mode error.<BR>
+Le fichier sélectionné contient des caractères inconnus.<BR>
+<BR>
+gba_nds_fat.c: #11903: Duplicated file open mode error.<BR>
+Des caractères se sont dupliqués plusieurs fois lors de l'ouverture du fichier.<BR>
+<BR>
+gba_nds_fat.c: #11904: Can not open directory.<BR>
+Le dossier sélectionné n'a pas pu être ouvert.<BR>
+<BR>
+gba_nds_fat.c: #11905: Can not open ReadOnly file for write.<BR>
+Vous avez essayé d'ouvrir un fichier en mode ajout ou d'écrire sur un fichier ayant l'attribut "lecture seule".<BR>
+<BR>
+gba_nds_fat.c: #11906: Not impliments file write.<BR>
+Vous avez essayé d'ouvrir en mode écriture avec la FATlib qui a été créé avec l'option de compilation écriture incluse.<BR>
+<BR>
+gba_nds_fat.c: #11907: FAT_FILE buffer full.<BR>
+Il y avait trop de fichiers ouverts simultanément.<BR>
+<BR>
+gba_nds_fat.c: #11908: Create first cluster error on read/write mode. Disk full!!<BR>
+Erreur lors de la création du premier cluster du fichier de lecture/écriture. Le disque est plein.<BR>
+<BR>
+gba_nds_fat.c: #11909: Create first cluster error on write mode. Disk full!!<BR>
+Erreur lors de la création du premier cluster du fichier en mode lecture/écriture. Le disque est plein.<BR>
+<BR>
+gba_nds_fat.c: #11910: Can not add dir entry.<BR>
+Erreur d'entrée de dossier lors de la création du fichier. Soit le disque est plein, soit l'entrée de dossier comporte une anomalie.<BR>
+<BR>
+gba_nds_fat.c: #11911: Create first cluster error on append mode. Disk full!!<BR>
+Vous avez essayé d'ouvrir un fichier qui n'existe pas en mode insertion.<BR>
+Le nouveau fichier a été créé mais le premier cluster n'a pas pu être sauvegardé parce que le disque est plein.<BR>
+<BR>
+gba_nds_fat.c: #11912: Can not add dir entry.<BR>
+Vous avez essayé d'ouvrir un fichier qui n'existe pas en mode insertion.<BR>
+Le nouveau fichier a été créé mais l'entrée de dossier comporte une anomalie. Le disque est peut-être plein.<BR>
+<BR>
+gba_nds_fat.c: #11913: Create first cluster error on exists write mode. Disk full!!<BR>
+Vous avez essayé d'ouvrir un fichier paramétré pour la lecture/l'écriture qui n'existe pas.<BR>
+Le nouveau fichier a été créé mais le premier cluster n'a pas pu être sauvegardé parce que le disque est plein.<BR>
+<BR>
+gba_nds_fat.c: #11914: Unknown error in file open.<BR>
+Une erreur indéterminée s'est produite à l'ouverture du fichier.<BR>
+<BR>
+gba_nds_fat.c: #11915: Not support 0byte file writed.<BR>
+Le fichier paramétré pour la lecture/l'écriture a été fermé alors qu'il fait 0 octet.<BR>
+<BR>
+gba_nds_fat.c: #11916: Can not tell. not opened.<BR>
+Vous essayez d'obtenir l'emplacement d'un fichier qui n'est pas ouvert.<BR>
+<BR>
+gba_nds_fat.c: #11917: Can not seek. not opened.<BR>
+Vous essayez de changer l'emplacement d'un fichier qui n'est pas ouvert.<BR>
+<BR>
+gba_nds_fat.c: #11918: Can not seek in modify mode.<BR>
+Le fichier paramétré pour l'insertion/l'écriture n'a pas été trouvé.<BR>
+<BR>
+gba_nds_fat.c: #11919: Can not seek. unknown origin mode.<BR>
+Vous avez effectué une recherche avec un pointeur de direction indéterminé.<BR>
+<BR>
+gba_nds_fat.c: #11920: Can not write. not opened.<BR>
+Vous essayez d'écrire sur un fichier qui n'est pas ouvert.<BR>
+<BR>
+gba_nds_fat.c: #11921: Can not write. opened for read.<BR>
+Vous essayez d'écrire sur un fichier paramétré pour la lecture seule.<BR>
+<BR>
+gba_nds_fat.c: #11922: Can not remove. This is removed.<BR>
+Le fichier que vous souhaitez supprimer n'a pas été trouvé.<BR>
+<BR>
+gba_nds_fat.c: #11923: Can not tell. Directory isn't empty.<BR>
+Vous essayez de supprimer un dossier qui n'est pas vide.<BR>
+<BR>
+gba_nds_fat.c: #11924: Can not mkdir. Directory is exists.<BR>
+Vous essayez de créer un dossier qui existe déjà.<BR>
+<BR>
+gba_nds_fat.c: #11925: Can not mkdir. Can not chdir directory.<BR>
+Le dossier à créer n'a pas pu être déplacé vers le dossier de destination.<BR>
+<BR>
+gba_nds_fat.c: #11926: Can not tell. Couldn't get a new cluster for the directory.<BR>
+Impossible d'obtenir le cluster de l'entrée de dossier pour le nouveau dossier. Le disque est probablement plein.<BR>
+<BR>
+gba_nds_fat.c: #11927: Can not tell. Couldn't add the directory entry.<BR>
+Le dossier [..] et [.] n'a pas pu être créé.<BR>
+<BR>
+gba_nds_fat.c: #11928: Not support 0byte file writed.<BR>
+Vous essayez de réouvrir un fichier paramétré pour l'écriture de 0 octet. Les fichiers vides ne sont pas gérés.<BR>
+<BR>
+<HR>
+fat2.cpp: #12001: The cluster size that exceeds 32kbyte is not supported.<BR>
+Le mode de lecture rapide a été activé alors que la taille des clusters du disque dépasse les 32Ko.<BR>
+<BR>
+fat2.cpp: #12002: FAT2_SetSize already file size is not zero.<BR>
+La taille du fichier a été remplacé par une autre de plus de 0 octet (immédiatement après l'ouverture en écriture).<BR>
+<BR>
+fat2.cpp: #12003: FAT2_SetSize file handle is NULL.<BR>
+La taille du fichier manipulé a été tentée d'être modifiée par un pointeur NULL.<BR>
+<BR>
+fat2.cpp: #12004: FAT2_SetSize file handle is not opened.<BR>
+La taille du fichier qui n'est pas ouvert a été tentée d'être modifiée.<BR>
+<BR>
+fat2.cpp: #12005: FAT2_SetSize file handle is not write mode.<BR>
+La taille d'un fichier paramétré pour la lecture seule a été tentée d'être modifiée.<BR>
+<BR>
+fat2.cpp: #12006: FAT2_SetSize disk full.<BR>
+La taille d'un fichier a été tentée d'être modifiée alors que le disque est plein.<BR>
+<BR>
+<HR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12101: Included illigal chars in Alias and LFN. [%s]<BR>
+Un caractère non-autorisé a été trouvé dans le nom du raccourci et le long nom d'un fichier lors de la création du long nom.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12102: Included illigal chars in Alias. [%s]<BR>
+Un caractère non-autorisé a été trouvé dans le nom du raccourci d'un fichier lors de la création du long nom de fichier.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12103: Included illigal chars in LFN. [%s]<BR>
+Un caractère non-autorisé a été trouvé dans le long nom de fichier d'un fichier lors de la création du long nom de fichier.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12104: Alias name overflow. %d,%d [%s]<BR>
+Le nom du raccourci du fichier est trop long.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12105: Alias ext overflow. %d,%d [%s]<BR>
+Le nom d'extension du raccourci du fichier est trop long.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12106: LFN is too long.<BR>
+Le nom de fichier long est trop long.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12107: FAT_FILE buffer full.<BR>
+Il y avait trop de fichiers ouverts simultanément.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12108: Create first cluster error. Disk full!!<BR>
+Impossible d'écrire le premier cluster. Le disque est probablement plein.<BR>
+<BR>
+FAT2_fopen_CreateForWrite_on_CurrentFolder.h: #12109: Can not add dir entry.<BR>
+L'ajout de l'entrée de dossier a échoué. Le disque est probablement plein ou alors l'entrée de dossier est anormale.<BR>
+<BR>
+<HR>
+FAT2_fopen_CurrentForRead.h: #12201: Can not open. not allocate files area.<BR>
+Il y avait trop de fichiers ouverts simultanément.<BR>
+<BR>
+FAT2_fopen_CurrentForRead.h: #12202: Directory entry error. [FILE_FREE]<BR>
+L'entrée de dossier n'a pas été trouvée lors de l'ouverture du dernier fichier recherché.<BR>
+<BR>
+<HR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12301: Illegal path. [%s]<BR>
+Un mauvais chemin a été indiqué lors de la recherche de l'entrée du long nom de fichier en tête.<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12302: name buffer overflow.<BR>
+Le nom de l'alias du nom fichier s'est retrouvé plus grand après la séparation du nom de fichier du chemin recherché. Une partie du nom du chemin recherché a dû y rester.<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12303: Not support find from LFN path.<BR>
+Une partie du nom chemin recherché a dû rester.<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12304: Not found dir entry.<BR>
+Nom du chemin recherché non trouvé.<BR>
+<BR>
+gba_nds_fat_DirEntFromPath_LFNTopDirEntry.h: #12305: found path is dir. [%s, %d]<BR>
+Le chemin recherché s'est terminé à un dossier. L'entrée du long nom de fichier n'a pas été trouvée.<BR>
+<BR>
+<HR>
+gba_nds_fat_fread.h: #12401: The cluster size that exceeds 32kbyte is not supported.<BR>
+Le mode de lecture rapide a été activé alors que la taille des clusters du disque dépasse les 32Ko.<BR>
+<BR>
+gba_nds_fat_fread.h: #12402: Can not read. not opened.<BR>
+Vous avez tenté de charger un fichier qui n'est pas ouvert.<BR>
+<BR>
+gba_nds_fat_fread.h: #12403: Can not read. Illegal size or buffer. (%d,%x)<BR>
+La taille ou l'adresse mémoire de destination est incorrecte.<BR>
+<BR>
+gba_nds_fat_fread.h: #12404: Can not read. for not read.<BR>
+Vous avez essayé de lire un fichier qui n'est pas paramétré pour la lecture.<BR>
+<BR>
+<HR>
+gba_nds_fat_fread_fast.h: #12501: Can not read. not opened.<BR>
+Vous avez essayé de lire un fichier qui n'est pas ouvert.<BR>
+<BR>
+gba_nds_fat_fread_fast.h: #12502: Can not read. Illegal size or buffer. (%d,%x)<BR>
+La taille chargée ou l'adresse mémoire de destination est incorrecte.<BR>
+<BR>
+gba_nds_fat_fread_fast.h: #12503: Can not read. for not read.<BR>
+Vous avez essayé de lire un fichier qui n'est pas paramétré pour la lecture.<BR>
+<BR>
+<HR>
+gba_nds_fat_fskip.h: #12601: Can not read. not opened.<BR>
+La lecture d'un fichier qui n'est pas ouvert a été omise.<BR>
+<BR>
+gba_nds_fat_fskip.h: #12602: Can not read. Illegal size. (%d)<BR>
+La taille chargée est incorrecte.<BR>
+<BR>
+gba_nds_fat_fskip.h: #12603: Can not read. for not read.<BR>
+Vous avez essayé de lire un fichier qui n'est pas paramétré pour la lecture.<BR>
+<BR>
+<HR>
+gba_nds_fat_move.h: #12701: FAT_Move: Source is removed.<BR>
+Le fichier source n'a pas été trouvé.<BR>
+<BR>
+gba_nds_fat_move.h: #12702: FAT_Move: Can not move source folder.<BR>
+Un dossier n'a pas pu être déplacé.<BR>
+<BR>
+gba_nds_fat_move.h: #12703: FAT_Move: Dist is removed.<BR>
+Fichier de destination non trouvé. Impossible de le créer.<BR>
+<BR>
+gba_nds_fat_move.h: #12704: FAT_Move: Can not move dist folder.<BR>
+Le fichier à déplacer est un dossier. Ne peut être déplacé.<BR>
+<BR>
+gba_nds_fat_move.h: #12705: FAT_Move: Not found source directory entry.<BR>
+La première entrée de dossier du long nom de fichier n'a pas été trouvée.<BR>
+<BR>
+<HR>
+cglb15.cpp: #12801: CglB15: CglB15: _buf is NULL.<BR>
+Il y a eu tentative de création d'un bitmap dans un endroit sans mémoire.<BR>
+<BR>
+<HR>
+cglcanvas.cpp: #12902: Blocked free line function.<BR>
+La fonction de tracé libre est devenu inutilisable.<BR>
+<BR>
+<HR>
+cglfont.cpp: #13004: Not support font height. (%d!=%d)<BR>
+Ce fichier comporte une taille de police qui n'est pas gérée.<BR>
+<BR>
+<HR>
+ErrorDialog.cpp: #18801: ErrorDialog_Draw: Can not load ErrorDialogBG.<BR>
+L'image de fond de la fenêtre du message d'erreur ne s'est pas chargée.<BR>
+<BR>
+<HR>
+extmem.cpp: #18901: extmem_Init: Internal error.<BR>
+Une erreur indéfinie s'est produite à l'initialisation de la mémoire étendue.<BR>
+<BR>
+<HR>
+lang.cpp: #13201: Not found language file.<BR>
+Le fichier du langage n'a pas été trouvé.<BR>
+<BR>
+lang.cpp: #13202: Language data buffer overflow.<BR>
+Le nombre maximum d'éléments dans la liste des langues a été dépassé.<BR>
+<BR>
+lang.cpp: #13203: Lang_GetUTF8: Language file not loaded.<BR>
+Les messages semblent présents pourtant le fichier du langage ne s'est pas chargé.<BR>
+<BR>
+<HR>
+launchstate.cpp: #13301: Can not found launch folder.<BR>
+Le dossier /launch (Accessoires) n'a pas été trouvé.<BR>
+<BR>
+launchstate.cpp: #13302: Can not read unicode filename.<BR>
+le long nom de fichier n'a pas été trouvé lors de la recherche des fichiers de l'accessoires.<BR>
+<BR>
+launchstate.cpp: #13303: Launch add error. item full.<BR>
+Il y a trop d'éléments dans les accessoires. C'est possible que les anciens accessoires n'ont pas été effacés.<BR>
+<BR>
+launchstate.cpp: #13304: ZLIB compress error!<BR>
+La compression du fichier d'info des accessoires a échouée.<BR>
+<BR>
+launchstate.cpp: #13305: launch data file open error. '%s'<BR>
+La création du fichier d'info des accessoires a échouée.<BR>
+<BR>
+launchstate.cpp: #13306: launch data file write error. '%s'<BR>
+L'écriture au fichier d'info des accessoires a échouée.<BR>
+<BR>
+<HR>
+memtool.cpp: #13406: COPY. Hooked memory address error. %s%d (%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>
+La taille ou l'adresse de la copie de mémoire est anormale.<BR>
+<BR>
+memtool.cpp: #13407: SET. Hooked memory address error. %s%d (%d) p1=0x%08x,p2=0x%08x,p3=0x%08x<BR>
+La taille ou l'adresse de la mémoire à initialiser est anormale.<BR>
+<BR>
+memtool.cpp: #13401: MM_Compact: Memory overflow. [%s]<BR>
+Une anomalie a été détectée lors d'un accès à la mémoire. L'optimisation des informations sur la définition des mécanismes en mémoire a échouée.<BR>
+<BR>
+memtool.cpp: #13402: Expand memory overflow. [%s]<BR>
+Une anomalie a été détectée lors d'un accès à la mémoire. L'optimisation des informations sur la définition des mécanismes en mémoire étendue a échouée.<BR>
+<BR>
+memtool.cpp: #13403: This addres is locked. [%s] (0x%08x)<BR>
+De la mémoire inderdite d'accès a été libérée.<BR>
+<BR>
+memtool.cpp: #13404: Can not clear. Not found adr. [%s] (0x%08x)<BR>
+Une adresse indéterminée a été libérée.<BR>
+<BR>
+memtool.cpp: #13405: Can not get size. Not found adr. [%s] (0x%08x)<BR>
+Une taille d'adresse indéterminée a été récupérée.<BR>
+<BR>
+memtool.cpp: #13408: Memory leak detected. [%s]<BR>
+Une fuite de mémoire (oublié d'être libérée) a été détecté.<BR>
+<BR>
+memtool.cpp: #13409: Memory check error. Illegal writing code?<BR>
+Un débordement de tampon (écriture anormale) a été détecté.<BR>
+<BR>
+memtool.cpp: #13410: Request free null pointer in safefree.<BR>
+Tentative de libération d'un pointeur NULL.<BR>
+<BR>
+<HR>
+procstate.cpp: #13501: File not found or size error. [%s]<BR>
+Le fichier de configuration n'a pas été trouvé ou bien, sa taille est anormale.<BR>
+<BR>
+procstate.cpp: #13502: Data sector index is 0 for load.<BR>
+Tentative de chargement des informations de configuration du secteur 0.<BR>
+<BR>
+procstate.cpp: #13503: Data sector index is 0 for save.<BR>
+Tentative d'écriture d'informations de configuration au secteur 0.<BR>
+<BR>
+procstate.cpp: #13504: ZLIB compress error!<BR>
+La compression des informations de configuration a échouée.<BR>
+<BR>
+procstate.cpp: #13505: Data file buffer overflow.<BR>
+Les informations de configuration ont été compressées mais, il y a dépassement de la taille des secteurs. <BR>
+<BR>
+<HR>
+rect.cpp: #19001: Rect buffer overflow.<BR>
+Les registres de zones indéterminées de la fonction de création "dirty region" sont trop nombreux.<BR>
+<BR>
+<HR>
+shell.cpp: #13616: Not found base file for write.<BR>
+Le fichier à écrire n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13617: Not found base file for create.<BR>
+Le nouveau fichier à créer n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13618: Not found base file for modify.<BR>
+Le fichier à modifier n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13619: Not found base file for split read.<BR>
+La partie du fichier à charger n'a pas été trouvée dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13601: Not found text font file. [%s]<BR>
+Le fichier de police n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13602: Can not found swap file. [%s]<BR>
+Le fichier de swap n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13603: Can not found prgjpeg swap file. [%s]<BR>
+Le fichier de swap pour les jpeg progressives n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13620: Can not found MoonShell2.00 data files.<BR>
+Le fichier de configuration n'a pas été trouvé dans le dossier du système.<BR>
+<BR>
+shell.cpp: #13604: Can not chdir to root.<BR>
+Le dossier n'a pas pu être déplacé à la racine lors de la convertion d'un long nom de fichier en alias.<BR>
+<BR>
+shell.cpp: #13605: Can not chdir to %s.<BR>
+Le dossier n'a pas pu être déplacé lors de la convertion d'un nom de fichier long en alias.<BR>
+<BR>
+shell.cpp: #13606: Can not chdir to root.<BR>
+Pour confirmer la présence de fichiers à long nom, le dossier ne peut être déplacé à la racine.<BR>
+<BR>
+shell.cpp: #13607: Can not chdir to %s.<BR>
+Pour confirmer la présence de fichiers à long nom, le dossier ne peut être déplacé.<BR>
+<BR>
+shell.cpp: #13608: Can not chdir to root.<BR>
+Pour confirmer la présence de dossiers à long nom, le dossier ne peut être déplacé à la racine.<BR>
+<BR>
+shell.cpp: #13609: Can not chdir to %s.<BR>
+Pour confirmer la présence de dossiers à long nom, le dossier ne peut être déplacé.<BR>
+<BR>
+shell.cpp: #13621: ConvertFullPath_Unicode2Alias: Not found path.<BR>
+Le fichier indiqué n'a pas été trouvé lors de la convertion d'un nom long de fichier en alias.<BR>
+<BR>
+shell.cpp: #13610: SplitItemFromFullPathAlias: output buffer is NULL.<BR>
+En mode alias, l'adresse de destination pour séparer le chemin et le nom du fichier est NULL.<BR>
+<BR>
+shell.cpp: #13611: SplitItemFromFullPathAlias: pFullPathAlias is NULL or blank.<BR>
+En mode alias, le chemin source utilisé pour séparer le chemin et le nom du fichier est NULL ou vide.<BR>
+<BR>
+shell.cpp: #13612: SplitItemFromFullPathUnicode: output buffer is NULL.<BR>
+En mode long nom de fichier, l'adresse de destination pour séparer le chemin et le nom du fichier est NULL.<BR>
+<BR>
+shell.cpp: #13613: SplitItemFromFullPathUnicode: pFullPathUnicode is NULL or blank.<BR>
+En mode long nom de fichier, le chemin source utilisé pour séparer le chemin et le nom du fichier est NULL ou vide.<BR>
+<BR>
+shell.cpp: #13622: FullPathUnicodeFromSplitItem: pFilenameUnicode is NULL or blank.<BR>
+Le nom de fichier est NULL ou vide à cause que le chemin et le nom du fichier sont mélangés.<BR>
+<BR>
+shell.cpp: #13614: Can not chdir to root.<BR>
+Spécifique à la Playlist. Le dossier ne peut être déplacé à la racine pour la convertion d'un long nom de fichier en alias.<BR>
+<BR>
+shell.cpp: #13615: Can not chdir to %s.<BR>
+Spécifique à la Playlist. Le dossier ne peut être déplacé pour la convertion d'un long nom de fichier en alias.<BR>
+<BR>
+<HR>
+skin.cpp: #13701: ComponentAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13702: FileList: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13703: FileListAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13704: FileListClockAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13705: ScrollBarAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13706: Setup: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13707: SetupAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13708: SysMenuAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13709: MoviePlayer: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13710: MoviePlayerAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13711: ImageView: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13712: Launch: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13713: LaunchAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13714: LongTapAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13715: MP3CntAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13716: Custom: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13717: StandbyClock: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13718: StandbyClockAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13719: TextView: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13720: TextViewAlpha: Unknown type. %d<BR>
+Vous avez essayé de charger un fichier de skin dont le nom est indéfini.<BR>
+<BR>
+skin.cpp: #13721: MemoEdit: Unknown type. %d<BR>
+Vous avez tenté de charger un fichier de skin avec un nom du fichier indéfini.<BR>
+<BR>
+skin.cpp: #13722: MemoEditAlpha: Unknown type. %d<BR>
+Vous avez tenté de charger un fichier de skin avec un nom du fichier indéfini.<BR>
+<BR>
+<HR>
+sndeff.cpp: #13803: LoadTTB0File: Header error. %08x!=%08x<BR>
+Tentative de décodage TTB d'un fichier ayant une en-tête indéfinie lors du chargement de l'effet sonore.<BR>
+<BR>
+sndeff.cpp: #13801: Sound data is too large! %d,%d<BR>
+Tentative de de chargement d'un fichier dont la taille est plus grande que celle des données sonnores spécifiées.<BR>
+<BR>
+sndeff.cpp: #13805: Sound_Init: sndeff.dat not found or internal error.<BR>
+Les effets sonores du fichier de configuration n'ont pas été trouvés ou alors le contenu est anormal.<BR>
+<BR>
+sndeff.cpp: #13802: sound effect illigal channels count.<BR>
+Le nombre de canals du fichier audio ne correspont ni au stéréo ni au mono.<BR>
+<BR>
+<HR>
+splash.cpp: #13901: Splash: Illegal key frame?<BR>
+L'animation du démarrage a un nombre d'images clés (key frame) anormal.<BR>
+<BR>
+splash.cpp: #13902: Splash: Exists multiple key frame?<BR>
+L'animation du démarrage a des images clés (key frame) non-compressées.<BR>
+<BR>
+splash.cpp: #13903: Splash: Exists multiple key frame?<BR>
+Il y a des images clés (key frame) compressées par la ZLIB.<BR>
+<BR>
+splash.cpp: #13904: Splash: Key frame decompress error.<BR>
+La décompression des images clés (key frame) compressées par la ZLIB de l'animation de démarrage a échoué.<BR>
+<BR>
+splash.cpp: #13905: Splash: Not found key frame.<BR>
+Aucune image clé (key frame) n'a été trouvé dans l'animation de démarrage.<BR>
+<BR>
+<HR>
+strpcm.cpp: #14001: strpcm unknown format. (%d)<BR>
+Le périphérique de sortie audio n'a pas été défini.<BR>
+<BR>
+strpcm.cpp: #14002: strpcmStart: Driver setting error.<BR>
+Les paramètres d'initialisation du périphérique de sortie audio sont anormaux.<BR>
+<BR>
+strpcm.cpp: #14003: strpcmUpdate: strpcmRingLRBuf is NULL.<BR>
+Le buffer circulaire du périphérique de sortie audio n'a pas été assuré.<BR>
+<BR>
+strpcm.cpp: #14004: Illigal writed on NULL pointer. (%d)<BR>
+Une écriture anormale s'est produite (écriture d'un pointeur vide).<BR>
+<BR>
+<HR>
+zlibhelp.cpp: #19101: zliberror: deflateInit: %s<BR>
+L'initialisation a échoué lors de la compression avec la librairie ZLIB.<BR>
+<BR>
+zlibhelp.cpp: #19102: zliberror: deflate: %s<BR>
+Une erreur s'est produite lors de la compression avec la librairie ZLIB.<BR>
+<BR>
+zlibhelp.cpp: #19103: zliberror: deflateEnd: %s<BR>
+Une erreur de défragmentation s'est produite lors de la compression avec la librairie ZLIB.<BR>
+<BR>
+zlibhelp.cpp: #19104: zliberror: inflateInit: %s<BR>
+L'initialisation a échoué lors de la décompression avec la librairie ZLIB.<BR>
+<BR>
+zlibhelp.cpp: #19105: zliberror: dist buffer memory overflow.<BR>
+Le tampon alloué a été dépassé lors de la compression avec la librairie ZLIB.<BR>
+<BR>
+zlibhelp.cpp: #19106: zliberror: inflateEnd: %s<BR>
+Une erreur de défragmentation s'est produite lors de la décompression avec la librairie ZLIB.<BR>
+<BR>
+<HR>
+skin_colortbl.h: #14301: Skin file '%s' not found.<BR>
+Le fichier de configuration des couleurs du skin n'a pas été trouvé.<BR>
+<BR>
+skin_colortbl.h: #14302: The item doesn't suffice for this file. '%s'<BR>
+Le fichier de configuration des couleurs du skin est incomplet.<BR>
+<BR>
+skin_colortbl.h: #14303: line%d error. The section name doesn't end correctly.<BR>
+Les paramètres du fichier qui défini les couleurs du skin sont incorrects.<BR>
+<BR>
+skin_colortbl.h: #14304: line%d error. There is a key ahead of the section name.<BR>
+Il y a une ligne qui n'appartient pas à la bonne section dans le fichier de configuration des couleurs du skin.<BR>
+<BR>
+skin_colortbl.h: #14305: line%d error. The key name doesn't end correctly.<BR>
+Il y a une fonction et son paramêtre qui n'est pas séparées par "=" dans le fichier de configuration des couleurs du skin.<BR>
+<BR>
+skin_colortbl.h: #14306: line%d error. The value doesn't end correctly.<BR>
+Il y a une ligne qui dépasse les 128 caractères dans le fichier de configuration des couleurs du skin.<BR>
+<BR>
+skin_colortbl.h: #14307: line%d error. current section [%s] unknown key=%s value=%s<BR>
+Il y a une ligne qui contient des éléments indéfinis dans le fichier de configuration des couleurs du skin.<BR>
+<BR>
+skin_colortbl.h: #14308: File is empty. [%s]<BR>
+Le fichier de configuration des couleurs du skin est vide.<BR>
+<BR>
+skin_colortbl.h: #14309: Illigal ScreenSaver type.<BR>
+Il manque des paramètres de couleur pour le skin de l'écran de veille.<BR>
+<BR>
+<HR>
+skin_SkinFile.h: #14401: Skin header size too long. %d,%d<BR>
+L'entête du fichier de skin est trop grand.<BR>
+<BR>
+skin_SkinFile.h: #14404: ZLIB decompress error.<BR>
+La défragmentation ZLIB du fichier du skin a échoué.<BR>
+<BR>
+skin_SkinFile.h: #14405: Skin B15 file '%s' not found.<BR>
+La fichier du skin est incomplet. Le fichier B15 spécifié n'a pas été trouvé.<BR>
+<BR>
+skin_SkinFile.h: #14406: Skin file TGF '%s' not found.<BR>
+La fichier du skin est incomplet. Le fichier TGF spécifié n'a pas été trouvé.<BR>
+<BR>
+<HR>
+strpcm_ARM7_SelfCheck.h: #14501: ARM7/SVC stack overflow signal received.<BR>
+Le système ARM7 signale une anomalie. La pile du BIOS est insuffisante.<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14502: ARM7/IRQ stack overflow signal received.<BR>
+Le système ARM7 signale une anomalie. La pile pour l'interruption est insuffisante.<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14503: ARM7/SYS stack overflow signal received.<BR>
+Le système ARM7 signale une anomalie. La pile du système est insuffisante.<BR>
+<BR>
+strpcm_ARM7_SelfCheck.h: #14504: ARM7/Unknown(0x%x) stack overflow signal received.<BR>
+Le système ARM7 signale une anomalie. Une erreur indéfinie s'est produite.<BR>
+<BR>
+<HR>
+clibdpg.cpp: #14604: Horizontal sizes other than 256 pixels became unsupported.<BR>
+Il n'est pas possible de visionner les vidéos de plus de 256 pixels de large.<BR>
+<BR>
+clibdpg.cpp: #14601: pClibmpg->ProcMoveFrame failed.<BR>
+La recherche de l'image vidéo a échouée.<BR>
+<BR>
+clibdpg.cpp: #14602: pClibmpg->ProcMoveFrameGOP failed.<BR>
+La recherche de l'image vidéo GOP a échouée.<BR>
+<BR>
+clibdpg.cpp: #14603: unknown audio format. (%d)<BR>
+Ce fichier vidéo contient un format audio indéfini. (ex : format OGG de l'ancien Moonshell.)<BR>
+<BR>
+clibmpg.cpp: #14701: Video width (%dpix) !=  Screen width (%dpix).<BR>
+La largeur de la vidéo diffère de celle de l'écran.<BR>
+<BR>
+clibmpg.cpp: #14702: Not support pixel format.<BR>
+Ce fichier vidéo a un format de pixels non géré. (ex : format RGB15/18/21 de l'ancien Moonshell.)<BR>
+<BR>
+clibmpg.cpp: #14703: Unknown pixel format.<BR>
+Ce fichier vidéo a un format de pixels non géré.<BR>
+<BR>
+<HR>
+plug_jpeg.cpp: #14801: Jpeg decode: Not support seek function. (%d,%d)<BR>
+Le décodeur Jpeg ne gère pas la recherche.<BR>
+<BR>
+plug_jpeg.cpp: #14802: Jpeg decode: Decode error.<BR>
+Une erreur s'est produite pendant le décodage Jpeg.<BR>
+<BR>
+<HR>
+plug_midi.cpp: #14901: Null MID track.<BR>
+Le fichier MIDI standard ne peut être lu car il est vide.<BR>
+<BR>
+plug_midi.cpp: #14902: Null RCP track.<BR>
+Le fichier RCP ne peut être lu car il est vide.<BR>
+<BR>
+<HR>
+plug_ndsrom.cpp: #15001: Can not open NDS file.<BR>
+Le fichier NDS lancé n'a pas été trouvé.<BR>
+<BR>
+plug_ndsrom.cpp: #15002: Large file size!! (Limit 2MByte)<BR>
+Les fichiers NDS de plus de 2Mo ne peuvent pas être lancés.<BR>
+<BR>
+plug_ndsrom.cpp: #15003: Unknown error.<BR>
+Une erreur indéterminée s'est produite lors du lancement du fichier NDS.<BR>
+<BR>
+plug_ndsrom.cpp: #15004: Can not open DLDI patch backup file. (%s)<BR>
+Le fichier DLDI de sauvegarde n'a pas été trouvé.<BR>
+<BR>
+plug_ndsrom.cpp: #15005: DLDI patch backup write error. (%s)<BR>
+Une erreur s'est produite lors de l'écriture du fichier DLDI de sauvegarde.<BR>
+<BR>
+<HR>
+_dpgfs.cpp: #15101: cluster link pre-search stopped.<BR>
+L'examen du fichier vidéo afin d'accéder directements au disque à échoué. La FAT est anormale.<BR>
+<BR>
+_dpgfs.cpp: #15102: cluster link search stopped.<BR>
+La création des liens aux clusters afin d'accéder directements au disque à échoué. La FAT est anormale.<BR>
+<BR>
+<HR>
+clibmpg_diskcache.h: #15201: DiskCache_Init: Already exists disk cache memory.<BR>
+Bien que le tampon du disque pour le chargement vidéo a déjà été initialisé, il a encore été initialisé.<BR>
+<BR>
+clibmpg_diskcache.h: #15203: DiskCache_LoadAllBuffer(); Already exists disk cache blocks. r=%d/w=%d<BR>
+Bien que le tampon du disque pour le chargement vidéo n'était pas vide, quelque chose a été chargé.<BR>
+<BR>
+<HR>
+clibmpg_framecache.h: #15301: Not empty main memory for frame cache. request size is %dbyte.<BR>
+La mémoire libre du le tampon des images du fichier vidéo est insufisante.<BR>
+<BR>
+clibmpg_framecache.h: #15302: Frame cache memory overflow.<BR>
+Le nombre d'images contenues dans le tampon des images du fichier vidéo est inférieur au minimun requis pour l'affichage.<BR>
+<BR>
+<HR>
+plug_jpeg_prgjpeg_dfs.h: #15401: cluster link pre-search stopped.<BR>
+La recherche du fichier swap du JPEG progressif afin d'accéder directements au disque à échoué. La FAT est anormale.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15402: cluster link search stopped.<BR>
+La création des liens aux clusters afin d'accéder directements au disque pour le fichier swap du JPEG progressif à échoué. La FAT est anormale.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15403: Insufficient swap memory for seek.<BR>
+La limite du fichier swap a été atteinte pendant la recherche du fichier swap du JPEG progressif.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15404: Insufficient swap memory for write.<BR>
+La limite du fichier swap a été atteinte pendant l'écriture du fichier swap du JPEG progressif.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15405: Insufficient swap memory for read.<BR>
+La limite du fichier swap a été atteinte pendant le chargement du fichier swap du JPEG progressif.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15406: DFS_PrgJpeg_Free: internal opened error.<BR>
+Il y a eu tentative de libérer le système sans fermer tous les fichiers manipulés par le fichier swap interne pour le jpeg progressif.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15407: DFS_PrgJpeg_fopen: Allocate area overflow. %dbyte, %d/%d<BR>
+Le fichier interne n'a pas pu être ouvert car la mémoire pour le fichier swap interne pour le jpeg progressif est insufisante.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15408: DFS_PrgJpeg_fopen: Not found closed file handle.<BR>
+Le fichier interne manipulé n'a pas pu être ouvert car le fichier swap interne pour le jpeg progressif est insufisant.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15409: DFS_PrgJpeg_fclose: is closed file. (%d)<BR>
+Le fichier interne manipulé du fichier swap pour le jpeg progressif a été fermé alors qu'il n'a pas été ouvert.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15410: DFS_PrgJpeg_fread: is closed file. (%d)<BR>
+Il y a eu tentative de lecture du fichier interne manipulé du fichier swap pour le jpeg progressif alors qu'il n'a pas été ouvert.<BR>
+<BR>
+plug_jpeg_prgjpeg_dfs.h: #15411: DFS_PrgJpeg_fwrite: is closed file. (%d)<BR>
+Il y a eu tentative d'écriture au fichier interne manipulé du fichier swap pour le jpeg progressif alors qu'il n'a pas été ouvert.<BR>
+<BR>
+<HR>
+pch.cpp: #15503: PCMStack_Unregist: Can not unregist null pointer.<BR>
+Il y a eu tentative de sortir des données d'une police de sons alors que l'adresse de destination est NULL.<BR>
+<BR>
+pch.cpp: #15504: PCMStack_Unregist: Not found target in stack list.<BR>
+Il y a eu tentative de sortir des données de la police de sons dont l'adresse de destination n'est pas listée.<BR>
+<BR>
+pch.cpp: #15505: Not support TTA compressed sound font.<BR>
+Les données de la police de sons sont compressées en TTA. Elles ne peuvent être utilisées en mode temps réel.<BR>
+<BR>
+pch.cpp: #15506: Unknown WAVE format.<BR>
+Les données de la police de sons sont dans un format indéfini.<BR>
+<BR>
+pch.cpp: #15507: PCH_UnloadProgram: is NULL.<BR>
+Il y a eu tentative de sortir la liste de sons de la police sonores avec une adresse de destination NULL.<BR>
+<BR>
+pch.cpp: #15508: PCH_Init: Not found power table file. [%s]<BR>
+Le fichier de la table d'équalisation qui sert au contrôle du volume n'a pas été trouvé.<BR>
+<BR>
+pch.cpp: #15509: PCH_Init: Not found sin table file. [%s]<BR>
+Le fichier de la table des sinusoïdes qui sert à moduler n'a pas été trouvé.<BR>
+<BR>
+pch.cpp: #15510: PCMStack: Not free pointer or zero referrer count founded.<BR>
+Un timbre, dont le compteur de référence (c'est référencé quelque part) n'est pas à zéro, a été détecté lors de la libération de la table de gestion des timbres.<BR>
+<BR>
+pch.cpp: #15511: PCMStack_Regist: Stack buffer overflow.<BR>
+Un chargement de plus de 256 timbres a été tenté. Le plus grand nombre gérable de la table de gestion des timbres est 256.<BR>
+<BR>
+<HR>
+sndfont.cpp: #15601: SndFont_Open: File not found. [%s]<BR>
+Le fichier de la police de sons Midi Logiciels n'a pas été trouvée.<BR>
+<BR>
+<HR>
+sndfont_dfs.h: #15801: cluster link pre-search stopped.<BR>
+L'acces direct au fichier de la police de sons Midi Logiciels a échoué. La FAT est anormale.<BR>
+<BR>
+sndfont_dfs.h: #15802: cluster link search stopped.<BR>
+La céation du cluster pour accédé directement au fichier de la police de sons Midi Logiciels a échoué. La FAT est anormale.<BR>
+<BR>
+sndfont_dfs.h: #15803: ReadSkip: size align error. (0x%x)<BR>
+La taille qui a été tenté d'être passée est un alignement anormal.<BR>
+<BR>
+sndfont_dfs.h: #15804: Read16bit: pbuf align error. (0x%x)<BR>
+La adresse de destination qui a été tenté d'être lue est un alignement anormal.<BR>
+<BR>
+sndfont_dfs.h: #15805: Read16bit: size align error. (0x%x)<BR>
+La taille qui a été tenté d'être lue est un alignement anormal.<BR>
+<BR>
+<HR>
+proc_chkdsk.cpp: #16101: Can not change root path.<BR>
+Les tests du dossier racine ont échoués lors de la vérification rapide du disque. On ne peut rien déplacer vers le dossier racine.<BR>
+<BR>
+proc_chkdsk.cpp: #16102: A necessary file doesn't suffice.<BR>
+Les tests du dossier racine ont échoués lors de la vérification rapide du disque. Il n'y a pas assez de fichiers.<BR>
+<BR>
+<HR>
+proc_Launch.cpp: #16303: DrawSubScreen create canvas failed.<BR>
+La création du bitmap de l'écran du haut a échoué dans l'onglet "Accessoires".<BR>
+<BR>
+<HR>
+proc_chkdsk_body.h: #16401: Error found in checking duplicate cluster.<BR>
+La vérification des liens de clusters de la vérification rapide du disque a échouée. Veuillez-vous référer à ce qu'indiquait l'écran et au fichier de jounalisation pour connaître la cause.<BR>
+<BR>
+proc_chkdsk_body.h: #16402: Not support disk size or cluster size.<BR>
+La vérification des liens de clusters de la vérification rapide du disque a échouée. Soit les clusters sont trop petits soit le disque est trop grand. Essayez de reformater la carte avec SDFormatter compatible SDHC.<BR>
+<BR>
+proc_chkdsk_body.h: #16405: Unknown FAT type. (FAT%d)<BR>
+Le disque est formaté autrement qu'en FAT. Seule la FAT16 et la FAT32 sont gérées.<BR>
+<BR>
+proc_chkdsk_body.h: #16406: Write test error. Please reffer log file.<BR>
+Le test d'écriture de la vérification rapide du disque a échouée. Veuillez-vous référer à ce qu'indiquait l'écran et au fichier de jounalisation pour connaître la cause.<BR>
+<BR>
+proc_chkdsk_body.h: #16408: 16bit read check error. Please refer [/misctools/Additional/Ignore16.txt]<BR>
+Le test de lecture en mode DLDI16bit de la vérification rapide du disque a échouée. Veuillez-vous référer au fichier /misctools/Additional/Ignore16.txt.<BR>
+<BR>
+<HR>
+proc_DPGPlay.cpp: #16601: can not open file.<BR>
+Le fichier vidéo ne peut être ouvert.<BR>
+<BR>
+proc_DPGPlay.cpp: #16602: can not open DPG format.<BR>
+La bibliothèque DPG ne peut pas lire ce format non reconnu.<BR>
+<BR>
+proc_DPGPlay.cpp: #16604: Unknown DPG play mode. (%d)<BR>
+Mode de lecture vidéo non reconnu.<BR>
+<BR>
+<HR>
+proc_DPGPlay_BGM.h: #16701: Can not found Long filename entry.<BR>
+Un nom long de fichier n'a pas été trouvé lors de la création de la playlist des fichiers vidéos.<BR>
+<BR>
+proc_DPGPlay_BGM.h: #16702: Can not found files.<BR>
+Aucun nom long n'a été trouvé lors de la création de la playlist des fichiers vidéos.<BR>
+<BR>
+<HR>
+proc_FileList_DeleteFileDialog.h: #16801: Not found extention.<BR>
+On ne peut pas mettre à la corbeille un fichier sans extension.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16802: Alias entry overflow.<BR>
+Le nom d'alias de destination n'a pas pû être créé lors de la mise à la corbeille du fichier.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16803: CB_KeyLongPress_ins_ExecuteDelete: Not found source alias.<BR>
+Impossible trouver le nom d'alias du fichier source lors de la mise à la corbeille du fichier.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16805: CB_KeyLongPress_ins_ExecuteDelete: Can not create move-to file.<BR>
+Impossible de créer le fichier de destination lors de la mise à la corbeille du fichier.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16806: CB_KeyLongPress_ins_ExecuteDelete: Not found dist alias.<BR>
+Impossible d'obtenir le nom d'alias du fichier de destination lors de la mise à la corbeille du fichier.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16807: CB_KeyLongPress_ins_ExecuteDelete: FAT2_Move() failed.<BR>
+Le déplacement a échoué lors de la mise à la corbeille du fichier. Veuillez-vous référer au fichier de jounalisation.<BR>
+<BR>
+proc_FileList_DeleteFileDialog.h: #16808: CB_KeyLongPress: Can not create dustbox folder.<BR>
+Le dossier Corbeille n'a pas été crée lors de la mise à la corbeille du fichier. La fonction de création automatique de dossier est désactivée.<BR>
+<BR>
+<HR>
+proc_FileList_NDSFiles.h: #17004: Can not change path. [%s]<BR>
+Lors de la création de la liste de fichiers, la chaîne de caractères du dossier de destination était vide ou n'a pû être déplacé vers le dossier de destination.<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17002: Can not read unicode filename.<BR>
+Lors de la création de la liste de fichiers, le long nom de fichier n'a pas été trouvé.<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17005: Illegal FileType. (%d)<BR>
+Lors de la création de la liste de fichiers, un fichier défini a été trouvé.<BR>
+<BR>
+proc_FileList_NDSFiles.h: #17003: Can not move current folder.<BR>
+Un dossier n'a pas pû être déplacé vers sa destination lors de l'importation de l'icone NDSROM.<BR>
+<BR>
+<HR>
+proc_FileList_NDSFiles_TextPool.h: #17102: TextPool saferealloc error. 0x%x!=0x%x<BR>
+Lors de la création de la liste de fichiers, le changement de taille du text pool a échoué.<BR>
+<BR>
+proc_FileList_NDSFiles_TextPool.h: #17103: TextPool memory overflow. size=%dbyte<BR>
+Lors de la création de la liste de fichiers, la mémoire réservée au "text pool" est insufisante.<BR>
+<BR>
+<HR>
+proc_FileList_ScrollBar.h: #17201: ScrollBar_MouseDown psb->CurMode(%d)!=ESBCM_Idle<BR>
+Un signal de bouton a été reçu pendant le traitement d'un événement de souris.<BR>
+<BR>
+proc_FileList_ScrollBar.h: #17202: ScrollBar_MouseIdle psb->MaxPos==0<BR>
+Une erreur s'est produite pendant le traitement d'un événement de souris. La liste des fichiers est vide.<BR>
+<BR>
+<HR>
+proc_ImageView.cpp: #17401: RelationalToBack: File not found.<BR>
+Le fichier précédant n'a pas été trouvé lors du déplacement du fichier d'image.<BR>
+<BR>
+proc_ImageView.cpp: #17402: RelationalToNext: File not found.<BR>
+Le fichier suivant n'a pas été trouvé lors du déplacement du fichier d'image.<BR>
+<BR>
+proc_ImageView.cpp: #17404: Data file not found. [%s]<BR>
+Impossible d'ouvrir le fichier d'image.<BR>
+<BR>
+proc_ImageView.cpp: #17405: This plugin is not image type. (%s)<BR>
+Le plug-in qui a été lancé n'est pas un plug-in d'image.<BR>
+<BR>
+proc_ImageView.cpp: #17406: Plugin load error.<BR>
+Le Plug-in n'a pas n'a pas démarré à cause d'une erreur indéterminée. Veuillez-vous référer au fichier de jounalisation.<BR>
+<BR>
+proc_ImageView.cpp: #17403: File not found.<BR>
+Impossible de créer la liste de fichiers d'images. Aucun fichier n'a été trouvé.<BR>
+<BR>
+<HR>
+proc_ImageView_createbg.h: #17501: Open for write failed.<BR>
+Le fichier de destination ne s'est pas ouvert lors de la création du fichier de fond d'écran.<BR>
+<BR>
+<HR>
+proc_ImageView_dfs.h: #17601: cluster link pre-search stopped.<BR>
+La vérification pour faire des accès directs au disque pour le fichier d'image a échoué. La FAT est anormale.<BR>
+<BR>
+proc_ImageView_dfs.h: #17602: cluster link search stopped.<BR>
+La céation du lien aux clusters pour accédé directement au disque dans le fichier de swap pour les fichiers d'images a échouée. La FAT est anormale.<BR>
+<BR>
+proc_ImageView_dfs.h: #17603: Insufficient swap memory for seek.<BR>
+Le fichier de swap est devenu plein pendant la recherche du fichier swap pour les images.<BR>
+<BR>
+proc_ImageView_dfs.h: #17604: Insufficient swap memory for write.<BR>
+Le fichier de swap est devenu plein pendant l'écriture du fichier swap pour les images.<BR>
+<BR>
+proc_ImageView_dfs.h: #17605: Insufficient swap memory for read.<BR>
+Le fichier de swap est devenu plein pendant le chargement du fichier swap pour les images.<BR>
+<BR>
+<HR>
+proc_ImageView_mcu.h: #17704: Can not found last MCU.<BR>
+Une anomalie s'est produite dans le système de cache de données de l'affichage d'image. Aucun bloc MCU n'a été trouvé.<BR>
+<BR>
+<HR>
+proc_ImageView_preview.h: #17801: Create preview error. height overflow. (%d,%d %d,%d)<BR>
+Les informations de l'aperçu de l'image sont anormales. La hauteur dépasse celle d'après l'ajustement.<BR>
+<BR>
+proc_ImageView_preview.h: #17802: Create preview error. width overflow. (%d %d,%d)<BR>
+Les informations de l'aperçu de l'image sont anormales. La largueur dépasse celle d'après l'ajustement.<BR>
+<BR>
+<HR>
+proc_ImageView_relationalto.h: #17902: Can not change path. [%s]<BR>
+Lors de la création de la liste de fichiers, la chaîne de caractères du dossier de destination était vide ou n'a pû être déplacé vers le dossier de destination.<BR>
+<BR>
+proc_ImageView_relationalto.h: #17901: Can not read unicode filename.<BR>
+Lors de la création de la liste de fichiers, le long nom de fichier n'a pas été trouvé.<BR>
+<BR>
+<HR>
+proc_TextView.cpp: #18101: Illegal font size. (%d)<BR>
+Une taille de police indéfinie a servi de base lors de la configuration l'espacement de texte.<BR>
+<BR>
+proc_TextView.cpp: #18102: Can not open text file.<BR>
+Impossible d'ouvrir le fichier texte.<BR>
+<BR>
+<HR>
+proc_TextView_bookmark_fileio.h: #18205: Bookmark_ChangeExtBKM: Not found extention.<BR>
+L'extension ne peut-être remplacée par "BKM" car il n'y en avait pas lors de la création du long nom du fichier de signet de texte.<BR>
+<BR>
+proc_TextView_bookmark_fileio.h: #18201: Not found extention.<BR>
+L'extension n'a pas été trouvée lors de la création du long nom du fichier de signets de texte.<BR>
+<BR>
+proc_TextView_bookmark_fileio.h: #18202: Alias entry overflow.<BR>
+La création du nom d'alias du fichier de signets de texte a échouée. (Il existe déjà plus de 100 même fichiers.)<BR>
+<BR>
+<HR>
+proc_TextView_dfs.h: #18301: cluster link pre-search stopped.<BR>
+La recherche pour accéder directements au disque dans le fichier swap de fichiers textes à échoué. La FAT est anormale.<BR>
+<BR>
+proc_TextView_dfs.h: #18302: cluster link search stopped.<BR>
+La création des liens aux clusters afin d'accéder directements au disque dans le fichier swap de fichiers textes à échoué. La FAT est anormale.<BR>
+<BR>
+proc_TextView_dfs.h: #18303: Insufficient swap memory for seek.<BR>
+La limite du fichier swap a été atteinte pendant la recherche du fichier swap de fichiers textes.<BR>
+<BR>
+proc_TextView_dfs.h: #18304: Insufficient swap memory for write.<BR>
+La limite du fichier swap a été atteinte pendant l'écriture du fichier swap de fichiers textes.<BR>
+<BR>
+proc_TextView_dfs.h: #18305: Insufficient swap memory for read.<BR>
+La limite du fichier swap a été atteinte pendant le chargement du fichier swap de fichiers textes.<BR>
+<BR>
+<HR>
+proc_TextView_extfont.h: #18402: ExtFont: Not found font width file.<BR>
+Le visualisateur de texte n'a pas trouvé le fichier de la liste des largeurs lors du chargement d'une police extendue.<BR>
+<BR>
+proc_TextView_extfont.h: #18403: ExtFont: Not found clear type font file.<BR>
+Le visualisateur de texte n'a pas trouvé le fichier de police lissées lors du chargement d'une police extendue.<BR>
+<BR>
+proc_TextView_extfont.h: #18404: ExtFont_LoadBody: Not found font glyph file.<BR>
+Le visualisateur de texte n'a pas trouvé le fichier des données de la police lors du chargement d'une police extendue.<BR>
+<BR>
+<HR>
+proc_TextView_libconv_ansi.h: #18601: Not found Codepage to Unicode convert table.<BR>
+Le visualisateur de texte n'a pas trouvé le fichier des données pour convertir le code page de différents langages en UNICODE.<BR>
+<BR>
+<HR>
+fpga_helper.cpp: #19201: Can not ROMEO2 configration. (process:REG_IME)<BR>
+Les interruptions doivent être désactivées afin de transférer le code de configuration à ROMEO2<BR>
+<BR>
+fpga_helper.cpp: #19202: FPGA configration failed.<BR>
+L'initialisation a échouée car ne peut pas recevoir toutes les bornes (flag) de configuration.<BR>
+<BR>
+fpga_helper.cpp: #19203: Can not ROMEO2 shutdown. (process:REG_IME)<BR>
+Les interruptions doivent être désactivées pour arrêter romeo2.<BR>
+<BR>
+fpga_helper.cpp: #19204: Can not ROMEO2 shutdown. (process:TimeOut)<BR>
+Ne peut pas quitter car ne trouve pas toutes les bornes (flag) de fin. <BR>
+<BR>
+<HR>
+lang_TextPool.h: #19301: TextPool saferealloc error. 0x%x!=0x%x<BR>
+Impossible de modifier la taille du "text pool" lors du chargement du fichier du langage.<BR>
+<BR>
+lang_TextPool.h: #19302: TextPool memory overflow. size=%dbyte<BR>
+Pas assez de mémoire pour le "text pool" lors du chargement du fichier du langage.<BR>
+<BR>
+<HR>
+memtool_MM.h: #19401 :Unknown memory manager ID.<BR>
+Le gestionnaire de mémoire a été utilisé avec un ID indéfini.<BR>
+<BR>
+<HR>
+shell_FAT_Read.h: #19501: Not found plugin in plugin package. [%s]<BR>
+Tentative de chargement d'un plug-in qui ne se trouve pas dans son paquetage.<BR>
+<BR>
+shell_FAT_Read.h: #19502: Plugin load error.<BR>
+Impossible de charger de plug-in. Une erreur indéfinie s'est produite.<BR>
+<BR>
+<HR>
+plug_mp3.cpp: #19601: Samples buffer overflow. %d/%dsamples.<BR>
+Une donnée qui dépasse la cache étendue pour MP3 a été entrée.<BR>
+<BR>
+<HR>
+proc_FileList.cpp: #19701: Relational file error.<BR>
+L'nformations sur le fichier relatif aux fenêtres est vide.<BR>
+<BR>
+<HR>
+proc_MemoEdit.cpp: #19801: Not found BMP file. [%s]<BR>
+Le fichier BMP n'a pas pu être chargé en mode Bloc-notes.<BR>
+<BR>
+proc_MemoEdit.cpp: #19802: Can not open BMP file for write. [%s]<BR>
+Le fichier BMP n'a pas pu être sauvegardé en mode Bloc-notes.<BR>
+<BR>
+<HR>
+</body>
+
+</html>

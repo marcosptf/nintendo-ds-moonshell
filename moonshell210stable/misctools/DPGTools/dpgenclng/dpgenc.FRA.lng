@@ -1,0 +1,52 @@
+DPG Encoder Language file for French par Supercarte. (2009/04/11) Moonlight(2006/12/13)
+Tahoma
+8
+0
+Fichier à encoder :
+Sélectioner
+Annuler
+Appliquer
+Options
+Options d'encodage audio
+Débit
+kbit/s
+Volume
+Options d'encodage vidéo
+Proportion de l'image
+auto-déctection
+4:3 (academy size)
+16:9 (wide screen)
+1:2.35 (Cinemascope)
+Débit video
+kbit/s
+Nombre d'images
+/s
+Adjustement automatique
+Luminosité
+Estompage
+Fort
+Léger
+Inverser l'image
+À propos du nombre d'images\n\nLe nombre d'images sélectionné est de %ffps.\n24fps ou plus est recommendé. Continuer?
+Erreur de création du pipe.
+Erreur de changement d'attribution du pipe.
+Impossible d'obtenir le stream audio.\nRéessayez avec une autre méthode.
+Auto-détection. (Si ça ne convertie pas avec DirectShow, essayez autrement.)
+Réencoder la vidéo auparavant avec ffmpeg. (pour format spécifique) (lent)
+Destination : 
+Changer
+Sélectionner le dossier de destination.
+Déplacez-le vers le dossier de destination puis sauvegardez.
+Options (&O)
+Log (&L)
+Info (&A)
+Auto-extinction (&S)
+Veuillez glisser/poser le(s) fichier(s) à encoder ici.\nVeillez à ne jamais poser de fichier non géré.
+Annuler
+Annulation en cours...
+annulé.
+Le nombre d'images par seconde indéterminé.
+Le format [WMV3 / Windows Media Video 9] n'est pas géré.
+Paramètres avancés
+Temps écoulé : %s Temps restant estimé: %s
+DPGenc est configurer pour éteindre le PC après l'encodage.\nCe paramètre sera réinitilisé au prochain démarrage.

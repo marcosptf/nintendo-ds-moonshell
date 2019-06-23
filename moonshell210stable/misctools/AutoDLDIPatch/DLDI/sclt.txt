@@ -1,0 +1,12 @@
+Device: SuperCard Lite(TransFlash MicroSD)
+DeviceID: SCLT
+Version: ?
+Download: http://cuthbert.free.fr/DLDI (but I can not promise I will update very often).
+Source: http://chishm.drunkencoders.com/DLDI/downloads/sclt.zip
+Author: brisssou
+Orignal: io_scmicrosd_asm.s from SuperCard website
+Read/Write: R/W
+Tested?: Yes
+Manufacturer: SuperCard
+Manufacturer's Website: http://www.supercard.cn
+LastModified=2007-01-19

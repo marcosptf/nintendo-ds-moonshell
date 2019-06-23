@@ -1,0 +1,14 @@
+
+Device: SuperCard (SD Card)
+DeviceID: SCSD
+Version: 1.0
+Download: http://mdxonline.dyndns.org/
+Source: Open (Edit ok, License free)
+Author: Moonlight
+Orignal: MoonShellVer1.51 InternalDriver
+Read/Write: R/W
+Tested?: No
+Manufacturer: SuperCard
+Manufacturer's Website: http://eng.supercard.cn/
+LastModified=2007-01-01
+

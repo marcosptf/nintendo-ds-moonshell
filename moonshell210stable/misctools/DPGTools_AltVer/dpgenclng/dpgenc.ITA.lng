@@ -1,0 +1,65 @@
+DPG Encoder Language file for Italian by Tyrian³. (2006/08/17)
+Tahoma
+8
+0
+Filmato selezionato :
+Seleziona
+Annulla
+OK
+Opzioni avanzate
+Opzioni Audio
+Frequenza
+Hz
+Bitrate
+kbps
+Volume
+Conversione normale [mencoder.exe]
+Conversione veloce [ffmpeg.exe]
+Usa DirectShow con codifica di 128kbyte per blocco [extractwave.exe]
+Usa DirectShow con codifica di 4byte per blocco [extractwave.exe]
+Usa un file demuxed (defrosted) [MediaFilename.wav]
+Ri-Codifica flusso video
+Opzioni Ri-Codifica video
+Larghezza
+pixel
+Formato video
+Rilevamento Automatico
+4:3 (Normale)
+16:9 (Wide Screen)
+1:2.35 (Cinemascope)
+Bitrate
+kbps
+Fotogrammi per secondo
+fps
+Luminosita'
+Sfocatura
+Massima
+Leggera
+Video speculare
+Errore : Seleziona un risoluzione video inferiore a 256x192 pixel.
+Immagini per secondo\n\nVideo di %ffps.\nSono raccomandati al massimo 24fps. Continuare?
+Impossibile determinare le dimensioni del filmato.
+Impossibile determinare la durata totale.
+Formato video non valido.
+Errore nella creazione del pipe.
+Cambia gli attributi del pipe.
+Impossibile acquisire il flusso audio.\nSeleziona un altro metodo.
+Automatico (se la conversione con DirectShow non è possibile provare con la preparazione video)
+Prepara i video con ffmpeg. (per formati specifici) (lento)
+Prepara i video con mencoder. (non supportato)
+Cartella di destinazione: 
+Sfoglia
+Seleziona destinazione
+Seleziona la cartella di destinazione e premi Salva.
+File (&F)
+Esci (&E)
+Opzioni (&O)
+Mostra LOG (&M)
+Lingua (&L)
+Informazioni su (&I)
+Trascina qui uno o piu' file video.\(Usa solo i formati supportati)
+Annullare questa operazione
+Attendere l'annullamento...
+Annullato.
+Impossibile determinare gli FPS dal filmato.
+Formato non supportato [WMV3 / Windows Media Video 9].

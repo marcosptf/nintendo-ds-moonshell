@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+<UL>
+<LI><A HREF="#install">安装 / 卸载 /更新的方法</A></LI>
+<LI><A HREF="#notboot">无法启动的状况</A></LI>
+<BR>
+<LI><A HREF="#supportformat">支持的格式</A></LI>
+<LI><A HREF="#restrictformat">关于格式的限制问题</A></LI>
+<LI><A HREF="#largefile">关于大尺寸文件的限制问题</A></LI>
+<LI><A HREF="#heavyfile">关于高质量文件的限制问题</A></LI>
+</UL>
+<BR>
+</FONT>
+<A NAME="install"><HR>
+・安装 / 卸载 /更新的方法<BR>
+<BR>
+强烈推荐使用SDFormatter软件格式化SD卡。<BR>
+安全起见、请给储存卡留下一定的剩余空间（推荐64MByte以上）。<BR>
+<BR>
+安装：请运行setup.exe。手动拷贝也能安装<BR>
+<BR>
+卸载：将moonshl2文件夹和moonshl2.nds文件从储存卡里删除。<BR>
+<BR>
+更新：请运行setup.exe。会将旧版moonshl2备份后在安装。<BR>
+<BR>
+<A NAME="notboot"><HR>
+・无法启动的状况<BR>
+<BR>
+请确保使用SDFormatter格式化后在安装。<BR>
+其他的自制应用软件也不能启动的时候，请检查烧录卡内核。<BR>
+如果只是MoonShell2无法启动、请参考<A HREF="faq.html">常见问题</A> <BR>
+<BR>
+<A NAME="supportformat"><HR>
+・支持的格式<BR>
+<BR>
+音乐支持： MP1, MP2, MP3, OGG, WAV, M4A, WMA, TTA, MID, RCP, R36, FLAC <BR>
+MOD支持： MOD, IT, FAR, MTM, S3M, XM, 669, MED, STM, AMF, GDM, ULT, UNI, ASY, IMF, OKT, STX <BR>
+ChipTune支持： SPC, NSF, GBS, HES, AY, SAP, KSS<BR>
+播放列表支持：M3U, WPL<BR>
+图片支持：JPG, BMP, GIF, PNG, PSD <BR>
+视频支持：DPG<BR>
+支持文本显示。
+<BR>
+<BR>
+<A NAME="restrictformat"><HR>
+・关于格式的限制问题<BR>
+<BR>
+NDS: 无法运行商业NDS ROM。<BR>
+WMA: 无法播放无损格式和语音格式。<BR>
+M4A, WMA: 无法播放经过加密的文件。<BR>
+MID: 无法播放Standard MIDI file format.2 格式。<BR>
+SPC: SPC-700模拟的音质相当差。<BR>
+ChipTune相关: 不兼容FM音源芯片。<BR>
+播放列表:不支持ANSI, S-JIS, UTF-8, CP437, CP850, CP1252编码格式以外的文件。<BR>
+播放列表: 无法处理使用"KbMedia Player for Windows Version 2.41.2005.0711"以后版本输出的M3U文件以外的包含多个曲目的ChipTune声音文件的播放列表。<BR>
+文本: 不支持ANSI, S-JIS, UTF-8, UTF-16BE, UTF-16LE 以外编码。<BR>
+<BR>
+文件列表菜单中显示文件信息、只支持MP3, Jpeg, BMP, PSD, DPG文件。<BR>
+<BR>
+<A NAME="largefile"><HR>
+・关于大尺寸文件的限制问题<BR>
+<BR>
+图片: 无法打开超过3648x2736pixels（约1000万像素）的图片。<BR>
+文本: 没有大小限制、但是超过131072行以后的将不显示。
+<BR>
+MOD関係: 无法播放超过500Kbyte的文件。<BR>
+MID, RCP, R36: 无法播放超过500KByte的文件。<BR>
+<BR>
+文件夹名和文件名合计超过255字符的（例"/test/mp3files/samplemusic.mp3"合计30个字符）程序不会处理。<BR>
+<BR>
+<A NAME="heavyfile"><HR>
+・关于高质量文件的限制问题<BR>
+<BR>
+播放128kbps以上比特率的WMA文件、使用MIDI软音源时和播放SPC时、屏幕显示将简略化。<BR>
+打开progressive Jpeg需要花费比较长的时间。此过程无法按B中断。（300万像素打开需30秒）
+<BR>
+同时进行MIDI播放和图片显示时、可能会发生争夺内存导致声音播放不正常的情况<BR>
+<BR>
+<HR>
+</body>
+
+</html>

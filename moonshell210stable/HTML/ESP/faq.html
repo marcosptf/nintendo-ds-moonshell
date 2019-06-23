@@ -1,0 +1,155 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT COLOR=#ff0000 SIZE=+1><B>Los propietarios de M3Perfect/M3Professional/M3Sakura en caso de tener algún problema, deben ponerse en contacto con el fabricante.</B></FONT><BR>
+<BR>
+En caso de problemas, por favor, primero lea toda esta documentación. Si no soluciona el problema, póngase en contacto conmigo sólo como último recurso con la siguiente información:<BR>
+<BR>
+ * Nombre y fotografía digital de la flashcart (R4/DSTT, etc...) utilizada.<BR>
+ * Versión del sistema y firmware utilizado.<BR>
+ * Descripción (con fotos si es posible) del problema.<BR>
+ * Por favor, incluya el último archivo /moonshl2/logbuf.txt<BR>
+ * Detalle lo mejor posible los síntomas del problema.<BR>
+<BR>
+No vale la pena si no ha tratado de solucionarlo previamente en la medida de lo posible.<BR>
+Por favor, evite en lo posible utilizar las direcciones de correo electrónico gratuitas (Yahoo, etc) para contactar conmigo, ya que he configurado mi spam de forma estricta.<BR>
+Moonshell es un software libre pero sin fines lucrativos. Me siento feliz cuando recibo algún estímulo.<BR>
+<BR>
+moonshellnds@gmail.com<BR>
+<BR>
+<HR>
+<FONT SIZE=-1>
+<A HREF="#giveup">Funcionalidades abandonadas</A><BR>
+<BR>
+<A HREF="#notwindows">Las herramientas previstas para Windows no pueden iniciarse.</A><BR>
+<A HREF="#notboot">Moonshell2 no se inicia.</A><BR>
+<A HREF="#notopenfile">Los archivos no se abren.</A><BR>
+<A HREF="#notskin">No puede aplicarse un skin.</A><BR>
+<A HREF="#notdpgplay">No pueden verse los vídeos.</A><BR>
+<A HREF="#notdpgenc">El codificador de vídeo (dpgenc.exe) no funciona.</A><BR>
+<A HREF="#notdpgconvert">No puede recodificarse el vídeo.</A><BR>
+<A HREF="#dpgslow">Hay ralentizaciones en el vídeo.</A><BR>
+<A HREF="#dpgslip">El sonido pierde sincronía con la imagen después de mover el cursor en la barra de tiempo.</A><BR>
+<A HREF="#notolddpgplay">Los vídeos antiguos no funcionan.</A><BR>
+<A HREF="#notfoundmoonshlfolder">Se cuelga en el mensaje "no se puede encontrar la carpeta moonshl." en el inicio.</A><BR>
+<A HREF="#notbootr4">Moonshell2 no se inicia en R4.</A><BR>
+<A HREF="#homebrewnotbootr4">El homebrew no se inicia en R4</A><BR>
+<A HREF="#notbootak2">Moonshell2 no se inicia en AceKard2</A><BR>
+<A HREF="#notbootgbasc">Moonshell2 no se inicia en SuperCard con soporte GBA</A><BR>
+<BR>
+</FONT>
+<A NAME="giveup"><HR>
+<B>Funcionalidades abandonadas</B><BR>
+<BR>
+dpgenc.exe tiene un fallo que detiene la codificación poco antes del final.<BR>
+Letras para canciones MP3 (lrc).<BR>
+Analizador de espectro, archivo de parámetros, lista de reproducción y editor de ecualización.<BR>
+Lectura de texto vertical.<BR>
+El pequeño ruido justo después de reproducir un archivo de sonido o de iniciar el protector de pantalla.<BR>
+Lectura de archivos de vídeo distintos de DPG.<BR>
+<BR>
+<A NAME="notwindows"><HR>
+<B>Las herramientas previstas para Windows no pueden iniciarse.</B><BR>
+<BR>
+Las herramientas proporcionadas por MoonShell2 son para Windows2000/XP/Vista.<BR>
+No han sido probadas en Windows95/98/Me. Creo que no funcionarán.<BR>
+<BR>
+<A NAME="notboot"><HR>
+<B>Moonshell2 no se inicia.</B><BR>
+<BR>
+Si la tarjeta tiene clusters de 64KB, por favor refiérase a Clust64k.txt e Ignore16.txt en la carpeta /misctools/Additional/.<BR>
+Utilice /misctools/AutoDLDIPatch/AutoDLDIPatch.exe. Puede que su controlador no esté actualizado.<BR>
+Las flashcart EZ4, R4SDHC y ahora M3Sakura están excluidas por software.<BR>
+<BR>
+<A NAME="notopenfile"><HR>
+<B>Los archivos no se abren.</B><BR>
+<BR>
+Por favor, compruebe que el formato de archivo es reconocido por MoonShell2.<BR>
+Es posible que la extensión sea la misma, pero el formato sea diferente. Moonshell2 no puede abrir archivos de gran tamaño.<BR>
+Por favor, lea la <A HREF="readme.html#supportformat">lista de formatos copmpatibles</A><BR>
+<BR>
+<A NAME="notskin"><HR>
+<B>No puede aplicarse un skin.</B><BR>
+<BR>
+Por favor, compruebe que el archivo corresponde a la versión actual de Moonshell.<BR>
+Si intenta cargar un skin de una versión anterior, se escribirá el error [Illegal ID.] en /moonshl2/logbuf.txt.<BR>
+<BR>
+<A NAME="notdpgplay"><HR>
+<B>No pueden verse los vídeos.</B><BR>
+<BR>
+Los archivos avi/mpg/wmv no pueden ejecutarse. Sólo el formato DPG es reproducible.<BR>
+<BR>
+<A NAME="notdpgenc"><HR>
+<B>El codificador de vídeo (dpgenc.exe) no funciona.</B><BR>
+<BR>
+El codificador de vídeo está previsto para Windows2000/XP/Vista.<BR>
+No funcionará sobre Windows95/98/Me.<BR>
+Es posible que los vídeos codificados por otro programa (BatchDPG, etc..) no puedan reproducirse.<BR>
+No puedo responder a preguntas acerca de otros codificadores.<BR>
+<BR>
+<A NAME="notdpgconvert"><HR>
+<B>No puede recodificarse el vídeo.</B><BR>
+<BR>
+MPG es el formato más fácil de convertir.<BR>
+Si tiene problemas para convertir de AVI/WMV, trate de convertir primero a MPG con otro conversor.<BR>
+Personalmente, el único formato que he intentado convertir directamente es el de Youtube.<BR>
+<BR>
+Los formatos especiales (MP4, DivX, OGM, etc ...) reproducibles con Windows Media Player pueden ser convertidos.<BR>
+Reproduzca los vídeos con Windows Media Player antes de la conversión.<BR>
+Sin embargo, los WMV3 no son compatibles.<BR>
+Los vídeos con más de 120fps no pueden ser convertidos.<BR>
+<BR>
+<A NAME="dpgslow"><HR>
+<B>Hay ralentizaciones en el vídeo.</B><BR>
+<BR>
+Después de mover el cursor de la barra de tiempo durante la reproducción, pueden aparecer problemas de reposicionamiento.<BR>
+Además, si la pequeña barra horizontal, que aparece de vez en cuando a la izquierda en la barra de tiempo, se vuelve de color rojo, es que el vídeo es demasiado grande.<BR>
+En ese caso, vuelva a codificar el vídeo con menos fps.<BR>
+<BR>
+<A NAME="dpgslip"><HR>
+<B>El sonido pierde sincronía con la imagen después de mover el cursor en la barra de tiempo.</B><BR>
+<BR>
+No se puede hacer mucho. Trate de mover el cursor varias veces, y con suerte se resincronizará.<BR>
+<BR>
+<A NAME="notolddpgplay"><HR>
+<B>Los vídeos antiguos no funcionan.</B><BR>
+<BR>
+Los vídeos DPG con archivos de sonido en formato OGG streaming o la imagen RGB15/18/21 no son compatibles con Moonshell2.<BR>
+<BR>
+<A NAME="notfoundmoonshlfolder"><HR>
+<B>Se cuelga en el mensaje "no se puede encontrar la carpeta moonshl." durante el inicio.</B><BR>
+<BR>
+Es un mensaje de error del antiguo Moonshell. No es necesario desinstalar los antiguos Moonshell porque pueden coexistir. Asegúrese de que ejecuta el archivo "moonshl2.nds".<BR>
+<BR>
+<A NAME="notbootr4"><HR>
+<B>Moonshell2 no se inicia en R4.</B><BR>
+<BR>
+Puede haber varias razones, como que el sistema de su tarjeta no esté actualizado. Las versiones antiguas pueden no parchear automáticamente el controlador DLDI.<BR>
+Por favor, compruebe que su tarjeta está actualizada.<BR>
+<BR>
+<A NAME="homebrewnotbootr4"><HR>
+<B>El homebrew no se inicia en R4</B><BR>
+<BR>
+Los hombrew iniciados desde MoonShell2 en un R4 (con la aplicación MS2 original) no funcionan; el uso de la pantalla táctil puede ser un problema.<BR>
+Honestamente, no puedo identificar el problema que les impide funcionar. ¿Cómo se puede solucionar?<BR>
+<BR>
+<A NAME="notbootak2"><HR>
+<B>Moonshell2 no se inicia en AceKard2</B><BR>
+<BR>
+El firmware AceKard2_v4.16_menu y AKAIO_ak2loader_2009.04.03 producen un error grave al cargar MoonShell2.<BR>
+Use un firmware 4.15 o anterior, o un AKAIO_ak2loader más reciente.<BR>
+<BR>
+<A NAME="notbootgbasc"><HR>
+<B>Moonshell2 no se inicia en SuperCard con soporte GBA</B><BR>
+<BR>
+La función Auto DLDI puede causar algún problema con el parche<BR>
+Copie y elimine de la raiz el archivo dldi.scp (si existe) antes usar el programa con el parche DLDI aplicado con Windows.<BR>
+<BR>
+<HR>
+</body>
+
+</html>

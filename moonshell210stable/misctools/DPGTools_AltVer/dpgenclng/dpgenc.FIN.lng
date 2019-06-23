@@ -1,0 +1,65 @@
+DPG Encoder Language file for Finnish by Sami Koivisto / Samtron-Translations. (versio 2006/08/15)
+Tahoma
+8
+0
+Lähdetiedosto:
+Valitse
+Peruuta
+Aloita
+Näytä asetukset
+Ääniasetukset
+Taajuus
+Hz
+Siirtonopeus
+kbps
+Äänenvoimakkuus
+Vakioasetus (käytössä mencoder.exe)
+Nopein tapa (käytössä ffmpeg.exe)
+Normaali DirectShow tapa: 128 kilotavua/block (käytössä extractwave.exe)
+Vaihtoehtoinen DirectShow tapa: 4 tavua/block (käytössä extractwave.exe)
+Ei uudelleenpakkausta (käytetään olemassa olevaa 'Mediatiedosto.wav' tiedostoa)
+Uudelleenpakkaa video
+Videon uudelleenpakkaus-asetukset
+Kuvan leveys
+pikseliä
+Kuvasuhde
+Tunnista automaattisesti
+4:3 (Academy)
+16:9 (Laajakuva)
+1:2.35 (Cinemascope)
+Siirtonopeus
+kbps
+Kuvataajuus
+fps
+Kuvan kirkkaus
+Pehmennys
+Vahva
+Kevyt
+Käännä videokuva (peilikuva pystysuunnassa)
+Kriittinen virhe: Ole hyvä ja määritä mpeg tiedosto alle 256x192 pikseliin.
+Kuvataajuudesta tietoa\n\nTämä mpeg on %ffps.\n24fps tai vähemmän on suositeltavaa. Jatka?
+Videon kokoa ei pystytä tunnistamaan.
+Kokonaiskestoa ei pystytä tunnistamaan.
+Kielletty kuvasuhde.
+Create pipe virhe.
+Change pipe attribute virhe.
+Äänivirtaa ei voitu tunnistaa.\nYritä toista tapaa.
+Uudelleenpakkaa suoraan käyttämällä DirectShow:ta. (WMP toistimen tukema muoto) (nopea)
+Valmistele video ffmpeg ohjelmalla. (tietyntyyppisille tiedostoille) (hidas)
+Valmistele video mencoder ohjelmalla. (ei tuettu)
+Kohdekansio : 
+Vaihda
+Valitse kohdekansio.
+Siirrä kohdekansioon. ja paina 'tallenna' painiketta.
+Tiedosto (&T)
+Lopeta (&L)
+Asetukset (&A)
+Näytä loki (&N)
+Kieli (&K)
+Tietoa (&T)
+Raahaa ja pudota tähän videotiedosto(t).\Älä pudota tähän muita tiedostoja.
+Keskeytä
+Keskeytetään...
+Keskeytetty.
+Ei voida määrittää kuvataajuutta videotiedostosta.
+Ei tuettu [WMV3 / Windows Media Video 9] tyyppi.

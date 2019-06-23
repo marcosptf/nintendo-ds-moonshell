@@ -1,0 +1,48 @@
+DPG Encoder Language file for Portuguese by oNaiPs. (2006/02/24)
+Tahoma
+8
+0
+Fonte do vídeo:
+Selecionar
+Cancelar
+Começar
+Mostrar Opções
+Opções de Áudio
+Frequência de Áudio
+Hz
+BitRate
+Kbps
+Volume
+Usar mencoder.exe Codec de Áudio especial.
+Usar ffmpeg.exe (Mais rápido).
+Usar extractwave.exe Metodo normal DirectShow a 128kbytes/bloco
+Usar extractwave.exe Metodo Alternativo DirectShow a 4bytes/bloco
+O ficheiro especificado é usado. (MediaFilename.wav)
+Re-encodear vídeo
+Opcões do Re-encoder
+Altura do Vídeo
+pixels
+Relação Largura-Altura (ratio)
+Detectar Automaticamente
+4:3 (Tamanho academico)
+16:9 (Panoramico)
+1:2.35 (Cinemascope)
+BitRate do Vídeo
+Kbps
+Fotogramas do Vídeo
+Fps
+Brilho do Vídeo
+Desfocar
+Muito
+Pouco
+Inverter Vídeo
+Erro Fatal: Especifique um ficheiro MPEG inferior a 256x192 pixels.
+Sobre os Fps\n\nEste MPEG tem %ffps .\nRecomenda-se usar 24 ou menos
+fps.¿Continuar?
+Não se conseguiu detectar o tamanho do vídeo.
+Não se conseguiu detectar a duração do vídeo.
+Relação Largura-Altura não permitida.
+Erro (Create Pipe).
+Erro (Change Pipe).
+Não se conseguiu adquirir áudio.\nPor favor, experimente outro método.
+

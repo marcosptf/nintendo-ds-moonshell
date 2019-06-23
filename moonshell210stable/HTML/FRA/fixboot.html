@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"> <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<HR>
+<FONT SIZE=-1>
+<B>Comment démarrer directement sur MoonShell2</B><BR>
+<BR>
+Méthodes pour démarrer directement sur MoonShell2 avec votre linker.<BR>
+Veuillez installer MoonShell2 normalement puis essayez si ça fonctionne avant de continuer.<BR>
+<BR>
+<UL>
+<LI><A HREF="#fordsttdirect">Méthode de démarrage automatique pour DSTT</A></LI>
+<LI><A HREF="#forr4direct">Méthode de démarrage automatique pour R4</A></LI>
+<LI><A HREF="#forr4withmm">Méthode de démarrage par l'icone multimédia du R4</A></LI>
+<LI><A HREF="#forcycrodswithms171p1">Démarrer Moonshell 2 sur le Cyclo DS (jusqu'au FW1.55Beta2) avec le l'icone Multimédia (en gardant MoonShell1.71+1)</A></LI>
+<LI><A HREF="#forcycrodswithoutms171p1">Démarrer Moonshell 2 sur le Cyclo DS (jusqu'au FW1.55Beta2) avec le l'icone Multimédia (MoonShell1.71+1 supprimé)</A></LI>
+<LI><A HREF="#forcycrodswithoutms171p1B3">Démarrer Moonshell 2 sur le Cyclo DS (depuis le FW1.55Beta3) avec le l'icone Multimédia</A></LI>
+</UL>
+<BR>
+</FONT>
+<A NAME="fordsttdirect"><HR>
+<B>Méthode de démarrage automatique pour DSTT</B><BR>
+</A>
+<BR>
+Pour démarrer directement sur MoonShell 2 sur DSTT, il faut remplacer le système du DSTT par MoonShell2<BR>
+N'appliquez pas cette méthode sur un faux (clone?) DSTT.<BR>
+<BR>
+Appliquez le patch DLDI avec "/misctools/AutoDLDIPatch/AutoDLDIPatch.exe" puis,<BR>
+renommez le fichier "moonshl2_TTIO_TTCARD IO Library.nds" par "TTMENU.DAT" ensuite, copiez-le sur votre Micro SD à la racine.<BR>
+<BR>
+<A NAME="forr4direct"></A><HR>
+<B>Méthode de démarrage automatique pour R4</B><BR>
+<BR>
+Pour démarrer directement sur MoonShell 2 sur R4, il faut remplacer le système du R4 par MoonShell2<BR>
+N'appliquez pas cette méthode sur un faux (clone?) R4.<BR>
+<BR>
+Appliquez le patch DLDI avec "/misctools/AutoDLDIPatch/AutoDLDIPatch.exe" puis,<BR>
+renommez le fichier "moonshl2_R4TF_M3Simply-R4DS (Micro SD Card).nds" par "DEFAULT.NDS", ensuite copiez-le sur votre Micro SD à la racine.<BR>
+<BR>
+<A NAME="forr4withmm"></A><HR>
+<B>Méthode de démarrage par l'icone multimédia du R4</B><BR>
+<BR>
+Pour démarrer directement sur MoonShell 2 à l'aide de l'icone multimédia du R4, pas besoin de remplacer le système du R4<BR>
+N'appliquez pas cette méthode sur un faux (clone?) R4.<BR>
+Vous pouvez supprimer l'ancien Moonshell.<BR>
+<BR>
+Appliquez le patch DLDI avec "/misctools/AutoDLDIPatch/AutoDLDIPatch.exe" puis,<BR>
+renommez le fichier "moonshl2_R4TF_M3Simply-R4DS (Micro SD Card).nds" par "_DS_MSHL.NDS", ensuite copiez-le sur votre micro SD à la racine.<BR>
+<BR>
+<A NAME="forcycrodswithms171p1"><HR>
+Démarrer Moonshell 2 sur le Cyclo DS <U>jusqu'au FW1.55Beta2</U> avec le l'icone Multimédia (en gardant MoonShell1.71+1)<BR>
+(Merci à leopon pour la suggestion)<BR>
+<BR>
+<OL>
+<LI>Décompresser MoonShell2.x et copier le dossier /moonshl2 à la racine de la Micro SD.</LI>
+<LI>Renommer le fichier moonshel.nds qui se trouve dans le dossier /moonshl à la racine de la Micro SD par moonshell171.nds.</LI>
+<LI>Renommer le fichier moonshl2.nds par moonshell.nds puis le copier dans le dossier /moonshl à la racine de la Micro SD.</LI>
+</OL>
+- Vous pourrez lancer MoonShell1.71+1 depuis le navigateur de fichier du Cyclo DS.<BR>
+- moonshell171.nds peut être mis dans n'importe quel dossier.<BR>
+<BR>
+<A NAME="#forcycrodswithoutms171p1"><HR>
+Démarrer Moonshell 2 sur le Cyclo DS <U>jusqu'au FW1.55Beta2</U> avec le l'icone Multimédia (MoonShell1.71+1 supprimé)<BR>
+(Merci à leopon pour la suggestion)<BR>
+<BR>
+<OL>
+<LI>Décompresser MoonShell2.x et copier le dossier /moonshl2 à la racine de la Micro SD.</LI>
+<LI>Supprimer le contenu du dossier /moonshl à la racine de la Micro SD. (Ne pas supprimer le dossier /moonshl)</LI>
+<LI>Renommer le fichier moonshl2.nds par moonshell.nds puis le copier dans le dossier /moonshl à la racine de la Micro SD.</LI>
+</OL>
+- Lorsqu'on touche l'icone multimédia du Cyclo DS, ça démarre tout simplement le fichier /moonshl/moonshell.nds. Ce fichier peut être n'importe quel homebrew. Il suffit de le renommer et de le mettre dans ce dossier.<BR>
+<BR>
+<A NAME="forcycrodswithoutms171p1B3"><HR>
+Démarrer Moonshell 2 sur le Cyclo DS (depuis le FW1.55Beta3) avec le l'icone Multimédia
+ (Avec ou sans MoonShell1.71+1)<BR>
+(Merci à leopon pour la suggestion)<BR>
+<OL>
+<LI>Installer MoonShell 2 avec le Setup.exe ou manuellement.</LI>
+<LI>Éditer le fichier confg.xml du dossier CycloDS à la racine de la Micro SD.</LI>
+<LI>Aller à la 21ème ligne, puis remplacer :<BR>
+&lt;moonshellPath&gt;/moonshl/moonshell.nds&lt;/moonshellPath&gt;<BR>
+par :<BR>
+&lt;moonshellPath&gt;/moonshl2.nds&lt;/moonshellPath&gt;<BR>
+</LI>
+<LI>Démarrer le Cyclo DS et toucher l'icone multimédia.</LI>
+</OL>
+- Lancer MoonShell1.71+1 depuis le navigateur de fichier du Cyclo DS. (si installé)<BR>
+<BR>
+<HR>
+</body>
+
+</html>

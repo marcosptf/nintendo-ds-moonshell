@@ -1,0 +1,17 @@
+Western Europe / U.S.        0  
+Symbol                       2  
+Japanese                     128
+Korean                       129
+Chinese (GB2312)             134
+Chinese (BIG5)               136
+Greek                        161
+Turkish                      162
+Vietnamese                   163
+Hebrew                       177
+Arabic                       178
+Baltic                       186
+Cyrillic                     204
+Thai                         222
+Central Europe               238
+OEM/DOS                      255
+

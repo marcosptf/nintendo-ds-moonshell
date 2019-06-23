@@ -1,0 +1,4 @@
+
+This is a very simple test skin.
+Only the double line mode of the file list is applied.
+
